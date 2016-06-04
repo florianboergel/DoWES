@@ -1,11 +1,47 @@
+%inits
 a = 0;
-a' = 0;
-rotorRadius = 50;
-numBlades = 3;
+a_old = 1000;
+a_Dash = 0;
+r = 5.058;
+R = 62.18;
 v1 = 10;
-airDensity = 1.225;
-alpha_twist = 0;
-alpha_pitch = 0;
-alpha = atan((v1(1-a))/(omega*r*(1+a')));
+omega = 12.59/60*2*pi;
+designTipSpeedRatio = 8.20;
+N = 3;
+count= 0;
+while (count==0 || abs(a-a_old) > 0.0000000001)
+    count
+    a_old = a;
+    %step 2, step 3
+    angleOfAttack = 10;
+    %alpha = atan((v1*(1-a))/(omega*r*(1+a_Dash)))*180/pi
+    alpha = atan(v1*(1-a)/(omega*r));
+   % disp(alpha*180/pi);
 
-angleOfAttack = alpha - (alpha_twist + alpha_pitch)
+    %step 4
+    interpolationTable = xlsread('Interpol.xlsx','NACA 65-415','B6:D81');
+    C_L = interp1(interpolationTable(:,1),interpolationTable(:,2),alpha*180/pi,'spline');
+    C_D = interp1(interpolationTable(:,1),interpolationTable(:,3),alpha*180/pi,'spline');
+
+    %step 5
+    C_T = C_L * cos(alpha) + C_D *sin(alpha);
+    C_Q = C_L * cos(alpha) - C_D *sin(alpha);
+
+    %step 6
+    c = 2*pi*R/N*8/(9*C_L)/(designTipSpeedRatio*sqrt((designTipSpeedRatio*r/R)^2+4/9));
+    sigma = N*c/(2*pi*r);
+    a_Dash_new = 1/((4*sin(alpha) * cos(alpha)/(sigma*C_Q)-1)) ;
+    a = 1/(4*sin(alpha) * sin(alpha)/(sigma*C_T)+1);
+
+    %step 7
+    a_c = 0.2;
+    K = 4*sin(alpha)^2/(sigma*C_T);
+    a=0.5*(2+K*(1-2*a_c)-sqrt((K*(1-2*a_c)+2)^2+4*(K*a_c^2-1)));
+    count = count+1;
+end;
+
+disp ('a',a);
+disp ('c:',c);
+disp(alpha*180/pi-10);
+
+
