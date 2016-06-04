@@ -26,7 +26,7 @@ for r = [5.058	12.674	20.290	27.906	35.522	43.138	50.754	58.370	62.178]
        % disp(alpha*180/pi);
 
         %step 4
-        interpolationTable = xlsread('Interpol.xlsx','NACA 65-415','B6:D81');
+        interpolationTable = xlsread('Interpol.xlsx','NACA 65-421','B6:D84');
         C_L = interp1(interpolationTable(:,1),interpolationTable(:,2),alpha*180/pi,'spline');
         C_D = interp1(interpolationTable(:,1),interpolationTable(:,3),alpha*180/pi,'spline');
 
