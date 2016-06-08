@@ -1,5 +1,5 @@
 %inits
-
+density = 1.225
 r = 5.058;
 R = 62.18;
 v1 = 10;
@@ -8,6 +8,7 @@ designTipSpeedRatio = 8.20;
 N = 3;
 a_c = 0.2;
 count= 0;
+stationNumber = 0;
 
 for r = [1.250	5.058	12.674	20.290	27.906	35.522	43.138	50.754	58.370	62.178]
     r
@@ -49,10 +50,17 @@ for r = [1.250	5.058	12.674	20.290	27.906	35.522	43.138	50.754	58.370	62.178]
         
         count = count+1;
     end;
-
-    disp (a);
-    disp (c);
-    disp(alpha*180/pi-10);
-
+    stationNumber = stationNumber +1;
+    resultAngles(stationNumber) = alpha*180/pi-10;
+    resultChordLength(stationNumber) = c;
+    dL(stationNumber) = 0.5*density*sqrt(v1^2+(omega*r)^2)*C_L;
+    dP(stationNumber) = N * dL(stationNumber) * sin(alpha) *omega *r
+    f_cl_snel(stationNumber) = 3*(c/r)^2
+    f_cl_chhansen(stationNumber) = 2.2*(c/r)*(cos(alpha*180/pi-10))^4
 end;
+%%
+figure();
+plot(f_cl_snel);
 
+figure();
+plot(f_cl_chhansen)
