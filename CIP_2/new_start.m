@@ -1,42 +1,39 @@
 %% New Start
 
 
-D = 62.18*2           % RotorDiameter
+D = 62.18*2          % RotorDiameter
 N = 3                % Number of blades
 RotorDiameter = 0.95 % Electrical conversion efficiency
 Ud = 10.0            % Design wind speed in [m/s]
-lambdad = 8.20        % Design tip-speed ratio
+lambdad = 8.20       % Design tip-speed ratio
 cld = 1.345          % Design lift coefficient selected for max. gliding factor
 rho = 1.225          % Air density [kg/m^3] @ standard conditions
+alpha_Ad_deg = 10.0  % Angle of Attack Design
+alpha_Ad    = alpha_Ad_deg * pi/180
 
 Ne = 10              % Number of elements
 R = D / 2.0          % Calculate the radius of the turbine
 
-RotationalSpeed = Ud *lambdad / R
-
-
+RotationalSpeed = Ud * lambdad / R
 BladeRootOffset = 1.25  %  Defining radial position at which the first element begins
-
 BladeElementLength = (R - BladeRootOffset) / 8
 
-
+% Calculate BladeElementRadii
 BladeElementRadii(1) = BladeRootOffset + BladeElementLength / 2
 for i = 2:Ne-1
    BladeElementRadii(i) = BladeElementRadii(i-1) + BladeElementLength
 end
 BladeElementRadii(Ne-1) = BladeElementRadii(Ne-2) + BladeElementLength/2
 
-alpha_Ad_deg = 10.0
-alpha_Ad    = alpha_Ad_deg * pi/180
-
+% Calcualte Twist-Angle and Chordlength
 count = 1
 for BladeElementRadius = BladeElementRadii
-    alpha_li = atan(R/(lambdad * BladeElementRadius))
-    alpha_i = 2.0/3.0 * alpha_li
-    alpha_twisti = alpha_i - alpha_Ad
+    alpha_li    =   atan(R/(lambdad * BladeElementRadius))
+    alpha_i     =   2.0/3.0 * alpha_li
+    alpha_twisti=   alpha_i - alpha_Ad
     % Storing results in arrays
-    alpha_1(count)     = alpha_li
-    %alpha       = np.append(alpha, alpha_i)
+    alpha_1(count) = alpha_li
+    %alpha = np.append(alpha, alpha_i)
     alpha_twist(count) = alpha_twisti
     alpha_twist_deg(count) =  alpha_twisti*180 / pi
     chord_i = 16.0 * pi * BladeElementRadius / (3 * cld) * (sin(1.0/3*alpha_li))^2
@@ -44,11 +41,12 @@ for BladeElementRadius = BladeElementRadii
     count = count +1;
 end
 
+% BEM Algorithm
+
 alpha_pitch = 0
 count_indice = 1
-stationNumber = 0
+
 for r = BladeElementRadii
-    r
     %step 1
     a = 0;
     a_old = 1000;
@@ -85,7 +83,6 @@ for r = BladeElementRadii
         a=0.5*(2+K*(1-2*a_c)-sqrt((K*(1-2*a_c)+2)^2+4*(K*a_c^2-1)));
         count = count+1;
     end;
-    stationNumber = stationNumber +1;
     count_indice = count_indice + 1;
 end;
 
