@@ -29,22 +29,22 @@ False                Cavitation:                Run cavitation check? if cavitat
 0.0                  WatDepth:                  Depth from water free surface to mudline (tower base)
 -----  Turbine Data  -----------------------------------------------------------
  3                   NumBlade:                  Number of blades.
-35.95                RotorRad:                  Rotor radius [length].
- 1.2                 HubRad:                    Hub radius [length or div by radius].
+62.18                RotorRad:                  Rotor radius [length].
+ 1.25                HubRad:                    Hub radius [length or div by radius].
 -3.0                 PreCone:                   Precone angle, positive downwind [deg].
  5.0                 Tilt:                      Shaft tilt [deg].
  0.0                 Yaw:                       Yaw error [deg].
-70.0                 HubHt:                     Hub height [length or div by radius].
+100                 HubHt:                     Hub height [length or div by radius].
  8                   NumSeg:                    Number of blade segments (entire rotor radius).
    RElm   Twist    Chord  AFfile  PrntElem
-3.421875	29.36987577	5.070530343	1	FALSE
-7.765625	14.20925825	4.459489198	1	FALSE
-12.109375	6.823436492	3.384116952	1	FALSE
-16.453125	2.753876508	2.650669029	1	FALSE
-20.796875	0.230641975	2.160752278	2	FALSE
-25.140625	-1.473157945	1.815959346	2	FALSE
-29.484375	-2.69646261	1.563239845	2	FALSE
-33.828125	-3.615679163	1.370923606	2	FALSE
+3.808   38.271   6.276	1	FALSE
+11.424	16.008   3.351	1	FALSE
+19.040	7.031    2.223	1	FALSE
+26.656	2.553	   1.872	1	FALSE
+34.272	-0.081   1.655	2	FALSE
+41.888	-1.807   1.468	2	FALSE
+49.504	-3.024   1.301	2	FALSE
+57.120	-3.927   1.183	2	FALSE
 -----  Aerodynamic Data  -------------------------------------------------------
 1.225                                    Rho:                 Air density [mass/volume].
 1.4639e-5                                KinVisc:             Kinematic air viscosity
@@ -52,8 +52,8 @@ False                Cavitation:                Run cavitation check? if cavitat
 True                                     UseCm:               Are Cm data included in the airfoil tables?
 False                                    UseCpmin:            Are Cp,min data included in the airfoil tables?
 2                                        NumAF:               Number of airfoil files.
-"C:\WT_Perf\Airfoils\NACA_63_218.dat"
-"C:\WT_Perf\Airfoils\NACA_63_215.dat"
+"C:\Users\derPianist\Documents\GitHub\DoWES\CIP_3\WT_Perf\Airfoils\NACA_65_415.dat"
+"C:\Users\derPianist\Documents\GitHub\DoWES\CIP_3\WT_Perf\Airfoils\NACA_65_421.dat"
 -----  Output Configuration  ---------------------------------------------------
 False                UnfPower:                  Write parametric power to an unformatted file?
 True                 TabDel:                    Make output tab-delimited (fixed-width otherwise).
@@ -76,6 +76,6 @@ True                 OutCp:                     Request output of Cp?
 True                 OutTrq:                    Request output of shaft torque?
 False                OutFlp:                    Request output of flap bending moment?
 True                 OutThr:                    Request output of rotor thrust?
--5, 5, 1             PitSt, PitEnd, PitDel:     First, last, delta blade pitch (deg).
-22, 24, 0.25         OmgSt, OmgEnd, OmgDel:     First, last, delta rotor speed (rpm).
-1, 10, 0.1           SpdSt, SpdEnd, SpdDel:     First, last, delta speeds.
+0, 30, 5             PitSt, PitEnd, PitDel:     First, last, delta blade pitch (deg).
+12.59, 12.59, 0         OmgSt, OmgEnd, OmgDel:     First, last, delta rotor speed (rpm).
+0.5, 20, 0.5          SpdSt, SpdEnd, SpdDel:     First, last, delta speeds.
