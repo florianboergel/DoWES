@@ -36,9 +36,8 @@ False                Cavitation:                Run cavitation check? if cavitat
  0.0                 Yaw:                       Yaw error [deg].
 100                 HubHt:                     Hub height [length or div by radius].
  8                   NumSeg:                    Number of blade segments (entire rotor radius).
-
-   RElm   Twist    Chord  AFfile  PrntElem
-3.808   26.530   6.988	1	FALSE
+RElm   Twist    Chord  AFfile  PrntElem
+3.808 26.530  6.988	1	FALSE
 11.424	9.594    5.407	1	FALSE
 19.040	2.661    3.832	1	FALSE
 26.656	-0.866	 2.906	1	FALSE

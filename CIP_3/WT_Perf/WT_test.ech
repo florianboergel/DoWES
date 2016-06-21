@@ -1,6 +1,6 @@
 Echo of WT_Perf Input File:
  "WT_test.wtp"
-Generated on: 13-Jun-2016 at 19:54:26.
+Generated on: 21-Jun-2016 at 12:43:17.
 "Test" Wind turbine - file example for DoWES CIP Tutorial 03                                                                                                                                            
 created by LVT 20th May 2014                                                                                                                                                                            
 -----  Input Configuration  ----------------------------------------------------                                                                                                                        
@@ -38,7 +38,7 @@ created by LVT 20th May 2014
    0.0000E+00  Yaw            - Yaw error.
    1.0000E+02  HubHt          - Hub height.
             8  NumSeg         - Number of blade segments (entire rotor radius).
-   RElm   Twist    Chord  AFfile  PrntElem                                                                                                                                                              
+RElm   Twist    Chord  AFfile  PrntElem                                                                                                                                                                 
 -----  Aerodynamic Data  -------------------------------------------------------                                                                                                                        
    1.2250E+00  AirDens        - Air density.
    1.4639E-05  KinVisc        - Kinesmatic viscosity.
