@@ -36,15 +36,16 @@ False                Cavitation:                Run cavitation check? if cavitat
  0.0                 Yaw:                       Yaw error [deg].
 100                 HubHt:                     Hub height [length or div by radius].
  8                   NumSeg:                    Number of blade segments (entire rotor radius).
+
    RElm   Twist    Chord  AFfile  PrntElem
-3.808   38.271   6.276	1	FALSE
-11.424	16.008   3.351	1	FALSE
-19.040	7.031    2.223	1	FALSE
-26.656	2.553	   1.872	1	FALSE
-34.272	-0.081   1.655	2	FALSE
-41.888	-1.807   1.468	2	FALSE
-49.504	-3.024   1.301	2	FALSE
-57.120	-3.927   1.183	2	FALSE
+3.808   26.530   6.988	1	FALSE
+11.424	9.594    5.407	1	FALSE
+19.040	2.661    3.832	1	FALSE
+26.656	-0.866	 2.906	1	FALSE
+34.272	-1.967   2.171	2	FALSE
+41.888	-3.354   1.806	2	FALSE
+49.504	-4.335   1.544	2	FALSE
+57.120	-5.066   1.348	2	FALSE
 -----  Aerodynamic Data  -------------------------------------------------------
 1.225                                    Rho:                 Air density [mass/volume].
 1.4639e-5                                KinVisc:             Kinematic air viscosity

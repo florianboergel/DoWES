@@ -98,8 +98,8 @@ for j=1:2
         a_Dash_results(count_indice,j)=a_Dash;
 
         fTip(count_indice,j)=2/pi*acos((exp(-N/2*(1-r/R)/(r/R*sin(alpha)))));
-        f_cl_snel(stationNumber) = 3*(c/r)^2
-        f_cl_hansen(count_indice) = 2.2*(c/r)*(cosd(alpha_twist(count_indice)*180/pi-10))^4
+        f_cl_snel(count_indice) = 3*(chord(count_indice)/r)^2
+        f_cl_hansen(count_indice) = 2.2*(chord(count_indice)/r)*(cosd(alpha_twist(count_indice)*180/pi-10))^4
         
         count_indice = count_indice + 1;
     end; % loop over r
