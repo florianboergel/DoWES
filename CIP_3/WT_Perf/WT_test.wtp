@@ -52,15 +52,15 @@ RElm   Twist    Chord  AFfile  PrntElem
 True                                     UseCm:               Are Cm data included in the airfoil tables?
 False                                    UseCpmin:            Are Cp,min data included in the airfoil tables?
 2                                        NumAF:               Number of airfoil files.
-"C:\Users\derPianist\Documents\GitHub\DoWES\CIP_3\WT_Perf\Airfoils\NACA_65_415.dat"
 "C:\Users\derPianist\Documents\GitHub\DoWES\CIP_3\WT_Perf\Airfoils\NACA_65_421.dat"
+"C:\Users\derPianist\Documents\GitHub\DoWES\CIP_3\WT_Perf\Airfoils\NACA_65_415.dat"
 -----  Output Configuration  ---------------------------------------------------
 False                UnfPower:                  Write parametric power to an unformatted file?
 True                 TabDel:                    Make output tab-delimited (fixed-width otherwise).
 1                    ConvFlag:                  For non-converging cases, 0 to output the result, 1 to output nines, 2 to output NaN (safest).
 True                 Beep:                      Beep if errors occur.
 True                 KFact:                     Output dimensional parameters in K (e.g., kN instead on N)
-False                WriteBED:                  Write out blade element data to "<rootname>.bed"?
+True                WriteBED:                  Write out blade element data to "<rootname>.bed"?
 True                 InputTSR:                  Input speeds as TSRs?
 True                 OutMaxCp:                  Output conditions for the maximum Cp?
 "mps"                SpdUnits:                  Wind-speed units (mps, fps, mph).
