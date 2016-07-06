@@ -1,0 +1,145 @@
+\documentclass[10pt]{article}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{paralist}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{eurosym}
+
+
+
+\begin{document}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=tb,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  otherkeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\onehalfspacing
+\section{CIP 1}
+In CIP 1 we were asked to estimate the main parameters of our wind turbine model. In addition we also calculated the airfoil aerodynamics properties and defined the geometry of our blade.
+The following table shows the side specific conditions and the limitations for the design process of the wind turbine.\\
+
+\begin{figure}[H]
+\begin{tabular}{l l l}
+\hline
+Name & unit & value\\
+\hline
+Airfoil profile set number	&-&	4\\
+Design wind regime	&-&	Rayleigh\\
+Target wind regime	&-&	High\\
+Weibull A-factor (local)&	m/s&	9\\
+Weibull k-factor (local)	&-&	2\\
+Rated electrical power	&kW&	3500\\
+Number of blades	&-&	3\\
+Cut-in wind speed	&m/s&	3.5\\
+Cut-out wind speed	&m/s&	25\\
+Max. tip speed	&m/s&	82\\
+Max. hub height – reference (*)&	m&	100\\
+Max. blade length  - reference (*)	&m&	60\\
+Blade root length	&m&	5\\
+Transmission	&-&	90\\
+\hline
+
+\end{tabular}
+\label{designparameters}
+\caption{Design parameters}
+\end{figure}
+\subsection{Total conversion efficiency}
+The total conversion efficiency is used to calculate the amount of energy which can be extracted from the wind flow. Therefore it contains all loses due to mechanical and electrical conversions as the corresponding $c_p$ reference value. The $c_p$ variable describes the maximum amount of energy which can be theoretical extracted from the wind.
+Taking all these losses into account we have the following equation for the total conversion efficiency:
+
+\begin{equation}
+\text{total conversion efficiency} = c_p * \nu_{el} * nu_{mech} = 	0.4705
+\end{equation}
+
+\subsection{Wind Power for nominal electrical power}
+The rated electrical power of the wind turbine is 3.500 kW. With the total conversion efficiency we computed in the last section we are now able to estimate how much wind power is needed to obtain nominal electrical power.
+
+\begin{equation}
+\text{total wind power} = \frac{\text{nominal power}}{\text{total conversion efficency}} = \frac{3500 kW}{0.4705} = 7439.26 kW
+\end{equation}
+
+\subsection{Rated wind speed}
+At rated wind speed the turbine is able to extract nominal wind speed. The following equation is used to calculate the power output of the wind turbine. It should be noted that resulting value had to be rounded up. 
+
+\begin{equation}
+P_{rated} = 0.5 \cdot c_{total} \cdot \rho \cdot \pi \cdot R^2 \cdot V_{rated}^3
+\end{equation}
+
+\begin{tabular}{l l}
+where:&\\
+$P_{rated}$ &= rated electrical power\\
+$c_{total}$ &= total conversion efficiency\\
+$\rho$ &= density\\
+$R$ &= reference max. blade length\\
+$V_{rated}$& = rated wind speed\\
+\end{tabular}
+
+This equation can be solved for $V_{rated}$:
+\begin{equation}
+V_{rated} = \sqrt[3]{\frac{2 \cdot P_{rated}}{\rho\cdot c_{total}\cdot R^2 \cdot \pi}} = 11 m/s
+\end{equation}
+\subsection{Rotor radius}
+To calculate the rotor radius we used equation (3). Instead of solving for $V_{rated}$ we solved for the blade radius.
+\begin{equation}
+R = \sqrt{\frac{2 \cdot P_{rated}}{c_{total} \cdot \rho \cdot \pi \cdot V_{rated}^3}} = 54 m
+\end{equation}
+With a hub diameter of 2.5 meters we end up with a blade length of 52.75 m.
+\subsection{Rotor area and specific rating}
+The rotor area is simply the area which is covered by the rotating blades. That leaves us with:
+\begin{equation}
+A_{area} = \pi * R^2 = 9161 m^2
+\end{equation}
+Next we were asked to calculate the specific rating which is defined as:
+\begin{equation}
+rating = \frac{\text{electrical power}}{area}
+\end{equation}
+We receive 382.06 W/$m^2$ as specific rating.
+\subsection{Rotor rated speed \& design tip speed ratio}
+The design tip speed ratio is the ratio between maximum tip speed and rated wind speed of the turbine. The maximum tip speed for the wind turbine is $82 m/s$ and the calculated rated wind speed is $11 m/s$. That leads to a design tip speed ratio $\lambda_d$ of \textbf{7.45}.\\
+Next the we calculated the rotor rated speed. The rotor rated speed in rotations per minute (rpm) is given by:
+
+\begin{equation}
+n = \frac{60s/min \cdot\ \text{max. tip speed}}{2\cdot\pi\cdot R} = 14.5 rpm
+\end{equation}
+
+
+\end{document}
