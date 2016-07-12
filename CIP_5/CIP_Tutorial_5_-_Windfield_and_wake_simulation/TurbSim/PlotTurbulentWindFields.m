@@ -9,18 +9,18 @@
 %% Main code
 
 % add path with matlab functions
-addpath('/home/jan/Desktop/TurbSim/MatlabFunctions');
+addpath('/media/fe/32492c60-8891-4a8f-8dc8-2a7888c7003a/Dokumente/DoWES/git_Dowes/CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/MatlabFunctions');
 
 
 % Inputs
 timeinterval = [100,200,300,400,500,600]; % time sliced in timeseries [s]
 yposition=0; %rotor center [m]
-zposition=80; %rotor hub height [m]
+zposition=100; %rotor hub height [m]
 
 %% Input turbulent file
 
 % display dialog for file selection if no
-[FileName, PathName] = uigetfile( '/home/jan/Desktop/TurbSim/TurbSim_test.wnd', 'Select full filed turbulent input file' );
+[FileName, PathName] = uigetfile( 'TurbSim_test.wnd', 'Select full filed turbulent input file' );
 % concatenate filename and path
 InputFilePathAndName = strcat(PathName, FileName);
 
