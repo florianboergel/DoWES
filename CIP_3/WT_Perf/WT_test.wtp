@@ -29,7 +29,7 @@ False                Cavitation:                Run cavitation check? if cavitat
 0.0                  WatDepth:                  Depth from water free surface to mudline (tower base)
 -----  Turbine Data  -----------------------------------------------------------
  3                   NumBlade:                  Number of blades.
-62.18                RotorRad:                  Rotor radius [length].
+54.00                RotorRad:                  Rotor radius [length].
  1.25                HubRad:                    Hub radius [length or div by radius].
 -3.0                 PreCone:                   Precone angle, positive downwind [deg].
  5.0                 Tilt:                      Shaft tilt [deg].
@@ -37,14 +37,14 @@ False                Cavitation:                Run cavitation check? if cavitat
 100                 HubHt:                     Hub height [length or div by radius].
  8                   NumSeg:                    Number of blade segments (entire rotor radius).
 RElm   Twist    Chord  AFfile  PrntElem
-3.808 26.530  6.988	1	FALSE
-11.424	9.594    5.407	1	FALSE
-19.040	2.661    3.832	1	FALSE
-26.656	-0.866	 2.906	1	FALSE
-34.272	-1.967   2.171	2	FALSE
-41.888	-3.354   1.806	2	FALSE
-49.504	-4.335   1.544	2	FALSE
-57.120	-5.066   1.348	2	FALSE
+4.547	27.589	6.628	1	FALSE
+11.141	11.022	5.426	1	FALSE
+17.734	3.812	3.934	1	FALSE
+24.328	0.054	3.013	1	FALSE
+30.922	-1.21	2.262	2	FALSE
+37.516	-2.714	1.887	2	FALSE
+44.109	-3.783	1.616	2	FALSE
+50.703	-4.579	1.412	2	FALSE
 -----  Aerodynamic Data  -------------------------------------------------------
 1.225                                    Rho:                 Air density [mass/volume].
 1.4639e-5                                KinVisc:             Kinematic air viscosity

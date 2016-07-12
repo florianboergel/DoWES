@@ -1,6 +1,6 @@
 Echo of WT_Perf Input File:
  "WT_test.wtp"
-Generated on: 27-Jun-2016 at 11:41:43.
+Generated on: 12-Jul-2016 at 12:39:02.
 "Test" Wind turbine - file example for DoWES CIP Tutorial 03                                                                                                                                            
 created by LVT 20th May 2014                                                                                                                                                                            
 -----  Input Configuration  ----------------------------------------------------                                                                                                                        
@@ -31,7 +31,7 @@ created by LVT 20th May 2014
    0.0000E+00  WatDepth       - Depth from water free surface to mudline (tower base)
 -----  Turbine Data  -----------------------------------------------------------                                                                                                                        
             3  NumBlade       - Number of blades.
-   6.2180E+01  RotorRad       - Unconed rotor radius.
+   5.4000E+01  RotorRad       - Unconed rotor radius.
    1.2500E+00  HubRad         - Hub radius.
   -3.0000E+00  PreCone        - Cone angle.
    5.0000E+00  Tilt           - Shaft tilt.

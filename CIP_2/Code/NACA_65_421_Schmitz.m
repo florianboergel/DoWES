@@ -1,6 +1,6 @@
 %% Blade Design according to Schmitz NACA 65-415
 
-D = 62.18*2          % RotorDiameter
+D = 54.0*2          % RotorDiameter
 N = 3                % Number of blades
 RotorDiameter = 0.95 % Electrical conversion efficiency
 cld = 1.345          % Design lift coefficient selected for max. gliding factor
@@ -29,8 +29,8 @@ a_results = zeros(length(BladeElementRadii),2);
 a_Dash_results = zeros(length(BladeElementRadii),2);
 
 for j=1:2
-    
-    Ud=j*5;
+
+    Ud=j*5.5;
     lambdad = 82/Ud;       % Design tip-speed ratio
     RotationalSpeed = Ud * lambdad / R
 
@@ -57,7 +57,7 @@ for j=1:2
 
     for r = BladeElementRadii
         %step 1
-     
+
         a=0;
         a_old = 1000;
         while (count==0 || abs(a-a_old) > 0.001)
@@ -93,17 +93,17 @@ for j=1:2
             end;
             count = count+1;
         end; %BEM while loop
-        
+
         a_results(count_indice,j)=a;
         a_Dash_results(count_indice,j)=a_Dash;
 
         fTip(count_indice,j)=2/pi*acos((exp(-N/2*(1-r/R)/(r/R*sin(alpha)))));
         f_cl_snel(count_indice) = 3*(chord(count_indice)/r)^2
         f_cl_hansen(count_indice) = 2.2*(chord(count_indice)/r)*(cosd(alpha_twist(count_indice)*180/pi-10))^4
-        
+
         count_indice = count_indice + 1;
     end; % loop over r
-    
+
 end; %loop over Ud
 
 C_L_3d_snel(:,1) = interpolationTable(18:61,2)+(c_l_design - interpolationTable(18:61,2))*f_cl_snel(3);
@@ -131,8 +131,3 @@ title('Hansen Drag Corrections');
 plot(C_D_3d_hansen(:,1));
 plot(C_D_3d_hansen(:,2));
 hold off;
-
-
-
-
-
