@@ -27,4 +27,4 @@ InputFilePathAndName = strcat(PathName, FileName);
 %% Plot 
 % Call WindSlice with standard values to plot turbulent wind file
 WindSlices(InputFilePathAndName,'tslice',timeinterval,'yslice',yposition,'zslice',zposition)
-saveas(gcf, 'wind_25ms.png')
+saveas(gcf, 'wind_wake_4_25ms.png')
