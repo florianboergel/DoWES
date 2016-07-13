@@ -76,8 +76,9 @@ disp(total_energy_yield*0.08-total_energy_yield*0.08*0.95)
 %% Calculate Turbulence Intensity for different wind speeds
 I_ref_b = 0.14;
 
+% According to NTM, Slide 6
 count = 1;
-for i = [5 10 15 25]
+for i = 1:25
     sigma(count) = I_ref_b*(0.75*i+5.6);
     turbulence_intensity(count) = sigma(count)/i;
     count = count + 1 ;
@@ -85,3 +86,42 @@ end
 
 disp('Turbulence Intensity')
 disp(turbulence_intensity)
+%% Wake Conditions
+count = 1;
+p_w = 0.06;
+N = 1;
+di_4 = 4;
+di_8 = 8;
+
+%According to Frandsen, Slide 7
+for i = 1:25
+    sigma_t(count,1) = sqrt(0.9*i^2/(1.5+0.3*di_4*sqrt(i))^2+sigma(count));
+    sigma_t(count,2) = sqrt(0.9*i^2/(1.5+0.3*di_8*sqrt(i))^2+sigma(count));
+    I_eff_4(count) = 1/i*((1-N*p_w)*sigma(count)^4+p_w*sigma_t(count,1)^4)^(1/4);
+    I_eff_8(count) = 1/i*((1-N*p_w)*sigma(count)^4+p_w*sigma_t(count,2)^4)^(1/4);
+
+    count = count + 1 ;
+end
+
+figure;
+plot(I_eff_4,'-or');
+hold on;
+plot(I_eff_8,'-ob');
+plot(turbulence_intensity,'-og');
+xlabel('Windspeed in [m/s]');
+ylabel('Turbulence Intensity in [%]');
+title('Wake Effects with neighbouring wind turbines');
+legend('Wake with D=4', 'Wake with D=8', 'Free Stream');
+saveas(gcf, 'wake_effects_5.png')
+
+disp('I_eff_4, for ws 5,10,15,25');
+disp(I_eff_4(5));
+disp(I_eff_4(10));
+disp(I_eff_4(15));
+disp(I_eff_4(25));
+
+disp('I_eff_8, for ws 5,10,15,25');
+disp(I_eff_8(5));
+disp(I_eff_8(10));
+disp(I_eff_8(15));
+disp(I_eff_8(25));
