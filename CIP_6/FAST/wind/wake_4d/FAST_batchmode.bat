@@ -1,0 +1,4 @@
+TurbSim64 TurbSim_ws_wake5.inp
+TurbSim64 TurbSim_ws_wake10.inp
+TurbSim64 TurbSim_ws_wake15.inp
+TurbSim64 TurbSim_ws_wake25.inp
