@@ -1,0 +1,4 @@
+TurbSim64 TurbSim_test_free_05.inp
+TurbSim64 TurbSim_test_free_10.inp
+TurbSim64 TurbSim_test_wake_05.inp
+TurbSim64 TurbSim_test_wake_10.inp

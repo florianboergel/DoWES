@@ -1,0 +1,30 @@
+Violett turbine Aerodyn input file for its use in DoWES 2014. LVT July 2014
+SI                                     SysUnits - System of units for used for input and output [must be SI for FAST] (unquoted string)
+BEDDOES                                StallMod - Dynamic stall included [BEDDOES or STEADY] (unquoted string)
+NO_CM                                  UseCm    - Use aerodynamic pitching moment model? [USE_CM or NO_CM] (unquoted string)
+DYNIN                                  InfModel - Inflow model [DYNIN or EQUIL] (unquoted string)
+SWIRL                                  IndModel - Induction-factor model [NONE or WAKE or SWIRL] (unquoted string)
+   0.005                               AToler   - Induction-factor tolerance (convergence criteria) (-)
+PRANDtl                                TLModel  - Tip-loss model (EQUIL only) [PRANDtl, GTECH, or NONE] (unquoted string)
+PRANDtl                                HLModel  - Hub-loss model (EQUIL only) [PRANdtl or NONE] (unquoted string)
+"wind\violett_test.wnd"                WindFile - Name of file containing wind data (quoted string)
+ 130.00                                HH       - Wind reference (hub) height [TowerHt+Twr2Shft+OverHang*SIN(ShftTilt)] (m)
+   0.0                                 TwrShad  - Tower-shadow velocity deficit (-)
+9999.9                                 ShadHWid - Tower-shadow half width (m)
+9999.9                                 T_Shad_Refpt - Tower-shadow reference point (m)
+   1.225                               AirDens  - Air density (kg/m^3)
+   1.4639E-5                           KinVisc  - Kinematic air viscosity (m^2/sec)
+   0.005                               DTAero   - Time interval for aerodynamic calculations (sec)
+   2                                   NumFoil  - Number of airfoil files (-)
+"airfoils\RISOE_A1_21.dat"             FoilNm   - Names of the airfoil files [NumFoil lines] (quoted strings)
+"airfoils\RISOE_A1_18.dat"
+   8                                   BldNodes - Number of blade nodes used for analysis (-)
+RNodes    AeroTwst  DRNodes  Chord  NFoil  PrnElm
+5.546875	33.07902189	8.59375	8.461965101	1	NOPRINT
+14.140625	15.9874465	8.59375	7.567467256	1	NOPRINT
+22.734375	8.202376341	8.59375	5.595141328	1	NOPRINT
+31.328125	4.09646454	8.59375	4.310267459	1	NOPRINT
+39.921875	-0.385216404	8.59375	3.664594211	2	NOPRINT
+48.515625	-2.03439229	8.59375	3.058969546	2	NOPRINT
+57.109375	-3.205786764	8.59375	2.620789311	2	NOPRINT
+65.703125	-4.079246518	8.59375	2.290386646	2	NOPRINT
