@@ -16,8 +16,8 @@ PRANDtl                                HLModel  - Hub-loss model (EQUIL only) [P
    1.4639E-5                           KinVisc  - Kinematic air viscosity (m^2/sec)
    0.005                               DTAero   - Time interval for aerodynamic calculations (sec)
    2                                   NumFoil  - Number of airfoil files (-)
-"airfoils\NACA_63_421.dat"               FoilNm   - Names of the airfoil files [NumFoil lines] (quoted strings)
-"airfoils\NACA_63_415.dat"
+"airfoils\NACA_65_421.dat"               FoilNm   - Names of the airfoil files [NumFoil lines] (quoted strings)
+"airfoils\NACA_65_415.dat"
 
 
   8                                BldNodes - Number of blade nodes used for analysis (-)
