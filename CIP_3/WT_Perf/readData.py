@@ -4,8 +4,8 @@ import numpy as np
 from scipy.optimize import fsolve
 
 rho = 1.225
-A = np.pi * 62.18 * 62.18
-Ud = 10
+A = np.pi * 54.00 * 54.00
+Ud = 11
 
 file = open('WT_test.oup')
 data = file.readlines()
@@ -44,8 +44,8 @@ torque = np.loadtxt(open("Output/torque.txt"))
 
 for i in range(len(thrust[:,0])):
 	#a_p = fsolve(func, 0.4)
-	thrust[i,1] = 1000*2*thrust[i,1]*(thrust[i,0])**2/(rho*62.18**4*np.pi*(2*np.pi*12.59/60)**2)
-	torque[i,1] = 1000*2*torque[i,1]*(torque[i,0])**2/(rho*62.18**5*np.pi*(2*np.pi*12.59/60)**2)
+	thrust[i,1] = 1000*2*thrust[i,1]*(thrust[i,0])**2/(rho*54.00**4*np.pi*(2*np.pi*14.50/60)**2)
+	torque[i,1] = 1000*2*torque[i,1]*(torque[i,0])**2/(rho*54.00**5*np.pi*(2*np.pi*14.50/60)**2)
 
 
 pl.figure()
@@ -57,7 +57,7 @@ pl.plot(cp[156:195,0],cp[156:195,1], label='20 deg.')
 pl.plot(cp[234:272,0],cp[234:272,1], label='30 deg.')
 pl.legend()
 pl.xlabel('Tipspeed Ratio \lambda')
-pl.ylabel('C_p') 
+pl.ylabel('C_p')
 axes = pl.gca()
 axes.set_ylim([0,1])
 pl.title('Power coefficient')
@@ -74,7 +74,7 @@ axes.set_ylim([0,4])
 pl.title('Thrust coefficient')
 pl.legend()
 pl.xlabel('Tipspeed Ratio \lambda')
-pl.ylabel('C_t') 
+pl.ylabel('C_t')
 pl.savefig('Output/thrust.png')
 pl.figure()
 pl.plot(torque[0:38,0],torque[0:38,1], label='0 deg.')
@@ -87,7 +87,7 @@ axes = pl.gca()
 pl.title('Torque coefficient')
 pl.legend()
 pl.xlabel('Tipspeed Ratio \lambda')
-pl.ylabel('C_q') 
+pl.ylabel('C_q')
 axes.set_ylim([0,0.08])
 pl.savefig('Output/torque.png')
 
@@ -113,19 +113,19 @@ pl.savefig('Output/validated_cp.png')
 
 thrust = 392.262
 torque = 968.677
-RPM = 10.07
+RPM = 11.86
 cp = 0.543895
 tsp = 8.2
 c_t = 0.0
 
 2054.846
 
-c_t = 2*thrust*tsp**2*1000/(rho*62.18**4*np.pi*(2*np.pi*RPM/60)**2) 
-c_q = 2*torque*tsp**2*1000/(rho*62.18**5*np.pi*(2*np.pi*RPM/60)**2) 
+c_t = 2*thrust*tsp**2*1000/(rho*54.00**4*np.pi*(2*np.pi*RPM/60)**2)
+c_q = 2*torque*tsp**2*1000/(rho*54.00**5*np.pi*(2*np.pi*RPM/60)**2)
 
 
-theo_pow = 0.5*16/27*rho*np.pi*62.18**2*12**3
-actual = 3500000/(0.5*rho*np.pi*62.18**2*12**3)
-rpm_310 = 5 * 12 /(62.18*2*np.pi) * 60
+theo_pow = 0.5*16/27*rho*np.pi*54.00**2*13**3
+actual = 3500000/(0.5*rho*np.pi*54.00**2*13**3)
+rpm_310 = 5 * 13 /(54.00*2*np.pi) * 60
 
 print c_t, c_q, theo_pow, actual,rpm_310

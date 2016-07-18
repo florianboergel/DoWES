@@ -76,6 +76,6 @@ True                 OutCp:                     Request output of Cp?
 True                 OutTrq:                    Request output of shaft torque?
 False                OutFlp:                    Request output of flap bending moment?
 True                 OutThr:                    Request output of rotor thrust?
-0, 30, 5             PitSt, PitEnd, PitDel:     First, last, delta blade pitch (deg).
-14.50, 14.50, 0         OmgSt, OmgEnd, OmgDel:     First, last, delta rotor speed (rpm).
-0.5, 20, 0.5          SpdSt, SpdEnd, SpdDel:     First, last, delta speeds.
+0, 0, 0            PitSt, PitEnd, PitDel:     First, last, delta blade pitch (deg).
+11.86, 11.86, 0         OmgSt, OmgEnd, OmgDel:     First, last, delta rotor speed (rpm).
+7.45, 7.45, 0          SpdSt, SpdEnd, SpdDel:     First, last, delta speeds.
