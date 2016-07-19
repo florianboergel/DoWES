@@ -4,11 +4,11 @@
 D = 54.0*2          % RotorDiameter
 N = 3                % Number of blades
 RotorDiameter = 0.95 % Electrical conversion efficiency
-Ud = 10.0            % Design wind speed in [m/s]
-lambdad = 8.20       % Design tip-speed ratio
+Ud = 11.0            % Design wind speed in [m/s]
+lambdad = 7.45      % Design tip-speed ratio
 cld = 1.345          % Design lift coefficient selected for max. gliding factor
 rho = 1.225          % Air density [kg/m^3] @ standard conditions
-alpha_Ad_deg = 10.0  % Angle of Attack Design
+alpha_Ad_deg = 11.0  % Angle of Attack Design
 alpha_Ad    = alpha_Ad_deg * pi/180
 
 Ne = 10              % Number of elements

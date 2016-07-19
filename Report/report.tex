@@ -195,10 +195,18 @@ In the first part of CIP 2 we designed the blade of the wind turbine. In the lec
 \end{figure}
 
 \subsection{Design your blade according to Betz theory}
-Betz theory estimates that the maximum of power that can be extracted from the wind is 
+Betz theory estimates that the maximum of power that can be extracted from the wind is:
 \begin{equation}
 P_{betz} = \frac{16}{27}*P_{wind}
 \end{equation}
+To understand why there is a certain limit, consider that if all energy coming from the wind movement through the turbine the speed afterwards would drop to zero and no new wind could get in.
+The principle of Betz's law is derived from the principles of conservation of mass and momentum of the air stream following through and idealized 'actuator disk' (see figure~%\ref{fig:betz_tube}).
+%\begin{figure}[H]
+%\includegraphics[width=1\linewidth]{figures/betz_tube.png}
+%\caption{disk-shaped actuator}
+%\label{fig:betz_tube}
+%\end{figure}
+
 If we want to design the blade geometry according to this law, the power from the blade element theory has to equal $P_{Betz}$. This leads to the following equations which have been used for the further calculation.\\
 
 Planform:
@@ -219,23 +227,84 @@ Using the parameters from CIP 1, we calculated the chord length and the twist an
 \hline
 Station number & 	1&	2&	3	&4	&5	&6	&7	&8	&9\\
 \hline
-Dist.(rotor center)	m&	4,547&	11,141&	17,734&	24,328&	30,922&	37,516&	44,109&	50,703&	54,000\\
-Dist.(blade root)	m&	3,297&	9,891&	16,484&	23,078&	29,672&	36,266&	42,859&	49,453&	52,750\\
+Dist.(rotor center)	m&	4.547&	11.141&	17.734&	24.328&	30.922&	37.516&	44.109&	50.703&	54.000\\
+Dist.(blade root)	m&	3.297&	9.891&	16.484&	23.078&	29.672&	36.266&	42.859&	49.453&	52.750\\
 \hline
 NACA 65-415\\
 \hline
-Chord length	m&		5,943&	3,246&	2,145&	1,589	&1,259&	1,042&	0,888&	0,774&	0,727\\
-Twist angle	deg	&	36,725	&13,436&	5,233&	1,228&	-1,123&	-2,665&	-3,752	&-4,559&	-4,890\\
+Chord length	m&		10.963&	5.989&	3.957&	2.932	&2.324&	1.923&	1.639&	1.428&	1.342\\
+Twist angle	deg	&	36.725	&13.436&	5.233&	1.228&	-1.123&	-2.665&	-3.752	&-4.559&	-4.890\\
 \hline
 NACA 65-421\\
 \hline
-Chord length	m	&	6,741&	3,581&	2,295&	1,672&	1,311&	1,077	&0,914&	0,793&	0,744\\
-Twist angle	deg	&	35,725&	12,436&	4,233&	0,228	&-2,123&	-3,665	&-4,752&	-5,559	&-5,890\\
+Chord length	m	&	11.749&	6.418	&4.240&	3.142&	2.490&	2.061	&1.757&	1.531&	1.438
+\\
+Twist angle	deg	&	35.725&	12.436&	4.233&	0.228	&-2.123&	-3.665	&-4.752&	-5.559	&-5.890\\
 \hline
 \end{tabular}
 \caption{Blade design according to Betz theory}
 \label{blade_design_betz}
 \end{table}
+\subsection{Design according to Schmitz}
+The blade design according to Schmitz uses the following equations:\\
+Planform:
+\begin{equation}
+t(r) = \frac{16\pi r}{N c_l}\sin^2(\frac{1}{3}\alpha_1)
+\end{equation}
+
+Twist angle:
+\begin{equation}
+\alpha(r) = \frac{2}{3}\alpha_1
+\end{equation}
+\begin{equation}
+\alpha_{twist} = \alpha(r) - \alpha_a
+\end{equation}
+
+where
+\begin{equation}
+\alpha_1 = \arctan(\frac{R}{\lambda_a rb})
+\end{equation}
+
+Using the same approach of the previous section we end up with the following results, shown in table~\ref{blade_design_schmitz}.
+\begin{table}[H]
+\begin{tabular}{c| l l l l l l l l l}
+\hline
+Station number & 	1&	2&	3	&4	&5	&6	&7	&8	&9\\
+\hline
+Dist.(rotor center)	m&	4.547&	11.141&	17.734&	24.328&	30.922&	37.516&	44.109&	50.703&	54.000\\
+Dist.(blade root)	m&	3.297&	9.891&	16.484&	23.078&	29.672&	36.266&	42.859&	49.453&	52.750\\
+\hline
+NACA 65-415\\
+\hline
+Chord length	m&		6.184 & 5.063 &	3.671&	2.812 & 2.262 & 1.887 & 1.616 &	1.412&	1.328\\
+Twist angle	deg	&	28.589	& 12.022 &	4.812 &	1.054 &	-1.210 &	-2.714 &	-3.783	& -4.579 &	-4.906\\
+\hline
+NACA 65-421\\
+\hline
+Chord length	m	&	6.628&	5.426&	3.934&	3.013&	2.424&	2.022	&1.732&	1.514&	1.424\\
+Twist angle	deg	&	27.589&	11.022&	3.812&	0.0548	&-2.210&	-3.714&-4.783&	-5.579	&-5.906\\
+\hline
+\end{tabular}
+\caption{Blade design according to Schmitz theory}
+\label{blade_design_schmitz}
+\end{table}
+The final blade is designed according to Schmitz theory by a combination of profile 1 and profile 2. The first station has got a cylindrical shape. For stations 2-5 the thinner profile is used, for stations 6-8 the thicker profile is used.Table~\ref{final_blade_design_schmitz} gives more detail about the design rotor blade.
+\begin{table}[H]
+\begin{tabular}{c| l l l l l l l l l}
+\hline
+Station number & 	1&	2&	3	&4	&5	&6	&7	&8	&9\\
+&Cylinder&65-421&65-421&65-421&65-421& 65-415& 65-415& 65-415&65-415\\
+\hline
+Blade	m&	3.297&	9.891&	16.484&	23.078&	29.672&	36.266&	42.859&	49.453&	52.750\\
+\hline
+Chord length	m&	6,628	&5,426&	3,935	&3,014&	2,425&	1,887&	1,617&	1,413&	1,329\\
+Twist angle	deg	&	27,590&	11,022&	3,813&	0,055&	-2,211&	-2,715&	-3,783&	-4,580&	-4,907\\
+\hline
+\end{tabular}
+\caption{Final blade design according to Schmitz}
+\label{final_blade_design_schmitz}
+\end{table}
+
 \newpage
 \section{CIP 3 - Performance Curves}
 \subsection{Introduction}

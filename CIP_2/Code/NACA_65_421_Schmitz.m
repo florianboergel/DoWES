@@ -1,11 +1,11 @@
-%% Blade Design according to Schmitz NACA 65-415
+%% Blade Design according to Schmitz NACA 65-421
 
 D = 54.0*2          % RotorDiameter
 N = 3                % Number of blades
 RotorDiameter = 0.95 % Electrical conversion efficiency
-cld = 1.345          % Design lift coefficient selected for max. gliding factor
+cld = 1.255          % Design lift coefficient selected for max. gliding factor
 rho = 1.225          % Air density [kg/m^3] @ standard conditions
-alpha_Ad_deg = 10.0  % Angle of Attack Design
+alpha_Ad_deg = 11.0  % Angle of Attack Design
 alpha_Ad    = alpha_Ad_deg * pi/180
 a_c = 0.2;
 c_l_design = 1.345;
