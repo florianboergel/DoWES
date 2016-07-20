@@ -9,6 +9,8 @@ cld = 1.345          % Design lift coefficient selected for max. gliding factor
 rho = 1.225          % Air density [kg/m^3] @ standard conditions
 alpha_Ad_deg = 10.0  % Angle of Attack Design
 alpha_Ad    = alpha_Ad_deg * pi/180
+c_l_design = 1.345;
+c_d_design = 0.016;
 
 Ne = 10              % Number of elements
 R = D / 2.0          % Calculate the radius of the turbine

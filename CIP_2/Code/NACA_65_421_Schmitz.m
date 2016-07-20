@@ -106,6 +106,18 @@ for j=1:2
 
 end; %loop over Ud
 
+% Section 2.1
+figure();
+hold on 
+title('Prandtl Tip Loss for NACA 65-421')
+plot(fTip(:,1));
+plot(fTip(:,2));
+legend('0.5 * rated windspeed', 'rated windspeed = 11 m/s','Location','southwest')
+xlabel('Blade Segment')
+ylabel('Tip-loss factor')
+saveas(gcf,'../Figures/prandtl_tip_loss.png')
+
+% Section 2.2
 C_L_3d_snel(:,1) = interpolationTable(18:61,2)+(c_l_design - interpolationTable(18:61,2))*f_cl_snel(3);
 C_L_3d_snel(:,2) = interpolationTable(18:61,2)+(c_l_design - interpolationTable(18:61,2))*f_cl_snel(5);
 C_L_3d_hansen(:,1) = interpolationTable(18:61,2)+(c_l_design - interpolationTable(18:61,2))*f_cl_hansen(3)
@@ -115,19 +127,66 @@ C_D_3d_hansen(:,2) = interpolationTable(18:61,3)+(c_d_design - interpolationTabl
 
 figure();
 hold on;
-title('Snel Lift Corrections');
-plot(C_L_3d_snel(:,1));
-plot(C_L_3d_snel(:,2));
+title('Snel Lift Corrections (3)');
+plot(interpolationTable(18:61,1),C_L_3d_snel(:,1));
+plot(interpolationTable(18:61,1),interpolationTable(18:61,2));
+xlabel('\alpha in [°]')
+ylabel('Lift coeffecient')
+legend('3D-corrected lift coefficient', '2D lift coefficient','location','northwest')
+saveas(gcf,'../Figures/snel_correction_3.png')
 hold off;
+
 figure();
 hold on;
-title('Hansen Lift Corrections');
-plot(C_L_3d_hansen(:,1));
-plot(C_L_3d_hansen(:,2));
+title('Snel Lift Corrections (5)');
+plot(interpolationTable(18:61,1),C_L_3d_snel(:,2));
+plot(interpolationTable(18:61,1),interpolationTable(18:61,2));
+xlabel('\alpha in [°]')
+ylabel('Lift coeffecient')
+legend('3D-corrected lift coefficient', '2D lift coefficient','location','northwest')
+saveas(gcf,'../Figures/snel_correction_5.png')
 hold off;
+
 figure();
 hold on;
-title('Hansen Drag Corrections');
-plot(C_D_3d_hansen(:,1));
-plot(C_D_3d_hansen(:,2));
+title('Hansen Lift Correction (3)');
+plot(interpolationTable(18:61,1),C_L_3d_hansen(:,1));
+plot(interpolationTable(18:61,1),interpolationTable(18:61,2));
+xlabel('\alpha in [°]')
+ylabel('Lift coeffecient')
+legend('3D-corrected lift coefficient', '2D lift coefficient','location','northwest')
+saveas(gcf,'../Figures/hansen_lift_correction_3.png')
+hold off;
+
+figure();
+hold on;
+title('Hansen Lift Correction (5)');
+plot(interpolationTable(18:61,1),C_L_3d_hansen(:,2));
+plot(interpolationTable(18:61,1),interpolationTable(18:61,2));
+xlabel('\alpha in [°]')
+ylabel('Lift coeffecient')
+legend('3D-corrected lift coefficient', '2D lift coefficient','location','northwest')
+saveas(gcf,'../Figures/hansen_lift_correction_5.png')
+hold off;
+
+figure();
+hold on;
+title('Hansen Drag Corrections (3)');
+plot(interpolationTable(18:61,1),C_D_3d_hansen(:,1));
+plot(interpolationTable(18:61,1),interpolationTable(18:61,3));
+xlabel('\alpha in [°]')
+ylabel('Drag coeffecient')
+legend('3D-corrected drag coefficient', '2D drag coefficient','location','northwest')
+saveas(gcf,'../Figures/hansen_drag_correction_3.png')
+hold off;
+
+figure();
+hold on;
+title('Hansen Drag Corrections (5)');
+plot(interpolationTable(18:61,1),C_D_3d_hansen(:,2));
+plot(interpolationTable(18:61,1),interpolationTable(18:61,3));
+xlabel('\alpha in [°]')
+ylabel('Drag coeffecient')
+legend('3D-corrected drag coefficient', '2D drag coefficient','location','northwest')
+saveas(gcf,'../Figures/hansen_drag_correction_5.png')
 hold off;

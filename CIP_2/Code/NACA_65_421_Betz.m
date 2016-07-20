@@ -1,6 +1,6 @@
 %% Blade Design according to Betz NACA 65-415
 
-
+a_c = 0.2
 D = 54.0*2          % RotorDiameter
 N = 3                % Number of blades
 RotorDiameter = 0.95 % Electrical conversion efficiency
@@ -10,6 +10,8 @@ cld = 1.345          % Design lift coefficient selected for max. gliding factor
 rho = 1.225          % Air density [kg/m^3] @ standard conditions
 alpha_Ad_deg = 11.0  % Angle of Attack Design
 alpha_Ad    = alpha_Ad_deg * pi/180
+c_l_design = 1.345;
+c_d_design = 0.016;
 
 Ne = 10              % Number of elements
 R = D / 2.0          % Calculate the radius of the turbine
@@ -104,12 +106,24 @@ for j=1:2
 
 end; %loop over Ud
 
+c_l_design = 1.345
+
 C_L_3d_snel(:,1) = interpolationTable(18:61,2)+(c_l_design - interpolationTable(18:61,2))*f_cl_snel(3);
 C_L_3d_snel(:,2) = interpolationTable(18:61,2)+(c_l_design - interpolationTable(18:61,2))*f_cl_snel(5);
 C_L_3d_hansen(:,1) = interpolationTable(18:61,2)+(c_l_design - interpolationTable(18:61,2))*f_cl_hansen(3)
 C_L_3d_hansen(:,2) = interpolationTable(18:61,2)+(c_l_design - interpolationTable(18:61,2))*f_cl_hansen(5)
 C_D_3d_hansen(:,1) = interpolationTable(18:61,3)+(c_d_design - interpolationTable(18:61,3))*f_cl_hansen(3)
 C_D_3d_hansen(:,2) = interpolationTable(18:61,3)+(c_d_design - interpolationTable(18:61,3))*f_cl_hansen(5)
+
+figure();
+hold on 
+title('Prandtl Tip Loss for NACA 65-421')
+plot(fTip(:,1));
+plot(fTip(:,2));
+legend('0.5 * rated windspeed', 'rated windspeed = 11 m/s','Location','southwest')
+xlabel('Blade Segment')
+ylabel('Tip-loss factor')
+saveas(gcf,'../Figures/prandtl_tip_loss.png')
 
 figure();
 hold on;
