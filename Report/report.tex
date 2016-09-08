@@ -418,10 +418,10 @@ n = \frac{60 \lambda v}{2 \pi R} = 9.21
 \newpage
 \section{CIP 4}
 
-The following parameters are relevant for the remainder of this section:
+In this part of the Design project a modal analysis for tower design will be carried out and evaluated with respect to economical factors. For this purpose the following parameters are relevant:
 
 \begin{align*}
-	\Omega_{rated} &= 12.59 rpm \text{ (rotor rated speed)} \\
+	\Omega_{rated} &= 14.5 rpm \text{ (rotor rated speed)} \\
 	D &= 5m \text{ (tower diameter)} \\
 	E &=211000000000 \frac{N}{m^2} \text{ (elastic modulus)} \\
 	l &=100m \text{ (hub height)} \\
@@ -432,22 +432,22 @@ The following parameters are relevant for the remainder of this section:
 \subsection{Task a}
 For tower design resonances of excitation frequencies from the rotating blades must be taken into account. The Eigenfrequency of the tower can thus be obtained by adding a $10 \%$ safety margin to the rotor rated speed which represents the maximum stationary rotor speed:
 \begin{equation*}
-	f_0 = \Omega_{rated} \cdot 1.1 = \frac{12.59}{60} Hz \cdot 1.1 = 0.23081 Hz
+	f_0 = \Omega_{rated} \cdot 1.1 = \frac{14.5}{60} Hz \cdot 1.1 = 0.2658 Hz
 \end{equation*}
 
 \subsection{Task b}
-The design range of our turbine is a classical soft-stiff design which results in large wave excitation.
+The design range of our turbine is a classical soft-stiff design which results in large wave excitation but allows variable speed turbine design since resonances with tower eigenfrequencies at frequencies lower than rated rotor speed are avoided. There are a few other common design approaches one of which is the soft-soft design where the eigenfrequency lies within the resonance range of the rotor. In this case certain rotor frequencies have to be excluded in order to avoid resonances.
 
 \subsection{Task c}
 The wall thickness $t$ can be computed from the following equations:
 
 \begin{align}
-f_0 \cot 2 \pi &= \sqrt{\frac{k}{m_{top} + 0.25 m_{tower}}} \\
+f_0 \cdot 2 \pi &= \sqrt{\frac{k}{m_{top} + 0.25 m_{tower}}} \\
 k &= \frac{3 E \pi D^3 t}{l^3 8} \\
-m_{tower} &= \rho \pi D t l\\
+m_{tower} &= \rho \pi D t l
 \end{align}
 
-By substituting Equations (2) and (3) into (1) we obtain the following equality which can be fed into Matlab in order to solve for the only unknown $t$:\\
+By substituting Equations (22) and (23) into (21) we obtain the following equality which can be fed into Matlab in order to solve for the only unknown $t$:\\
 
 \begin{equation*}
 0 = \sqrt{\frac{3 E \pi D^3 t}{l^3 8 \cdot (m_{top} + 0.25\rho \pi D t l)}} -f_0 \cdot 2 \pi \\
@@ -457,21 +457,24 @@ Extract from Matlab code used to solve for variable $t$:\\
 
 \begin{lstlisting}
 t=1;
-func = @(t) sqrt(3*E*pi*D^3*t/(l^3*8*(mTop+0.25*rho*pi*D+t*l)))-0.23081*2*pi;
+func = @(t) sqrt(3*E*pi*D^3*t/(l^3*8*(mTop+0.25*rho*pi*D+t*l)))-f0*2*pi;
 t = fsolve(func,t);
 \end{lstlisting}
 
-The resulting value for the wall thickness is $t=0.0239m$. The tower mass is then $m_{tower}=295310 kg = 295.31t$. The material cost for this tower would thus be of $147655$ \euro, assuming a price of $500$ \euro /t. Obviously a thicker tower wall leads to a higher price overall (linear increase). As depicted in Figure~\ref{fig:eigfreqWall} a thicker wall leads to a higher Eigenfrequency of the tower as well. However, in this case the relationship is not a linear one due to the exponent of $0.5$ in the formula. Hence, a thicker wall results in a higher Eigenfrequency but the increase is only significant for wall thicknesses up to $0.1m$. Above that the cost increase does not justify the gain in Eigenfrequency.
+The resulting value for the wall thickness is $t=0.0318m$. The tower mass is then $m_{tower}=391730 kg = 391.73t$. The material cost for this tower would thus be of $195870$ \euro, assuming a price of $500$ \euro /t. Obviously a thicker tower wall leads to a higher price overall (linear increase). As depicted in Figure~\ref{fig:eigfreqWall} a thicker wall leads to a higher Eigenfrequency of the tower as well. However, in this case the relationship is not a linear one due to the exponent of $0.5$ in the formula. Hence, a thicker wall results in a higher Eigenfrequency but the increase is only significant for wall thicknesses up to $0.1m$. Above that the cost increase does not justify the gain in Eigenfrequency because wall thickness and costs are proportional but the Eigenfrequency is under-proportional.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\linewidth]{../CIP_4/figures/eigenfrequency.jpg}
-\caption{Effect of wall thickness on Eigenfrequencies}
+\includegraphics[width=\linewidth]{../CIP_4/figures/eigenfrequency.jpg}
+\caption{Effect of wall thickness on Eigenfrequency}
 \label{fig:eigfreqWall}
 \end{figure} 
 
 \subsection{Task d}
-The Campbell diagram is depicted in Figure~\ref{fig:campbell}  (work in progress)
+The Campbell diagram is depicted in Figure~\ref{fig:campbell}. The red line shows the computed Eigenfrequency of the tower and the circles mark resonance cases for certain rotor speed values. For example the dashed blue line ($1\Omega$) represents the unbalance, the second blue line ($3\Omega$) etc.\\
+
+The operational range of the rotor with respect to tower Eigenfrequencies must thus be kept within the limits between the last ($\Omega$ with red line) and the second-last point of intersection ($3\Omega$ with red line).
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth]{../CIP_4/figures/campbell.jpg}
