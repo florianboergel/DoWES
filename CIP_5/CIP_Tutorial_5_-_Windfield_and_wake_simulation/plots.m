@@ -2,11 +2,14 @@
 cut_in_ws = 3.5
 cut_out_ws = 25
 rated_ws = 11
-data = wblpdf(1:0.5:30,9,2)
-data = data*8760
+k = 2
+vAve=10
+A = vAve/sqrt(pi/2)
+data = wblpdf(0:0.01:30,A,k)
+data = data*8760/100 %must be fitted to bin size 1
 
 figure;
-plot(1:0.5:30,data)
+plot(0:0.01:30,data)
 y1=get(gca,'ylim')
 hold on
 plot([cut_in_ws cut_in_ws],y1)
@@ -27,16 +30,20 @@ R = 54.0
 
 power = @(V) 0.5*rho*total_eff*pi*R^2*V^3;
 j=1;
-for i= 1:0.5:30
+for i= 0:0.01:30
     data_power(j) = power(i);
     if data_power(j) > 3500000
         data_power(j) = 3500000;
     end
+    if i<cut_in_ws || i>= cut_out_ws
+        data_power(j) = 0;
+    end
+
     j = j +1;
 end
 
 figure;
-plot(1:0.5:30, data_power)
+plot(0:0.01:30, data_power)
 y1 = [0 3800000];
 hold on
 plot([cut_in_ws cut_in_ws],y1)
@@ -48,7 +55,7 @@ text(cut_out_ws,2000000,'Cut Out')
 axis([0,30,0,3800000])
 title('Power Curve')
 xlabel('Wind speed in [m/s]')
-ylabel('Power in [kW]')
+ylabel('Power in [W]')
 saveas(gcf,'power_curve.png')
 hold off
 
@@ -57,7 +64,7 @@ for i= 1:length(data_power)
     energy_yield(i) = data_power(i)/1000*data(i);
 end
 figure;
-plot(1:0.5:30, energy_yield)
+plot(0:0.01:30, energy_yield)
 title('Energy yield')
 xlabel('Wind speed in [m/s]')
 ylabel('Energy in [kWh/a]')

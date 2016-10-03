@@ -57,7 +57,7 @@
 \tableofcontents
 \newpage
 
-\section{CIP 1}
+\section{CIP 1: Selection of main parameters and rotor design}
 In CIP 1 we were asked to estimate the main parameters of our wind turbine model. In addition we also calculated the airfoil aerodynamics properties and defined the geometry of our blade.
 The following table shows the side specific conditions and the limitations for the design process of the wind turbine.\\
 
@@ -186,7 +186,7 @@ lift-to-drag method & 5.0 & 0.952 & 0.006 &  0.092\\
 
 As the 80\% method results in a higher lift coefficients for both profiles we selected the corresponding parameters according to the 80\% method.
 \newpage
-\section{CIP 2}
+\section{CIP 2: Advanced BEM }
 In the first part of CIP 2 we designed the blade of the wind turbine. In the lecture we discussed two theories which are used to design the blade geometry. Betz and Schmitz theory both have different approaches to calculate the chord length and the twist angle. For the following steps it is import to keep in mind that the given blade consists of 10 blade elements, which are shown in the following figure.
 \begin{figure}[H]
 \includegraphics[width=1\linewidth]{../CIP_2/Figures/blade_elements.png}
@@ -306,7 +306,7 @@ Twist angle	deg	&	27,590&	11,022&	3,813&	0,055&	-2,211&	-2,715&	-3,783&	-4,580&	
 \end{table}
 
 \newpage
-\section{CIP 3 - Performance Curves}
+\section{CIP 3: Performance Curves}
 \subsection{Introduction}
 In this section we analysed the designed turbine under different pitch angles and tip-speed ratios. The design process of a wind turbine differs from turbine to turbine. In order to compare wind turbines non dimensional coefficients are used. These do not depend on factors like size or wind conditions. The most common coefficient is the power coefficient $c_p$. Further we used the torque coefficient $c_q$ and the thrust coefficient $c_t$.
 These coefficient are defined as:
@@ -416,7 +416,7 @@ The resulting $c_p$ corresponds to a tip speed ratio of 5 with a pitch angle of 
 n = \frac{60 \lambda v}{2 \pi R} = 9.21
 \end{align*}
 \newpage
-\section{CIP 4}
+\section{CIP 4: Tower design}
 
 In this part of the Design project a modal analysis for tower design will be carried out and evaluated with respect to economical factors. For this purpose the following parameters are relevant:
 
@@ -429,16 +429,16 @@ In this part of the Design project a modal analysis for tower design will be car
 	\rho &=7850 \frac{kg}{m^3}\text{ (material density)} \\
 \end{align*}
 
-\subsection{Task a}
+\subsection{Eigenfrequency}
 For tower design resonances of excitation frequencies from the rotating blades must be taken into account. The Eigenfrequency of the tower can thus be obtained by adding a $10 \%$ safety margin to the rotor rated speed which represents the maximum stationary rotor speed:
 \begin{equation*}
 	f_0 = \Omega_{rated} \cdot 1.1 = \frac{14.5}{60} Hz \cdot 1.1 = 0.2658 Hz
 \end{equation*}
 
-\subsection{Task b}
+\subsection{Desiugn range}
 The design range of our turbine is a classical soft-stiff design which results in large wave excitation but allows variable speed turbine design since resonances with tower eigenfrequencies at frequencies lower than rated rotor speed are avoided. There are a few other common design approaches one of which is the soft-soft design where the eigenfrequency lies within the resonance range of the rotor. In this case certain rotor frequencies have to be excluded in order to avoid resonances.
 
-\subsection{Task c}
+\subsection{Wall thickness}
 The wall thickness $t$ can be computed from the following equations:
 
 \begin{align}
@@ -470,8 +470,8 @@ The resulting value for the wall thickness is $t=0.0318m$. The tower mass is the
 \label{fig:eigfreqWall}
 \end{figure} 
 
-\subsection{Task d}
-The Campbell diagram is depicted in Figure~\ref{fig:campbell}. The red line shows the computed Eigenfrequency of the tower and the circles mark resonance cases for certain rotor speed values due to periodic excitations. For example the dashed blue line ($1\Omega$) represents the 1P excitation (unbalance), the second blue line ($3\Omega$) which represents the periodic excitation caused by a tower shadow of one of the three blades.\\
+\subsection{Campbell diagram}
+The Campbell diagram is depicted in Figure~\ref{fig:campbell}. The red line shows the computed Eigenfrequency of the tower and the circles mark resonance cases for certain rotor speed values due to periodic excitations. For example the dashed blue line ($1\Omega$) represents the 1P excitation (unbalance from the rotation), the second blue line ($3\Omega$) represents the periodic excitation caused by a tower shadow of one of the three blades.\\
 
 The operational range of the rotor with respect to tower Eigenfrequencies must thus be kept within certain limits. By designing the tower wall thickness with adding a 10\% safety margin to the rotor rated speed we can are on the safe side and avoid 1P excitations (intersection point of the $\Omega$ line with the red line). It must further be excluded during operations that any of the other intersection points occur, e.g. $3\Omega$ line with red line. Some rotational speed ranges must thus be excluded in operation in order to avoid any resonances.This analysis however only considers tower resonances. A complete evaluation must take into account more resonances as well, e.g. 1st blade edgewise and 1st blade flapwise eigenfrequencies. \\
 
@@ -481,6 +481,149 @@ The operational range of the rotor with respect to tower Eigenfrequencies must t
 \caption{Campbell Diagram}
 \label{fig:campbell}
 \end{figure} 
-\end{document}
 
-\section{CIP 5}
+
+\section{CIP 5: Windfields and wake modelling}
+\subsection{Wind speed distribution: Rayleigh}
+Assuming a wind class type I-B gives per definition a reference wind speed of $V_{ref} = 50 m/s$ and a reference turbulence intensity of $I_{ref}=0.14$. The Rayleigh distribution as a special case of Weibull where the shape parameter has a value of $k=2$. The average wind speed can be derived from the reference wind speed as follows: $V_{ave}=V_{ref}/5 =10 m/s$. From this we can derive the scale parameter via $V_{ave} =  \lambda \cdot \sqrt{\frac{\pi}{2}}$ resulting in $\lambda = 7.97 m/s$. The corresponding wind speed distribution following a Weibull law with $\lambda = 7.97 m/s$ and $k=2$ is depicted in Figure~\ref{fig:rayleigh}. Frequencies were multiplied with 8760 in order to represent the absolute number of hours per year. Three crucial windpeeds are highlighted in the diagram: Cut-In speed ($3.5 m/s$), Rated speed ($11 m/s$) and Cut-Out speed ($25 m/s$). These three limits define the operational conditions of the turbine: Between Cut-In and Rated speed the turbine is operating in partial load, between rated speed and Cut-Out the turbine is operating under full load. Beyond these limits the turbine is not operating.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hours_year.png}
+\caption{Wind speeds vs hours per year}
+\label{fig:rayleigh}
+\end{figure} 
+
+\subsection{Power curve and AEP}
+The power produced depending on the wind speed can be obtained from the following formula:
+\begin{equation*}
+P(v) = 0.5 \cdot \rho \cdot \nu \cdot \pi \cdot R^2 \cdot v^3
+\end{equation*}
+Wind density is fixed at $\rho= 1.225$, the total conversion efficiency is given as $\nu=0.4705$ and the rotor swept area is $\pi \cdot 54^2 m^2$. For wind speeds above rated wind speed the power output of the turbine will be constant.
+The corresponding power curve is depicted in Figure~\ref{fig:powercurve}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png}
+\caption{Power curve}
+\label{fig:powercurve}
+\end{figure} 
+
+Combining the wind speed distribution from Figure~\ref{fig:rayleigh} and the power curve from Figure~\ref{fig:powercurve} enables computing the annual energy production. We multiply the number of hours for each wind speed with the power output at that specific speed and integrate this over all relevant wind speeds. The result corresponds to the area under the curve in Figure~\ref{fig:energyYield}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_yield.png}
+\caption{Energy yield for different wind speeds}
+\label{fig:energyYield}
+\end{figure} 
+
+Here, the total AEP is of about $11.099$ GWh. For a $100\%$ availability and a feed-in tariff of $0.08$~\euro/kWh the revenue is thus of approximately $887930$\euro. If we assume an availability of only $95\%$ the corresponding revenue lies around $843530$\euro which results in a loss of nearly $45000$\euro in one year.
+
+\subsection{Turbulence intensity under free stream conditions}
+Applying the normal turbulence model we calculated the turbulence intensity for different wind speeds. The wind class type is I-B which defines a reference intensity of $I_{ref}=0.14$. The result for the four given wind speeds is shown in Table~\ref{tab:freestream}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\textbf{v} & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ \\
+\hline
+\textbf{I} & $0.2618$ & $0.1834$ & $0.1573$ & $0.1364$	\\
+\hline
+\textbf{Operational condition} & partial & partial & full & full	\\
+\hline
+\end{tabular}
+\caption{Turbulence intensity according to NTM at different wind speeds}
+\label{tab:freestream}
+\end{table}
+
+From Figure~\ref{fig:energyYield} in the previous section we have seen that the biggest portion of the AEP of the turbine is contributed by wind speeds around rated wind speed. At higher wind speeds less energy is produced because these wind speeds simply are much less frequent due to the distribution, especially speeds of $20$m/s and higher are insignificant to the AEP. However, wind speeds around $5$m/s or $15$m/s do have an impact. Regarding the turbulence intensity shown above we can then conclude that there is no direct relation between turbulence and power output. 
+
+\subsection{Wind fields with TurbSim}
+Using TurbSim we generated wind fields for the given conditions, see Figure~\ref{fig:windfields}.
+
+\begin{figure}[htb!]
+\centering
+\begin{subfigure}{0.4\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.png}
+  \caption{At 5m/s}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_10ms.png}
+   \caption{At 10m/s}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_15ms.png}
+   \caption{At 15m/s}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_25ms.png}
+   \caption{At 25m/s}
+\end{subfigure}
+\caption{Wind fields by TurbSim}
+\label{fig:windfields}
+\end{figure}
+
+
+\subsection{Wake modelling with Frandsen}
+We now use Frandsen's model in order to analyze wakes. Two different setups will be evaluated: One with distances between the turbines of 4 times the rotor diameter, and one with 8 times the rotor diameter.
+The result for the four given wind speeds is shown in Table~\ref{tab:waketable}. The results for the NTM model have been carried over in order to compare these to the wake results.
+    
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\textbf{v} & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ \\
+\hline
+$\mathbf{4 \cdot d}$ & $0.2667$ & $0.1867$ & $0.1594$ & $ 0.1370$	\\
+\hline
+$\mathbf{8 \cdot d}$ & $0.2621$ & $0.1827$ & $0.1562$ & $0.1349$	\\
+\hline
+\textbf{NTM} & $0.2618$ & $0.1834$ & $0.1573$ & $0.1364$	\\
+\hline
+\end{tabular}
+\caption{Turbulence intensity according to NTM at different wind speeds}
+\label{tab:waketable}
+\end{table}
+
+Clearly the turbulence intensity is lower for the case of larger distances ($8 \cdot d$) for all wind speeds. However, the difference between the free stream turbulence and the case of larger distances is only marginal. For a wind speed of 5 m/s the turbulence intensity is lower in the free turbulence model, but for all other wind speeds the Frandsen model leads to lower turbulences then the free stream model. 
+
+The complete dataset for all wind bins and all three cases is visualized in Figure~\ref{fig:turbintense}. It is not easy to recognize, but by looking closely we find that the order $8 \cdot d$, NTM, $4 \cdot d$ from lowest to highest turbulences holds for all wind bins above 10 m/s.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png}
+\caption{Turbulence intensity in different setups}
+\label{fig:turbintense}
+\end{figure} 
+
+We generated wind fields for wake conditions with both layouts as well since these will be used later. 
+A comparison of the wind field under free stream conditions with the wind field under wake condition ($4\cdot d$) for $v=5m/s$ is shown in Figure~\ref{fig:windfieldsComp}. The two wind field do not diverge very much, but the computed turbulence intensity differs considerably ($0.2504$ vs $0.2544$).
+
+\begin{figure}[htb!]
+\begin{subfigure}{0.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.png}
+  \caption{Wind field for Free stream at 5m/s}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_wake_4_5ms.png}
+   \caption{Wind field for Wakes with $4\cdot d$ at 5m/s}
+\end{subfigure}
+\caption{Free stream vs Wake conditions}
+\label{fig:windfieldsComp}
+\end{figure}
+
+\subsection{Possible faults}
+Failures can occur with respect to electrical components and the turbine control. These failures must be simulated in order to ensure structural integrity of the turbine. Possible faults are defect pitch or yaw actuators, which lead to the turbine being unable to reduce or increase forces and might cause a breakdown. Also it could be that sensors are defect and supply wrong data which would result in a fatal mis-behavior of the turbine. 
+Likewise the drive train and gearbox might be affected by broken parts causing severe failure of the turbine if not handled correctly. The generator of a turbine can be subject to electromechanical problems, e.g. torque scaling fault, overheating, asymmetries etc.
+
+\section{Load simulation}
+
+\end{document}
