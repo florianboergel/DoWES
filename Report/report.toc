@@ -9,8 +9,7 @@
 \contentsline {subsection}{\numberline {2.6}Rotor rated speed \& design tip speed ratio}{5}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Annual Energy Production}{5}{subsection.2.7}
 \contentsline {subsection}{\numberline {2.8}Main aerodynamic properties}{5}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Annual Energy Production}{6}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Annual Energy Production}{7}{subsection.2.10}
+\contentsline {subsection}{\numberline {2.9}Annual Energy Production}{7}{subsection.2.9}
 \contentsline {section}{\numberline {3}CIP 2: Advanced BEM }{9}{section.3}
 \contentsline {subsection}{\numberline {3.1}Design your blade according to Betz theory}{10}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Design according to Schmitz}{11}{subsection.3.2}

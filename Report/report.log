@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.21)  5 OCT 2016 00:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.21)  5 OCT 2016 00:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,7 +707,7 @@ Package pdftex.def Info: ../CIP_1/lift_to_drag_ratio_421.png used on input line
  164.
 (pdftex.def)             Requested size: 215.0023pt x 159.01915pt.
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 157--166
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 157--167
 []$[]$ $[]$ 
  []
 
@@ -794,14 +794,14 @@ Package pdftex.def Info: ../CIP_3/WT_Perf/Output/torque.png used on input line
 409.
 (pdftex.def)             Requested size: 430.00462pt x 322.50143pt.
  [16 <../CIP_3/WT_Perf/Output/thrust.png>]
-<../CIP_3/Report/power_coeff_literature.png, id=400, 866.23625pt x 506.89375pt>
+<../CIP_3/Report/power_coeff_literature.png, id=401, 866.23625pt x 506.89375pt>
 File: ../CIP_3/Report/power_coeff_literature.png Graphic file (type png)
 <use ../CIP_3/Report/power_coeff_literature.png>
 Package pdftex.def Info: ../CIP_3/Report/power_coeff_literature.png used on inp
 ut line 420.
 (pdftex.def)             Requested size: 430.00462pt x 251.62863pt.
  [17 <../CIP_3/WT_Perf/Output/torque.png>]
-<../CIP_3/Report/thrust_coeff_literature.png, id=410, 546.04pt x 330.23375pt>
+<../CIP_3/Report/thrust_coeff_literature.png, id=412, 546.04pt x 330.23375pt>
 File: ../CIP_3/Report/thrust_coeff_literature.png Graphic file (type png)
 
 <use ../CIP_3/Report/thrust_coeff_literature.png>
@@ -809,7 +809,7 @@ Package pdftex.def Info: ../CIP_3/Report/thrust_coeff_literature.png used on in
 put line 429.
 (pdftex.def)             Requested size: 430.00462pt x 260.06044pt.
  [18 <../CIP_3/Report/power_coeff_literature.png>]
-<../CIP_3/Report/torque_coeff_literature.png, id=419, 832.10875pt x 498.86375pt
+<../CIP_3/Report/torque_coeff_literature.png, id=421, 832.10875pt x 498.86375pt
 >
 File: ../CIP_3/Report/torque_coeff_literature.png Graphic file (type png)
  <use ../CIP_3/Report/torque_coeff_literature.png>
@@ -822,7 +822,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 450--451
  []
 
 [20 <../CIP_3/Report/torque_coeff_literature.png>]
-<../CIP_3/WT_Perf/Output/validated_cp.png, id=433, 578.16pt x 433.62pt>
+<../CIP_3/WT_Perf/Output/validated_cp.png, id=435, 578.16pt x 433.62pt>
 File: ../CIP_3/WT_Perf/Output/validated_cp.png Graphic file (type png)
 
 <use ../CIP_3/WT_Perf/Output/validated_cp.png>
@@ -847,7 +847,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 522.
 
-<../CIP_4/figures/eigenfrequency.jpg, id=451, 890.32625pt x 666.49pt>
+<../CIP_4/figures/eigenfrequency.jpg, id=453, 890.32625pt x 666.49pt>
 File: ../CIP_4/figures/eigenfrequency.jpg Graphic file (type jpg)
 
 <use ../CIP_4/figures/eigenfrequency.jpg>
@@ -865,7 +865,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 538--539
  []
 
 [25 <../CIP_4/figures/eigenfrequency.jpg>]
-<../CIP_4/figures/campbell.jpg, id=472, 878.28125pt x 658.46pt>
+<../CIP_4/figures/campbell.jpg, id=474, 878.28125pt x 658.46pt>
 File: ../CIP_4/figures/campbell.jpg Graphic file (type jpg)
 
 <use ../CIP_4/figures/campbell.jpg>
@@ -873,7 +873,7 @@ Package pdftex.def Info: ../CIP_4/figures/campbell.jpg used on input line 542.
 (pdftex.def)             Requested size: 430.00462pt x 322.387pt.
  [26 <../CIP_4/figures/campbell.jpg>]
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hours_yea
-r.png, id=478, 421.575pt x 316.0608pt>
+r.png, id=480, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hour
 s_year.png Graphic file (type png)
 
@@ -885,7 +885,7 @@ n/windspeed_vs_hours_year.png used on input line 554.
  [27 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hour
 s_year.png (PNG copy)>]
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png, id=48
-5, 421.575pt x 316.0608pt>
+7, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png G
 raphic file (type png)
 
@@ -895,7 +895,7 @@ n/power_curve.png used on input line 569.
 (pdftex.def)             Requested size: 430.00462pt x 322.38739pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_yield.png, id=4
-89, 421.575pt x 316.0608pt>
+91, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_yield.png 
 Graphic file (type png)
 
@@ -908,7 +908,7 @@ n/energy_yield.png used on input line 578.
 NG copy)>] [29 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_
 yield.png (PNG copy)>]
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.png, 
-id=504, 413.8662pt x 314.6154pt>
+id=506, 413.8662pt x 314.6154pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.
 png Graphic file (type png)
 
@@ -919,7 +919,7 @@ n/TurbSim/wind_5ms.png used on input line 612.
 (pdftex.def)             Requested size: 171.99922pt x 130.75017pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_10ms.png,
- id=505, 421.575pt x 316.0608pt>
+ id=507, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_10ms
 .png Graphic file (type png)
 
@@ -930,7 +930,7 @@ n/TurbSim/wind_10ms.png used on input line 617.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_15ms.png,
- id=506, 421.575pt x 316.0608pt>
+ id=508, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_15ms
 .png Graphic file (type png)
 
@@ -941,7 +941,7 @@ n/TurbSim/wind_15ms.png used on input line 622.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_25ms.png,
- id=507, 425.9112pt x 319.4334pt>
+ id=509, 425.9112pt x 319.4334pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_25ms
 .png Graphic file (type png)
 
@@ -956,7 +956,7 @@ m/wind_10ms.png (PNG copy)> <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simul
 ation/TurbSim/wind_15ms.png (PNG copy)> <../CIP_5/CIP_Tutorial_5_-_Windfield_an
 d_wake_simulation/TurbSim/wind_25ms.png (PNG copy)>]
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png, id
-=516, 421.575pt x 316.0608pt>
+=518, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.pn
 g Graphic file (type png)
 
@@ -975,7 +975,7 @@ n/TurbSim/wind_5ms.png used on input line 673.
 (pdftex.def)             Requested size: 215.0023pt x 163.44252pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_wake_4_5m
-s.png, id=518, 421.575pt x 316.0608pt>
+s.png, id=520, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_wake
 _4_5ms.png Graphic file (type png)
 
@@ -992,7 +992,7 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 671--681
 [31 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png
  (PNG copy)>] [32 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/Turb
 Sim/wind_wake_4_5ms.png (PNG copy)>]
-<../CIP_6/FAST/Plots_ws5/TwrBsMxt.png, id=534, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/TwrBsMxt.png, id=536, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png>
@@ -1000,7 +1000,7 @@ Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png used on input lin
 e 701.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
-<../CIP_6/FAST/Plots_ws5/TwrBsMyt.png, id=535, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/TwrBsMyt.png, id=537, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png>
@@ -1008,7 +1008,7 @@ Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png used on input lin
 e 705.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
-<../CIP_6/FAST/Plots_ws5/RootMFlp2.png, id=536, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/RootMFlp2.png, id=538, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/RootMFlp2.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/RootMFlp2.png>
@@ -1016,7 +1016,7 @@ Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/RootMFlp2.png used on input li
 ne 709.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
-<../CIP_6/FAST/Plots_ws5/RootMedg2.png, id=537, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/RootMedg2.png, id=539, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/RootMedg2.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/RootMedg2.png>
@@ -1030,28 +1030,28 @@ Overfull \hbox (84.20546pt too wide) in paragraph at lines 747--762
 [][] 
  []
 
-<figures/delsTwrSide.png, id=546, 482.80376pt x 290.08376pt>
+<figures/delsTwrSide.png, id=548, 482.80376pt x 290.08376pt>
 File: figures/delsTwrSide.png Graphic file (type png)
 
 <use figures/delsTwrSide.png>
 Package pdftex.def Info: figures/delsTwrSide.png used on input line 773.
 (pdftex.def)             Requested size: 171.99922pt x 103.34119pt.
 
-<figures/delsTwrFore.png, id=547, 482.80376pt x 290.08376pt>
+<figures/delsTwrFore.png, id=549, 482.80376pt x 290.08376pt>
 File: figures/delsTwrFore.png Graphic file (type png)
 
 <use figures/delsTwrFore.png>
 Package pdftex.def Info: figures/delsTwrFore.png used on input line 776.
 (pdftex.def)             Requested size: 171.99922pt x 103.34119pt.
 
-<figures/delsBldEdge.png, id=548, 481.8pt x 289.08pt>
+<figures/delsBldEdge.png, id=550, 481.8pt x 289.08pt>
 File: figures/delsBldEdge.png Graphic file (type png)
 
 <use figures/delsBldEdge.png>
 Package pdftex.def Info: figures/delsBldEdge.png used on input line 779.
 (pdftex.def)             Requested size: 171.99922pt x 103.19974pt.
 
-<figures/delsBldFlap.png, id=549, 481.8pt x 289.08pt>
+<figures/delsBldFlap.png, id=551, 481.8pt x 289.08pt>
 File: figures/delsBldFlap.png Graphic file (type png)
 
 <use figures/delsBldFlap.png>
@@ -1059,7 +1059,7 @@ Package pdftex.def Info: figures/delsBldFlap.png used on input line 782.
 (pdftex.def)             Requested size: 171.99922pt x 103.19974pt.
  [34] [35 <./figures/delsTwrSide.png> <./figures/delsTwrFore.png> <./figures/de
 lsBldEdge.png> <./figures/delsBldFlap.png>]
-<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png, id=568, 421.575pt x 316.1
+<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png, id=570, 421.575pt x 316.1
 8124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png Graphic file (type pn
 g)
@@ -1068,7 +1068,7 @@ Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png us
 ed on input line 840.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 
-<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png, id=569, 421.575pt x 316.
+<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png, id=571, 421.575pt x 316.
 18124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png Graphic file (type p
 ng)
@@ -1077,7 +1077,7 @@ Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png u
 sed on input line 844.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 
-<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png, id=570, 421.575pt x 316.1
+<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png, id=572, 421.575pt x 316.1
 8124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png Graphic file (type pn
 g)
@@ -1086,7 +1086,7 @@ Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png us
 ed on input line 848.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 
-<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png, id=571, 421.575pt x 316.
+<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png, id=573, 421.575pt x 316.
 18124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png Graphic file (type p
 ng)
@@ -1105,7 +1105,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 876--879
  []
 
 [37]
-<../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png, id=582, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png, id=584, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png>
@@ -1113,7 +1113,7 @@ Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png used on input
  line 885.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50/RootMFlp2.png, id=583, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EOG_50/RootMFlp2.png, id=585, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png>
@@ -1121,7 +1121,7 @@ Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png used on inpu
 t line 889.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50/BldPitch2.png, id=586, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EOG_50/BldPitch2.png, id=588, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EOG_50/BldPitch2.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EOG_50/BldPitch2.png>
@@ -1129,7 +1129,7 @@ Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/BldPitch2.png used on inpu
 t line 899.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png, id=588, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png, id=590, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png>
@@ -1137,7 +1137,7 @@ Package pdftex.def Info: ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png used on input
 line 910.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EWSVR/RootMFlp2.png, id=589, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EWSVR/RootMFlp2.png, id=591, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png>
@@ -1152,7 +1152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 921--922
  []
 
 
-<../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png, id=598, 425.9112pt x 319.4334p
+<../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png, id=600, 425.9112pt x 319.4334p
 t>
 File: ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png Graphic file (type png)
  <use ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png>
@@ -1160,7 +1160,7 @@ Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png used on
  input line 930.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png, id=599, 425.9112pt x 319.4334
+<../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png, id=601, 425.9112pt x 319.4334
 pt>
 File: ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png Graphic file (type png)
  <use ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png>
@@ -1169,7 +1169,7 @@ n input line 934.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
  [39 <../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme
 /EWSVR/RootMFlp2.png (PNG copy)>]
-<../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png, id=607, 425.9112pt x 319.43
+<../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png, id=609, 425.9112pt x 319.43
 34pt>
 File: ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png Graphic file (type png)
 
@@ -1178,7 +1178,7 @@ Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png used
  on input line 946.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png, id=608, 425.9112pt x 319.4
+<../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png, id=610, 425.9112pt x 319.4
 334pt>
 File: ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png Graphic file (type png
 )
@@ -1202,42 +1202,52 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1003.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1003.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1003.
 
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: ED0821D3E20F2587CDEFEA8B2DE3DBF9;3265.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: ED0821D3E20F2587CDEFEA8B2DE3DBF9;3265
+(rerunfilecheck)             After:  0D0A4301D00A8F2A9F7B7B03B37D7A84;3190.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1003.
  ) 
 Here is how much of TeX's memory you used:
- 10823 strings out of 493085
- 161538 string characters out of 6136917
+ 10824 strings out of 493085
+ 161549 string characters out of 6136917
  398650 words of memory out of 5000000
  13949 multiletter control sequences out of 15000+600000
  12535 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,40p,1173b,1689s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosy
-m/feymr10.pfb>
-Output written on report.pdf (43 pages, 2453359 bytes).
+pdfTeX warning (dest): name{subsection.2.10} has been referenced but does not
+ exist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/
+feymr10.pfb>
+Output written on report.pdf (43 pages, 2454450 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
- 602 compressed objects within 7 object streams
- 178 named destinations out of 1000 (max. 500000)
+ 734 PDF objects out of 1000 (max. 8388607)
+ 604 compressed objects within 7 object streams
+ 179 named destinations out of 1000 (max. 500000)
  594 words of extra memory for PDF output out of 10000 (max. 10000000)
 
