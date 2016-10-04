@@ -57,9 +57,13 @@
 \tableofcontents
 \newpage
 
+\section{Introduction}
+This reports guides through the process of Design of Wind Energy Systems. The different phases are structured in so called CIPs. In the first CIP the main parameters of the turbine to be designed will be fixed and site conditions defined. Then in the second CIP the geometry of the blade will be computed according to Schmitz' and Betz' models. Performance curves are the subject of the third tutorial. CIP 4 treats the tower design. Impact of wakes and wind fields are investigated in CIP 5 before in the last CIP a fatigue load analysis (CIP 6a) and an extreme load analysis (CIP 6b) are carried out.
+During this project we have used a set of different tools and programming languages, among those: Matlab, Python, WT-Perf, Fast and Turbsim.
+
 \section{CIP 1: Selection of main parameters and rotor design}
 In CIP 1 we were asked to estimate the main parameters of our wind turbine model. In addition we also calculated the airfoil aerodynamics properties and defined the geometry of our blade.
-The following table shows the side specific conditions and the limitations for the design process of the wind turbine.\\
+The following table shows the site specific conditions and the limitations for the design process of the wind turbine.\\
 
 \begin{table}[H]
 \begin{tabular}{l l l}
@@ -138,13 +142,13 @@ rating = \frac{\text{electrical power}}{area}
 \end{equation}
 We receive 382.06 W/$m^2$ as specific rating.
 \subsection{Rotor rated speed \& design tip speed ratio}
-The design tip speed ratio is the ratio between maximum tip speed and rated wind speed of the turbine. The maximum tip speed for the wind turbine is $82 m/s$ and the calculated rated wind speed is $11 m/s$. That leads to a design tip speed ratio $\lambda_d$ of \textbf{7.45}.\\
-Next the we calculated the rotor rated speed. The rotor rated speed in rotations per minute (rpm) is given by:
+The design tip speed ratio is the ratio between maximum tip speed and rated wind speed of the turbine. The maximum tip speed for the wind turbine is $82 m/s$ and the calculated rated wind speed is $11 m/s$. That leads to a design tip speed ratio $\lambda_d$ of \textbf{7.45}.\\\subsection{Annual Energy Production}
+Next, we calculated the rotor rated speed. The rotor rated speed in rotations per minute (rpm) is given by:
 
 \begin{equation}
 n = \frac{60s/min \cdot\ \text{max. tip speed}}{2\cdot\pi\cdot R} = 14.5 rpm
 \end{equation}
-\subsection{Annual Energy Production}
+%\subsection{Annual Energy Production}
 \subsection{Main aerodynamic properties}
 In order to estimate the design lift coefficient, the angle of attack and the drag coefficient we were given an excel sheet with the rotor design profile data for NACA-64-415 and NACA-64-421.
 Each sheet consists of 4 columns: angle of attack, lift coefficient, drag coefficient and thrust coefficient. According to the lecture, the optimal lift coefficient is defined as the maximum of the lift-to-drag ratio. Figure~\ref{fig:comparison_lift_to_drag} shows the lift-to-drag ratio for different angles of attack (AOA).
@@ -159,7 +163,7 @@ Each sheet consists of 4 columns: angle of attack, lift coefficient, drag coeffi
   \centering
   \includegraphics[width=1\linewidth]{../CIP_1/lift_to_drag_ratio_421.png}
   \caption{Lift-to-drag ratio for NACA 65-421}
-\end{subfigure}
+\end{subfigure}\subsection{Annual Energy Production}
 \caption{Lift-to-drag ratio for different angle of attacks}
 \label{fig:comparison_lift_to_drag}
 \end{figure}
@@ -199,14 +203,8 @@ Betz theory estimates that the maximum of power that can be extracted from the w
 \begin{equation}
 P_{betz} = \frac{16}{27}*P_{wind}
 \end{equation}
-To understand why there is a certain limit, consider that if all energy coming from the wind movement through the turbine the speed afterwards would drop to zero and no new wind could get in.
-The principle of Betz's law is derived from the principles of conservation of mass and momentum of the air stream following through and idealized 'actuator disk' (see figure~%\ref{fig:betz_tube}).
-%\begin{figure}[H]
-%\includegraphics[width=1\linewidth]{figures/betz_tube.png}
-%\caption{disk-shaped actuator}
-%\label{fig:betz_tube}
-%\end{figure}
-
+To understand why there is a certain limit, consider that if all energy coming from the wind movement through the turbine the speed afterwards would drop to zero then no new wind could get in and theenergy thus limited.
+The principle of Betz's law is derived from the principles of conservation of mass and momentum of the air stream following through and idealized 'actuator disk'.
 If we want to design the blade geometry according to this law, the power from the blade element theory has to equal $P_{Betz}$. This leads to the following equations which have been used for the further calculation.\\
 
 Planform:
@@ -221,7 +219,7 @@ Twist angle:
 \begin{equation}
 \alpha_{twist} = \alpha(r) - \alpha_a
 \end{equation}
-Using the parameters from CIP 1, we calculated the chord length and the twist angle for each blade segment. And overview is shown in table~\ref{blade_design_betz}.
+Using the parameters from CIP 1, we calculated the chord length and the twist angle for each blade segment. An overview is shown in table~\ref{blade_design_betz}.
 \begin{table}[H]
 \begin{tabular}{c| l l l l l l l l l}
 \hline
@@ -308,7 +306,7 @@ Twist angle	deg	&	27,590&	11,022&	3,813&	0,055&	-2,211&	-2,715&	-3,783&	-4,580&	
 \newpage
 \section{CIP 3: Performance Curves}
 \subsection{Introduction}
-In this section we analysed the designed turbine under different pitch angles and tip-speed ratios. The design process of a wind turbine differs from turbine to turbine. In order to compare wind turbines non dimensional coefficients are used. These do not depend on factors like size or wind conditions. The most common coefficient is the power coefficient $c_p$. Further we used the torque coefficient $c_q$ and the thrust coefficient $c_t$.
+In this section we analyzed the designed turbine under different pitch angles and tip-speed ratios. The design process of a wind turbine differs from turbine to turbine. In order to compare wind turbines non dimensional coefficients are used. These do not depend on factors like size or wind conditions. The most common coefficient is the power coefficient $c_p$. Further we used the torque coefficient $c_q$ and the thrust coefficient $c_t$.
 These coefficient are defined as:
 \begin{align*}
 c_p = \frac{P}{0.5 *\rho A v^3}\hspace{0.5cm}c_t =  \frac{T}{0.5\rho A v^2}\hspace{0.5cm}c_q = \frac{Q}{0.5\rho A v^2*R}\\
@@ -320,13 +318,13 @@ $c_q$ = Torque coefficient\\
 $p$   = Power\\
 $\rho$ = Density\\
 $A$    = Area\\
-$v$	   = Windspeed\\
-$R$		= Rotorradius
+$v$	   = Wind speed\\
+$R$		= Rotor radius
 
 \subsection{WT\_Perf}
-To compute the nondimensional parameters a program called WT\_Perf is used. 
+To compute the non dimensional parameters a program called WT\_Perf is used. 
 WT\_Perf uses blade-element momentum (BEM) theory to predict the performance of wind turbines. \footnote{WT\_Perf\_Users\_guide.pdf}. It also takes different correction algorithms into account, e.g. Prandtl's tip-loss and hub-loss model.
-WT\_Perf can be used from the operating system's command prompt. In order to use WT\_Perf  we configured the input file by updating the 'Turbine Data' section and implementing the calculated blade geometry. WT\_Perf also needs the aerodynamic data of the airfoils. We were able to used the provided data here. Last we defined the range of pitch angle and tip-speed ratio according to the tasks of CIP-3. \\
+WT\_Perf can be used from the operating system's command prompt. In order to use WT\_Perf  we configured the input file by updating the 'Turbine Data' section and implementing the calculated blade geometry. WT\_Perf also needs the aerodynamic data of the airfoils. We were able to use the provided data here. Last we defined the range of pitch angle and tip-speed ratio according to the tasks of CIP~3. \\
 The following code-snippet gives an idea of the input file structure:
 \newpage
 \begin{lstlisting}
@@ -350,10 +348,11 @@ The following code-snippet gives an idea of the input file structure:
 49.504	-4.335   1.544	 2	    FALSE
 57.120	-5.066   1.348	 2	    FALSE
 \end{lstlisting}
-\subsection{3.1,3.2}
-As already mentioned we configured the input file according to CIP-3. The generated output file contains values for the power coefficient $c_p$, thrust $T$ and torque $Q$.
-For task 3.2 we wrote a small python-program which examines the data and plots the results for the three different nondimensional coefficient mentioned in the introduction of CIP-3: $c_p, c_t$ and $c_q$. Since WT\_Perf only writes the power coefficient we had to calculate $c_t$ and $c_q$. Note that the coefficient are functions of $c_t(\lambda), c_q(\lambda)$.
-The following figures display the results for $c_p, c_t$ and $c_q$ with a tip-speed ratio $\lambda$ from one to 20 and pitch angles of : 0,5,10,15,20 and 30 degree. The curves are calculated at rated rotor speed (12.59 rpm).
+
+\subsection{Comparison}
+As already mentioned we configured the input file according to CIP~3. The generated output file contains values for the power coefficient $c_p$, thrust $T$ and torque $Q$.
+For task 3.2 we wrote a small python-program which examines the data and plots the results for the three different non dimensional coefficient mentioned in the introduction of CIP~3: $c_p, c_t$ and $c_q$. Since WT\_Perf only writes the power coefficient we had to calculate $c_t$ and $c_q$. Note that the coefficients are functions of $c_t(\lambda), c_q(\lambda)$.
+The following figures display the results for $c_p, c_t$ and $c_q$ with a tip-speed ratio $\lambda$ from 1 to 20 and pitch angles of 0,5,10,15,20 and 30 degree. The curves are calculated at rated rotor speed (12.59 rpm).
 
 \begin{figure}[H]
 \centering
@@ -369,7 +368,7 @@ The $c_p-\lambda$ curve shows different power coefficients at different tip-spee
 \caption{Thrust coefficient}
 \label{fig:thrust-coeff}
 \end{figure} 
-Figure \ref{fig:thrust-coeff} shows the behaviour of the thrust coefficient. 
+Figure \ref{fig:thrust-coeff} shows the behavior of the thrust coefficient. 
 From 0$^\circ$ to 10$^\circ$ the thrust coefficient reaches high values. For higher pitch angles the resulting thrust coefficient is significantly lower and is equal to zero for higher tip speed ratios. The thrust is directly applied at the tower and can be decreased by increasing the pitch angle.
 
 \begin{figure}[H]
@@ -378,14 +377,14 @@ From 0$^\circ$ to 10$^\circ$ the thrust coefficient reaches high values. For hig
 \caption{Torque coefficient}
 \label{fig:torque-coeff}
 \end{figure} 
-Figure \ref{fig:torque-coeff} shows the torque coefficient for different pitch angles. Compared to the $c_p-\lambda$ the maxima are shifted to the left and decrease with increasing pitch angle.  
-\subsection{3.4}
+Figure \ref{fig:torque-coeff} shows the torque coefficient for different pitch angles. Compared to the $c_p-\lambda$ the maximums are shifted to the left and decrease with increasing pitch angle.  
+\subsection{Rotor rated speed}
 In task 3.4 we were asked to calculate the resulting rotor speed for a rated wind speed of 8 m/s. For the calculation we used our design tip speed ratio:
 \begin{align}
 \lambda = \frac{\Omega R}{v}\\
 n = \frac{60 \lambda v}{2 \pi R} = 10.07 rpm
 \end{align}
-\subsection{3.5, 3.6}
+\subsection{Operation conditions}
 Again we used WT\_Perf to calculate the resulting operation conditions below rated wind speed. The input parameters are: v = 8 m/s, design top speed ratio $\lambda$ = 8.2 and rotational speed $n$ = 10.07 rpm. The results are shown in the following table:\\
 
 \begin{tabular}{|c |c| c| c| c| c|}
@@ -396,14 +395,14 @@ m/s &rpm & - &- &-& kW\\
 8 &10.07&0.544&0.825&0.033& 2054.846\\
 \hline
 \end{tabular}
-Power aus WT\_Perf
-\subsection{3.7,3.8}
+Power from WT\_Perf
+\subsection{Coefficients}
 According to Betz, the wind turbine should be able to extract 7618 kW.
 However the rated power of the wind turbine is lower than the power which could be extracted. Therefore pitching is needed. The resulting $c_p$ can be calculated as follows:
 \begin{equation}
 c_p = \frac{3500000}{0.5 \cdot 1.225 \cdot \pi\cdot  62.18^2 \cdot  12^3} = 0.272
 \end{equation}
-\subsection{3.9}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth]{../CIP_3/WT_Perf/Output/validated_cp.png}
@@ -411,7 +410,7 @@ c_p = \frac{3500000}{0.5 \cdot 1.225 \cdot \pi\cdot  62.18^2 \cdot  12^3} = 0.27
 \label{fig:validate}
 The resulting $c_p$ corresponds to a tip speed ratio of 5 with a pitch angle of 10$^\circ$
 \end{figure} 
-\subsection{3.10}
+\subsection{Rotor speed}
 \begin{align*}
 n = \frac{60 \lambda v}{2 \pi R} = 9.21
 \end{align*}
@@ -483,9 +482,9 @@ The operational range of the rotor with respect to tower Eigenfrequencies must t
 \end{figure} 
 
 
-\section{CIP 5: Windfields and wake modelling}
+\section{CIP 5: Wind fields and wake modeling}
 \subsection{Wind speed distribution: Rayleigh}
-Assuming a wind class type I-B gives per definition a reference wind speed of $V_{ref} = 50 m/s$ and a reference turbulence intensity of $I_{ref}=0.14$. The Rayleigh distribution as a special case of Weibull where the shape parameter has a value of $k=2$. The average wind speed can be derived from the reference wind speed as follows: $V_{ave}=V_{ref}/5 =10 m/s$. From this we can derive the scale parameter via $V_{ave} =  \lambda \cdot \sqrt{\frac{\pi}{2}}$ resulting in $\lambda = 7.97 m/s$. The corresponding wind speed distribution following a Weibull law with $\lambda = 7.97 m/s$ and $k=2$ is depicted in Figure~\ref{fig:rayleigh}. Frequencies were multiplied with 8760 in order to represent the absolute number of hours per year. Three crucial windpeeds are highlighted in the diagram: Cut-In speed ($3.5 m/s$), Rated speed ($11 m/s$) and Cut-Out speed ($25 m/s$). These three limits define the operational conditions of the turbine: Between Cut-In and Rated speed the turbine is operating in partial load, between rated speed and Cut-Out the turbine is operating under full load. Beyond these limits the turbine is not operating.
+Assuming a wind class type I-B gives per definition a reference wind speed of $V_{ref} = 50 m/s$ and a reference turbulence intensity of $I_{ref}=0.14$. The Rayleigh distribution as a special case of Weibull where the shape parameter has a value of $k=2$. The average wind speed can be derived from the reference wind speed as follows: $V_{ave}=V_{ref}/5 =10 m/s$. From this we can derive the scale parameter via $V_{ave} =  \lambda \cdot \sqrt{\frac{\pi}{2}}$ resulting in $\lambda = 7.97 m/s$. The corresponding wind speed distribution following a Weibull law with $\lambda = 7.97 m/s$ and $k=2$ is depicted in Figure~\ref{fig:rayleigh}. Frequencies were multiplied with 8760 in order to represent the absolute number of hours per year. Three crucial wind speeds are highlighted in the diagram: Cut-In speed ($3.5 m/s$), Rated speed ($11 m/s$) and Cut-Out speed ($25 m/s$). These three limits define the operational conditions of the turbine: Between Cut-In and Rated speed the turbine is operating in partial load, between rated speed and Cut-Out the turbine is operating under full load. Beyond these limits the turbine is not operating.
 
 \begin{figure}[H]
 \centering
@@ -570,7 +569,7 @@ Using TurbSim we generated wind fields for the given conditions, see Figure~\ref
 \end{figure}
 
 
-\subsection{Wake modelling with Frandsen}
+\subsection{Wake modeling with Frandsen}
 We now use Frandsen's model in order to analyze wakes. Two different setups will be evaluated: One with distances between the turbines of 4 times the rotor diameter, and one with 8 times the rotor diameter.
 The result for the four given wind speeds is shown in Table~\ref{tab:waketable}. The results for the NTM model have been carried over in order to compare these to the wake results.
     
@@ -624,7 +623,7 @@ A comparison of the wind field under free stream conditions with the wind field 
 Failures can occur with respect to electrical components and the turbine control. These failures must be simulated in order to ensure structural integrity of the turbine. Possible faults are defect pitch or yaw actuators, which lead to the turbine being unable to reduce or increase forces and might cause a breakdown. Also it could be that sensors are defect and supply wrong data which would result in a fatal mis-behavior of the turbine. 
 Likewise the drive train and gearbox might be affected by broken parts causing severe failure of the turbine if not handled correctly. The generator of a turbine can be subject to electromechanical problems, e.g. torque scaling fault, overheating, asymmetries etc.
 
-\section{Fatigue loads}
+\section{CIP 6a: Fatigue loads}
 \subsection{FAST}
 The wind fields from the previous chapter will now be used to run simulations with FAST for fatigue analysis.
 We use the same wind speeds of 5,10,15 and 25m/s and free stream conditions. 
@@ -771,7 +770,7 @@ The DELs under wake condition for tower and root can be found in Table~\ref{tab:
 \label{tab:DELwake}
 \end{table}
 
-Comparing the DELs in the three different settings (free stream and wake with $4\dcot d$ and $8\cdot d$) in Figure~\ref{fig:compDels} we can see that for the edgewise blade DELs there is no notable difference between the three settings. For the flapwise blade moments however the DELs are lowest for the setting with wakes and a $8\cdot d$ distance and highest for a $4\cdot d$ distance while the freestream setting lies in the middle.
+Comparing the DELs in the three different settings (free stream and wake with $4\cdot d$ and $8\cdot d$) in Figure~\ref{fig:compDels} we can see that for the edgewise blade DELs there is no notable difference between the three settings. For the flapwise blade moments however the DELs are lowest for the setting with wakes and a $8\cdot d$ distance and highest for a $4\cdot d$ distance while the free stream setting lies in the middle.
 Regarding the tower DELs the differences are more clear, especially in the case of fore-aft bending. Here again the $8\cdot d$ distance setting has lowest DELs at most wind speeds (except 5m/s) while the free stream setting has lower DELs then the $4\cdot d$ setting for moderate wind speeds.
 The fact that the $8\cdot d$ distance case results in lower DELs then the $4\cdot d$ distance case is as expected as we saw in the previous chapter that the turbulence intensity is lower for the setting with larger distances between neighboring turbines. However, we would have thought that the free stream setting results in even lower DELs since the turbulence intensity was shown to be lower with the NTM model then in the Frandsen model. 
 
@@ -865,7 +864,7 @@ This tower was designed with an Eigenfrequency of $0.2658 Hz$. There is no obvio
 \end{figure}
 
 
-\section{Extreme loads}
+\section{CIP 6b: Extreme loads}
 \subsection{Extreme conditions}
 \begin{itemize}
 \item Load case 1.3: \\
@@ -999,13 +998,13 @@ After the failure the signal drops to zero and then the gust appears and the ret
 \label{tab:exloadtable}
 \end{table}
 
-For tower base and blade root all max and min values of the 6 variables have been extracted from the signal data in Matlab. Values are in KN (forces) and kNm (moments). The first observation is that load case 2.3 dominates load case 1.5 with respect to the amplitudes. The more extreme values of the time series occur in the last and before-last column of the table. Only for some variables we find higher amplitudes for loadcase 1.5, e.g. TwrBsFzt and TwrBsMzt. 
+For tower base and blade root all max and min values of the 6 variables have been extracted from the signal data in Matlab. Values are in KN (forces) and kNm (moments). The first observation is that load case 2.3 dominates load case 1.5 with respect to the amplitudes. The more extreme values of the time series occur in the last and before-last column of the table. Only for some variables we find higher amplitudes for load case 1.5, e.g. TwrBsFzt and TwrBsMzt. 
 Within the load case 2.3 there is no clearly dominant setting. The 1-year gust and the 50-year gust setting both have similar amplitudes in the signals. Sometimes EOG\_01 has lower min or higher max values and sometimes EOG\_50 wins.
 
 \section{Summary}
 In this design project the entire process of designing a wind turbine has been carried out. We have seen that it is a very complex undertaking requiring a lot of expertise from engineering, physics and also meteorology. The team has to be very accurate at any point and take into account a lot of aspects. The site conditions must be investigated in order to find out about the possible revenues of the turbine and thus the financial revenue during its lifetime. Economic feasibility is the pre-condition of the whole project for all stakeholders.
 The wind distribution, the design of the rotor blade and the mechanical
-and electrical efficiency must be taken into account. Wind turbine dynamics are an important aspect as well. Many design decisions must be met which influence the possible engery gain and also the further design process. Security is the next big topic. A load analysis has to be carried out regarding fatigue and extreme loads, otherwise the turbine can not be certified.
+and electrical efficiency must be taken into account. Wind turbine dynamics are an important aspect as well. Many design decisions must be met which influence the possible energy gain and also the further design process. Security is the next big topic. A load analysis has to be carried out regarding fatigue and extreme loads, otherwise the turbine can not be certified.
 All these steps and many more which have not been treated in this project require a professional team and a good time-management in order to successfully design a good turbine.
 
 \end{document}
