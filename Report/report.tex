@@ -624,6 +624,224 @@ A comparison of the wind field under free stream conditions with the wind field 
 Failures can occur with respect to electrical components and the turbine control. These failures must be simulated in order to ensure structural integrity of the turbine. Possible faults are defect pitch or yaw actuators, which lead to the turbine being unable to reduce or increase forces and might cause a breakdown. Also it could be that sensors are defect and supply wrong data which would result in a fatal mis-behavior of the turbine. 
 Likewise the drive train and gearbox might be affected by broken parts causing severe failure of the turbine if not handled correctly. The generator of a turbine can be subject to electromechanical problems, e.g. torque scaling fault, overheating, asymmetries etc.
 
-\section{Load simulation}
+\section{Fatigue loads}
+\subsection{FAST}
+The wind fields from the previous chapter will now be used to run simulations with FAST for fatigue analysis.
+We use the same wind speeds of 5,10,15 and 25m/s and free stream conditions. 
+
+Figure~\ref{fig:towersideside} shows the side-to-side bending moment of the tower for the different wind speeds.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/TwrBsMxt.png}
+  \caption{5m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/TwrBsMxt.png}
+  \caption{10m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/TwrBsMxt.png}
+  \caption{15m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/TwrBsMxt.png}
+  \caption{25m/s}
+\end{subfigure}
+\caption{Tower side-to-side bending moments}
+\label{fig:towersideside}
+\end{figure}
+
+Figure~\ref{fig:towerforeaft} shows the fore-aft bending moment of the tower for the different wind speeds.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/TwrBsMyt.png}
+  \caption{5m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/TwrBsMyt.png}
+  \caption{10m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/TwrBsMyt.png}
+  \caption{15m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/TwrBsMyt.png}
+  \caption{25m/s}
+\end{subfigure}
+\caption{Tower fore-aft bending moments}
+\label{fig:towerforeaft}
+\end{figure}
+
+Figure~\ref{fig:bladeflap} shows the flapwise bending moment of the root for the different wind speeds.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/RootMFlp2.png}
+  \caption{5m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/RootMFlp2.png}
+  \caption{10m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/RootMFlp2.png}
+  \caption{15m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/RootMFlp2.png}
+  \caption{25m/s}
+\end{subfigure}
+\caption{Blade flapwise bending moments}
+\label{fig:bladeflap}
+\end{figure}
+
+Figure~\ref{fig:bladeedge} shows the flapwise bending moment of the root for the different wind speeds.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/RootMedg2.png}
+  \caption{5m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/RootMedg2.png}
+  \caption{10m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/RootMedg2.png}
+  \caption{15m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/RootMedg2.png}
+  \caption{25m/s}
+\end{subfigure}
+\caption{Blade edgewise bending moments}
+\label{fig:bladeedge}
+\end{figure}
+
+\subsection{Damage equivalent loads under free stream}
+The DELs under free stream conditions for tower and root can be found in Table~\ref{tab:DELfree}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\textbf{v} & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ \\
+\hline
+\textbf{Tower side-to-side} & $811.645$ & $1466.761$ & $2112.274$ & $4974.035$ \\
+\hline
+\textbf{Tower fore-aft} & $2382.669$ & $2990.821$ & $3862.967$ & $6328.944$	\\
+\hline
+\textbf{Blade edgewise} & $1924.045$ & $2387.446$ & $2432.449$ & $2552.909$	\\
+\hline
+\textbf{Blade flapwise} & $738.816$ & $1426.071$ & $1765.008$ & $2353.317$	\\
+\hline
+\end{tabular}
+\caption{DELs under free stream conditions}
+\label{tab:DELfree}
+\end{table}
+
+
+\subsection{Damage equivalent loads under wake condition}
+The DELs under wake condition for tower and root can be found in Table~\ref{tab:DELwake}.
+
+\begin{table}[H]
+\begin{tabular}{| c | c | c | c | c |c | c | c | c |}
+\hline
+\multicolumn{1}{|c|}{\textbf{neighboring distance}} & \multicolumn{4}{c|}{$4\cdot d$} & \multicolumn{4}{c|}{$8\cdot d$} \\ 
+\hline
+\textbf{v} & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ \\
+\hline
+\textbf{Tower side-to-side} & $775.607$ & $1404.149$ & $2087.209$ & $5419.259$ & $810.116$ & $1445.473$ & $2132.343$ & $5356.443$ \\
+\hline
+\textbf{Tower fore-aft} & $3050.375$ & $3695.06$ & $3620.304$ & $6162.187$ & $2651.542$ & $2677.856$ & $3516.175$ & $5957.573$	\\
+\hline
+\textbf{Blade edgewise} & $1940.040$ & $2419.468$ & $2416.637$ & $2555.216$ & $1923.647$ & $2397.627$ & $2436.092$ & $2560.151$	\\
+\hline
+\textbf{Blade flapwise} & $814.974$ & $1445.028$ & $1701.446$ & $2308.930$ & $791.422$ & $1351.939$ & $1721.214$ & $2299.36$	\\
+\hline
+\end{tabular}
+\caption{DELs under wake condition}
+\label{tab:DELwake}
+\end{table}
+
+Comparing the DELs in the three different settings (free stream and wake with $4\dcot d$ and $8\cdot d$) in Figure~\ref{fig:compDels} we can see that for the edgewise blade DELs there is no notable difference between the three settings. For the flapwise blade moments however the DELs are lowest for the setting with wakes and a $8\cdot d$ distance and highest for a $4\cdot d$ distance while the freestream setting lies in the middle.
+Regarding the tower DELs the differences are more clear, especially in the case of fore-aft bending. Here again the $8\cdot d$ distance setting has lowest DELs at most wind speeds (except 5m/s) while the free stream setting has lower DELs then the $4\cdot d$ setting for moderate wind speeds.
+The fact that the $8\cdot d$ distance case results in lower DELs then the $4\cdot d$ distance case is as expected as we saw in the previous chapter that the turbulence intensity is lower for the setting with larger distances between neighboring turbines. However, we would have thought that the free stream setting results in even lower DELs since the turbulence intensity was shown to be lower with the NTM model then in the Frandsen model. 
+
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{figures/delsTwrSide.png}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{figures/delsTwrFore.png}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{figures/delsBldEdge.png}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{figures/delsBldFlap.png}
+\end{subfigure}
+\caption{Comparison of the DELs}
+\label{fig:compDels}
+\end{figure}
+
+
+\subsection{Statistical max/min sensor values}
+The statistical max and min values of the sensors analyzed above for all settings can be seen in Table~\ref{tab:statmaxmin}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c |}
+\hline
+\textbf{sensor} & \textbf{max} & \textbf{min} \\
+\hline
+Tower side-to-side & $5419.259$ & $775.607$  \\
+\hline
+Tower fore-aft & $6328.944$ & $2382.669$	\\
+\hline
+Blade edgewise & $2560.151$ & $1923.647$ 	\\
+\hline
+Blade flapwise & $2353.317$ & $738.816$ 	\\
+\hline
+\end{tabular}
+\caption{Max and mins of sensor values}
+\label{tab:statmaxmin}
+\end{table}
+
+For all of the four sensors the max and min values always come from the same of the three settings meaning that in that setting there is a high span betwenn the $5m/s$ DEL and the $25m/s$ DEL. For instance the tower side-to-side max and min DEL values both come from wake conditions with $4\cdot d$ distance while for the tower fore-aft DEL the extreme values come from free stream conditions.
+
+\subsection{Power spectral density}
+
+
+
+\section{Extreme loads}
+\subsection{Extreme conditions}
+\begin{itemize}
+\item Load case 1.3: \\
+	Power production under the ETM (extreme turbulence model). This load case is important because extreme turbulences can damage the turbine's components much more than normal turbulence which reduces lifetime. These conditions must thus be simulated 
+\item Load case 1.5: \\
+	Power production under the EWS (extreme wind shear). Extreme wind shear occurs when there is a high vertical (or horizontal) wind speed profile, which means that wind speeds differ considerably depending on the location on the rotor area. Blades are loaded non-linearly and also the drive-train can receive varying loads which might cause damages.
+\item Load case 2.1: \\
+	Control system fault or loss of electrical network. During production (NTM) a non-functioning control system or a turbine without electrical network is in extreme conditions because missing control or even erroneous control of the turbine, e.g. wrong pitch angel, can result in production losses and even failure or damages of the turbine.
+\item Load case 6.1: \\
+	The turbine is in parked position and the underlying wind model is EWM (extreme wind) with a 50-year recurrence. This practically means an exceptionally strong gust which occurs statistically only once within 50 years and might only last a few seconds (3 seconds). Clearly, such an extreme condition can pose severe problems to a turbine including breaking of components.
+\item Load case 8.1: \\
+	The turbine is transported, assembled, maintained or repaired. Even under the NTM and wind speeds defined by the manufacturer these steps in the lifetime of a turbine must also be simulated because wrong handling during any of these steps can damage parts of the turbine.
+\end{itemize}
+
+\section{Summary}
+In this design project the entire process of designing a wind turbine has been carried out. We have seen that it is a very complex undertaking requiring a lot of expertise from engineering, physics and also meteorology. The team has to be very accurate at any point and take into account a lot of aspects. The site conditions must be investigated in order to find out about the possible revenues of the turbine and thus the financial revenue during its lifetime. Economic feasibility is the pre-condition of the whole project for all stakeholders.
+The wind distribution, the design of the rotor blade and the mechanical
+and electrical efficiency must be taken into account. Wind turbine dynamics are an important aspect as well. Many design decisions must be met which influence the possible engery gain and also the further design process. Security is the next big topic. A load analysis has to be carried out regarding fatigue and extreme loads, otherwise the turbine can not be certified.
+All these steps and many more which have not been treated in this project require a professional team and a good time-management in order to successfully design a good turbine.
 
 \end{document}

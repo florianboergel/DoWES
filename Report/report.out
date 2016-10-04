@@ -31,3 +31,12 @@
 \BOOKMARK [2][-]{subsection.5.4}{Wind fields with TurbSim}{section.5}% 31
 \BOOKMARK [2][-]{subsection.5.5}{Wake modelling with Frandsen}{section.5}% 32
 \BOOKMARK [2][-]{subsection.5.6}{Possible faults}{section.5}% 33
+\BOOKMARK [1][-]{section.6}{Fatigue loads}{}% 34
+\BOOKMARK [2][-]{subsection.6.1}{FAST}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.2}{Damage equivalent loads under free stream}{section.6}% 36
+\BOOKMARK [2][-]{subsection.6.3}{Damage equivalent loads under wake condition}{section.6}% 37
+\BOOKMARK [2][-]{subsection.6.4}{Statistical max/min sensor values}{section.6}% 38
+\BOOKMARK [2][-]{subsection.6.5}{Power spectral density}{section.6}% 39
+\BOOKMARK [1][-]{section.7}{Extreme loads}{}% 40
+\BOOKMARK [2][-]{subsection.7.1}{Extreme conditions}{section.7}% 41
+\BOOKMARK [1][-]{section.8}{Summary}{}% 42
