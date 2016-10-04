@@ -36,11 +36,11 @@
 \contentsline {section}{\numberline {7}CIP 6a: Fatigue loads}{26}{section.7}
 \contentsline {subsection}{\numberline {7.1}FAST}{26}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Damage equivalent loads under free stream condition}{30}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Damage equivalent loads under wake condition}{30}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.3}Damage equivalent loads under wake condition}{31}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Statistical max/min sensor values}{32}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Power spectral density}{32}{subsection.7.5}
-\contentsline {section}{\numberline {8}CIP 6b: Extreme loads}{33}{section.8}
-\contentsline {subsection}{\numberline {8.1}Extreme conditions}{33}{subsection.8.1}
+\contentsline {subsection}{\numberline {7.5}Power spectral density}{33}{subsection.7.5}
+\contentsline {section}{\numberline {8}CIP 6b: Extreme loads}{34}{section.8}
+\contentsline {subsection}{\numberline {8.1}Extreme conditions}{34}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Simulation of extreme load cases 1.5 and 2.3}{34}{subsection.8.2}
 \contentsline {subsection}{\numberline {8.3}Extreme load table}{38}{subsection.8.3}
 \contentsline {section}{\numberline {9}Summary}{39}{section.9}

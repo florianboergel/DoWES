@@ -360,7 +360,7 @@ The following figures display the results for $c_p, c_t$ and $c_q$ with a tip-sp
 \caption{Power coefficient}
 \label{fig:c-lambda}
 \end{figure} 
-The $c_p-\lambda$ curve shows different power coefficients at different tip-speeds and pitch-angles. Regarding the maximum for $c_p$ at each curve we identify that they appear at different tip-speed ratios. At pitch angle 5$^\circ$ the maximum $c_p$ is at 0.564 which is very close to the theoretical maximum of 0.592.
+The $c_p-\lambda$ curve shows different power coefficients at different tip-speeds and pitch-angles. Regarding the maximum for $c_p$ at each curve we identify that they appear at different tip-speed ratios. At pitch angle 5$^\circ$ the maximum $c_p$ is at 0.554 which is very close to the theoretical maximum of 0.592.
 
 \begin{figure}[H]
 \centering
@@ -377,7 +377,35 @@ From 0$^\circ$ to 10$^\circ$ the thrust coefficient reaches high values. For hig
 \caption{Torque coefficient}
 \label{fig:torque-coeff}
 \end{figure} 
-Figure \ref{fig:torque-coeff} shows the torque coefficient for different pitch angles. Compared to the $c_p-\lambda$ the maximums are shifted to the left and decrease with increasing pitch angle.  
+Figure \ref{fig:torque-coeff} shows the torque coefficient for different pitch angles. Compared to the $c_p-\lambda$ the maximums are shifted to the left and decrease with increasing pitch angle. 
+
+In the following the simulated results are compared to the corresponding curves from the literature. Figure~\ref{fig:power-coeff-lit} shows a power curve from literature. The maximum $c_p$ is close to 0.52 at zero degree pitch and design tip speed ratio. The results from figure~\ref{fig:c-lambda} is somewhat similar with the maximum at 0.554. Also the shape of pitch angles 0, 10, 20 and 30 degree of the designed turbine have a similar shape compared to the power curve from the literature. The designed turbine seems to overestimate the $c_p$ for higher tip speed ratios at pitch angle $5^{\circ}$ and $10^{\circ}$. According to the literature lower $c_p$ values should be assumed.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{../CIP_3/Report/power_coeff_literature.png}
+\caption{Power coefficient from literature}
+\label{fig:power-coeff-lit}
+\end{figure} 
+
+The same comparison has been done for the thrust coefficient. Figure~\ref{fig:thrust-coeff-lit} shows the expected outcome predicted by the literature. It can be seen that the thrust coefficient for the designed turbine looks very similar in it's shape compared to the thrust coefficient shown in figure~\ref{fig:thrust-coeff-lit}. For high pitch angles the curve reaches zero quickly. Lower pitch angles lead to an increasing thrust coefficient for higher tip speed ratios.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{../CIP_3/Report/thrust_coeff_literature.png}
+\caption{Thrust coefficient from literature}
+\label{fig:thrust-coeff-lit}
+\end{figure} 
+
+At last the predicted torque coefficient was evaluated. The designed turbine shows the same deviation that was already seen in the power curve. Pitch angles 5 and 10 degree seem to be a little bit off for higher tip speed ratios.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{../CIP_3/Report/torque_coeff_literature.png}
+\caption{Torque coefficient from literature}
+\label{fig:torque-coeff-lit}
+\end{figure} 
 \subsection{Rotor rated speed}
 In task 3.4 we were asked to calculate the resulting rotor speed for a rated wind speed of 8 m/s. For the calculation we used our design tip speed ratio:
 \begin{align}
