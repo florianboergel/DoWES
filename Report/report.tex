@@ -435,7 +435,7 @@ For tower design resonances of excitation frequencies from the rotating blades m
 	f_0 = \Omega_{rated} \cdot 1.1 = \frac{14.5}{60} Hz \cdot 1.1 = 0.2658 Hz
 \end{equation*}
 
-\subsection{Desiugn range}
+\subsection{Design range}
 The design range of our turbine is a classical soft-stiff design which results in large wave excitation but allows variable speed turbine design since resonances with tower eigenfrequencies at frequencies lower than rated rotor speed are avoided. There are a few other common design approaches one of which is the soft-soft design where the eigenfrequency lies within the resonance range of the rotor. In this case certain rotor frequencies have to be excluded in order to avoid resonances.
 
 \subsection{Wall thickness}
@@ -725,7 +725,7 @@ Figure~\ref{fig:bladeedge} shows the flapwise bending moment of the root for the
 \label{fig:bladeedge}
 \end{figure}
 
-\subsection{Damage equivalent loads under free stream}
+\subsection{Damage equivalent loads under free stream condition}
 The DELs under free stream conditions for tower and root can be found in Table~\ref{tab:DELfree}.
 
 \begin{table}[H]
@@ -775,7 +775,6 @@ Comparing the DELs in the three different settings (free stream and wake with $4
 Regarding the tower DELs the differences are more clear, especially in the case of fore-aft bending. Here again the $8\cdot d$ distance setting has lowest DELs at most wind speeds (except 5m/s) while the free stream setting has lower DELs then the $4\cdot d$ setting for moderate wind speeds.
 The fact that the $8\cdot d$ distance case results in lower DELs then the $4\cdot d$ distance case is as expected as we saw in the previous chapter that the turbulence intensity is lower for the setting with larger distances between neighboring turbines. However, we would have thought that the free stream setting results in even lower DELs since the turbulence intensity was shown to be lower with the NTM model then in the Frandsen model. 
 
-
 \begin{figure}[H]
   \centering
 \begin{subfigure}{0.40\textwidth}
@@ -800,27 +799,70 @@ The statistical max and min values of the sensors analyzed above for all setting
 
 \begin{table}[H]
 \centering
-\begin{tabular}{| c | c | c |}
-\hline
-\textbf{sensor} & \textbf{max} & \textbf{min} \\
-\hline
-Tower side-to-side & $5419.259$ & $775.607$  \\
-\hline
-Tower fore-aft & $6328.944$ & $2382.669$	\\
-\hline
-Blade edgewise & $2560.151$ & $1923.647$ 	\\
-\hline
-Blade flapwise & $2353.317$ & $738.816$ 	\\
-\hline
+\begin{tabular}{ | c | c | c | c | c | c | c | c | c | }
+	 \hline
+	 & \multicolumn{2}{c|}{Tower side-side} &  \multicolumn{2}{c|}{Tower fore-aft} & \multicolumn{2}{c|}{Blade flapwise} & \multicolumn{2}{c|}{Blade edgewise } \\
+	 \hline
+	 & Min & Max & Min & Max & Min & Max & Min & Max \\
+	 \hline
+	 NTM 5m/s & -1272 & 1163 & 12310 & 17310 & 1452 & 2626 & -1328 & 1304 \\
+	 \hline
+	 NTM 10m/s & -629.6 & 1635 & 9931 & 21010 & 778.8 & 3110 & -1678 & 1285 \\
+	 \hline
+	 NTM 15m/s & -2701 & 3865 & 4047 & 20430 & -306.5 & 3192 & -1798 & 1580 \\ 
+	 \hline
+	 NTM 25m/s & -8513 & 8904 & 732.7 & 23270 & -1855 & 2903 & -2001 & 1684 \\ 
+	 \hline
+	 4d, 5m/s & -1271 & 1504 & 4610 & 19290 & 1016 & 2861 & -1332 & 1314 \\ 
+	 \hline
+	 4d, 10m/s & -2666 & 2637 & 8794 & 40330 & 766.2 & 5109 & -1807 & 1775 \\ 
+	 \hline
+	 4d, 15m/s & -2481 & 3642 & 3418 & 19770 & -291.7 & 3247 & -1802 & 1609 \\ 
+	 \hline
+	 4d, 25m/s & -8523 & 9251 & 260.2 & 22730 & -1844 & 2894 & -1992 & 1710 \\ 
+	 \hline
+	 8d, 5m/s & -1183 & 1529 & 5393 & 19760 & 1024 & 2908 & -1330 & 1306 \\ 
+	 \hline
+	 8d, 10m/s & -2912 & 2818 & 8901 & 38050 & 774.3 & 4984 & -1866 & 1838 \\ 
+	 \hline
+	 8d, 15m/s & -2397 & 3576 & 3439 & 19730 & -272.9 & 3206 & -1804 & 1602 \\ 
+	 \hline
+	 8d, 25m/s & -8490 & 8621 & 1003 & 23480 & -1889 & 2921 & -2021 & 1684 \\ 
+	 \hline
 \end{tabular}
 \caption{Max and mins of sensor values}
 \label{tab:statmaxmin}
 \end{table}
 
-For all of the four sensors the max and min values always come from the same of the three settings meaning that in that setting there is a high span betwenn the $5m/s$ DEL and the $25m/s$ DEL. For instance the tower side-to-side max and min DEL values both come from wake conditions with $4\cdot d$ distance while for the tower fore-aft DEL the extreme values come from free stream conditions.
+
 
 \subsection{Power spectral density}
+For the blade flapwise bending moment and for the tower fore-aft bending moment under wake conditions (with $8\cdot d$ distance) the power spectral density plots can be found in Figure~\ref{fig:psdplots}. Two different wind speeds of 5 m/s and 25 m/s were chosen.
+The overall pattern of the spectral density is similar in all cases. Frequencies below 1 Hz are most powerful but occur less then higher frequencies. Higher wind speeds leads to higher frequencies and flattens the spectral profile a little.
 
+This tower was designed with an Eigenfrequency of $0.2658 Hz$. There is no obvious effect on the power spectral density of the Eigenfrequency. However, the power spectral density in all cases has these spikes which should be in same way linked to the Eigenfrequency of the system components, i.e. multiples of the blades flapwise and towers eigenfrequencies.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png}
+    \caption{Blade flapwise at 5 m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png}
+      \caption{Blade flapwise at 25 m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png}
+      \caption{Tower fore-aft at 5 m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png}
+        \caption{Tower fore-aft at 25 m/s}
+\end{subfigure}
+\caption{Power spectral density plots}
+\label{fig:psdplots}
+\end{figure}
 
 
 \section{Extreme loads}
@@ -837,6 +879,128 @@ For all of the four sensors the max and min values always come from the same of 
 \item Load case 8.1: \\
 	The turbine is transported, assembled, maintained or repaired. Even under the NTM and wind speeds defined by the manufacturer these steps in the lifetime of a turbine must also be simulated because wrong handling during any of these steps can damage parts of the turbine.
 \end{itemize}
+
+\subsection{Simulation of extreme load cases 1.5 and 2.3}
+Now we will simulate two extreme load cases. Load case 1.5 is defined by power production plus extreme wind shear (EWS). Load case 2.3 stands for power production plus fault and extreme operation gust.
+Within the load case 2.3 two different gusts are used: The 1-year return gust
+(EOG\_1\_R) and the 50-year return gust (EOG\_50\_R). The approach is as follows: \\
+
+First we created winds by using the provided input file which we adopted to our turbine and running the IECWind.exe. As mentioned in the task description only three of the set of generated files will be used: EOG\_01\_R.wnd, EOG\_50\_R.wnd” and EWSV00\_R.wnd. Next the .ipt and .fst input files are adopted to our turbine and the generated wind files. Then the supplied Matlab script is used to derive results from the FAST output files. 
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png}
+    \caption{Tower fore-aft for EOG\_50}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50/RootMFlp2.png}
+    \caption{Blade flapwise for EOG\_50}
+\end{subfigure}
+\caption{Time series EOG}
+\label{fig:lc23signal}
+\end{figure}
+
+Let us have a look at the time series now. For load case 2.3 we consider the same sensors as in the fatigue analysis (tower fore-aft and blade flapwise bending moments) for the 50-year return gust, see Figure~\ref{fig:lc23signal}. With the occurrence of the gust and the failure a high peak in both signals follows and after that a steep decrease to zero with some oscillations and then a slow recovering of the signal. The reaction of the controller accounts for this behavior, because it changes the pitch angle in order to cope with the gust, see Figure~\ref{fig:lc23pitch}.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\linewidth]{../CIP_6/FASTextreme/EOG_50/BldPitch2.png}
+    \caption{Pitch for EOG\_50}
+\label{fig:lc23pitch}
+\end{figure}
+
+The signals for the 1-year return gust look similar (here a gust of +4.5m/s is simulated instead of +6m/s as in the case of the 50-year gust).\\
+For load case 1.5 we obtain the signals in Figure~\ref{fig:lc15signal}.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png}
+    \caption{Tower fore-aft for EWS}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EWSVR/RootMFlp2.png}
+    \caption{Blade flapwise for EWS}
+\end{subfigure}
+\caption{Time series EWS}
+\label{fig:lc15signal}
+\end{figure}
+
+Here we note that the extreme shear event also causes a peak in the signals, which is however especially for the tower not as high as in the case of EOG. Also recovery of the signal is much quicker: After only about 10 seconds the signals have returned to normal oscillations as before the extreme event. Likewise the controller reacted by adapting pitch angles of the blades in order to reduce power and loads due to the extreme shear.\\
+
+No impact could be found regarding the timing of the failure except a shift of the event on the timescale.
+Concerning the influence of the brake we modified the input parameters a little. Activation time and time for nominal torque of the brake were considerably reduced (about 25\%) while the nominal torque of the break was increased (around 20\%).
+The recovery of the signal now goes much faster, see Figure~\ref{fig:lc23breaksignal}. Here the signal already drops back to the values before the event at around $t=300s$ whereas with the original brake settings this process takes approximately twice as long (compare Figure~\ref{fig:lc23signal}.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png}
+    \caption{Tower fore-aft}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png}
+    \caption{Blade flapwise}
+\end{subfigure}
+\caption{Modified breaks for EOG\_50}
+\label{fig:lc23breaksignal}
+\end{figure}
+
+A change in the time of the failure (TimeGenOf in the input file) does also affect the signal. We have had the failure occur before the extreme gust. The corresponding signal can be found in Figure~\ref{fig:lc23failtime}.
+After the failure the signal drops to zero and then the gust appears and the return to normal operation of the turbine starts.
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png}
+    \caption{Tower fore-aft}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png}
+    \caption{Blade flapwise}
+\end{subfigure}
+\caption{Changed failure time for EOG\_50}
+\label{fig:lc23failtime}
+\end{figure}
+
+
+\subsection{Extreme load table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ | l | l | l | l | l | l | }
+\hline
+	\textbf{Group} & \textbf{Variable} & \textbf{Min/Max} & \textbf{DLC 1.5 EWS} & \textbf{DLC 2.3 EOG01} & \textbf{DLC 2.3 EOG50} \\ \hline \hline
+	Tower base & Fx & Min & 206.9 & -36.4 & -20.01 \\ \hline
+	Tower base & Fx & Max & 219.5 & 326.5 & 324.8 \\ \hline
+	Tower base & Fy & Min & -10.1 & -56.23 & -59.6 \\ \hline
+	Tower base & Fy & Max & 1.61 & 49.4 & 47.23 \\ \hline
+	Tower base & Fz & Min & -2002 & -2000 & -2001 \\ \hline
+	Tower base & Fz & Max & -1993 & -1969 & -1971 \\ \hline
+	Tower base & Mx & Min & 630.9 & -1680 & -2084 \\ \hline
+	Tower base & Mx & Max & 1630 & 2216 & 2567 \\ \hline
+	Tower base & My & Min & 17590 & -3825 & -2380 \\ \hline
+	Tower base & My & Max & 18470 & 26580 & 26490 \\ \hline
+	Tower base & Mz & Min & -47.01 & -114.7 & -115 \\ \hline
+	Tower base & Mz & Max & 158.4 & 65.48 & 67.85 \\ \hline
+	Blade root & Fx & Min & 51.93 & -7.054 & -2.584 \\ \hline
+	Blade root & Fx & Max & 99.58 & 97.53 & 101.2 \\ \hline
+	Blade root & Fy & Min & -53.65 & -53.05 & -53.83 \\ \hline
+	Blade root & Fy & Max & 28.19 & 38.35 & 38.11 \\ \hline
+	Blade root & Fz & Min & 196.9 & 184 & 186.2 \\ \hline
+	Blade root & Fz & Max & 281.2 & 339.1 & 337.6 \\ \hline
+	Blade root & Mx & Min & -296.2 & -470.9 & -465.8 \\ \hline
+	Blade root & Mx & Max & 726.5 & 684.5 & 710.5 \\ \hline
+	Blade root & My & Min & 947.5 & -277.6 & -185.3 \\ \hline
+	Blade root & My & Max & 1966 & 1839 & 1943 \\ \hline
+	Blade root & Mz & Min & 0.7765 & -0.4313 & -0.4882 \\ \hline
+	Blade root & Mz & Max & 12.05 & 16.25 & 13.77 \\ \hline
+\end{tabular}
+\caption{Extreme load table}
+\label{tab:exloadtable}
+\end{table}
+
+For tower base and blade root all max and min values of the 6 variables have been extracted from the signal data in Matlab. Values are in KN (forces) and kNm (moments). The first observation is that load case 2.3 dominates load case 1.5 with respect to the amplitudes. The more extreme values of the time series occur in the last and before-last column of the table. Only for some variables we find higher amplitudes for loadcase 1.5, e.g. TwrBsFzt and TwrBsMzt. 
+Within the load case 2.3 there is no clearly dominant setting. The 1-year gust and the 50-year gust setting both have similar amplitudes in the signals. Sometimes EOG\_01 has lower min or higher max values and sometimes EOG\_50 wins.
 
 \section{Summary}
 In this design project the entire process of designing a wind turbine has been carried out. We have seen that it is a very complex undertaking requiring a lot of expertise from engineering, physics and also meteorology. The team has to be very accurate at any point and take into account a lot of aspects. The site conditions must be investigated in order to find out about the possible revenues of the turbine and thus the financial revenue during its lifetime. Economic feasibility is the pre-condition of the whole project for all stakeholders.

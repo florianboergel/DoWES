@@ -1,0 +1,12 @@
+!OUTPUT FROM IECWIND v4.12 (19-Jun-2001) - IEC 61400-1 2nd EDITION.
+ ! 1-YEAR EXTREME WIND MODEL IEC CONDITION
+!---------------------------------------------------------------
+!Stats for this wind file:
+!     The maximum wind speed is 44.62 m/s.
+!     The wind inflow inclination angle is  0.0  degrees to the horizontal.
+!---------------------------------------------------------------
+ ! Time	Wind	Wind	Vertical	Horiz.	Pwr.Law	Lin.Vert.	Gust
+ !	Speed	Dir	Speed	Shear	Vert.Shr	Shear	Speed
+ ! (sec)	(m/s)	(Deg)	(m/s)				(m/s)
+    0.000	   44.625	  -15.000	    0.000	    0.000	    0.110	    0.000	    0.000
+  100.000	   44.625	  -15.000	    0.000	    0.000	    0.110	    0.000	    0.000
