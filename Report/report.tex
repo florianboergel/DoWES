@@ -628,104 +628,34 @@ Likewise the drive train and gearbox might be affected by broken parts causing s
 The wind fields from the previous chapter will now be used to run simulations with FAST for fatigue analysis.
 We use the same wind speeds of 5,10,15 and 25m/s and free stream conditions. 
 
-Figure~\ref{fig:towersideside} shows the side-to-side bending moment of the tower for the different wind speeds.
+Figure~\ref{fig:bendingmoments5ms} shows the signals for the four variables (tower side-to-side, tower fore-aft, blade flapwise and blade edgewise) at a wind speed of $v=5m/s$. Units are kNm. The corresponding signals for higher windspeeds are analogue with a different scaling and different frequencies. 
+
+We can see that the tower fore-aft bending moments are highest while side-to-side tower moments and blade edgewise moments are moderate. The oscillations are very regular in the case of the edgewise bending moments of the blade. For the other cases we see different maximums and minimums and some evolution in the course of the signal.
 
 \begin{figure}[H]
   \centering
 \begin{subfigure}{0.40\textwidth}
   \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/TwrBsMxt.png}
-  \caption{5m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/TwrBsMxt.png}
-  \caption{10m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/TwrBsMxt.png}
-  \caption{15m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/TwrBsMxt.png}
-  \caption{25m/s}
-\end{subfigure}
 \caption{Tower side-to-side bending moments}
-\label{fig:towersideside}
-\end{figure}
-
-Figure~\ref{fig:towerforeaft} shows the fore-aft bending moment of the tower for the different wind speeds.
-
-\begin{figure}[H]
-  \centering
+\end{subfigure}
 \begin{subfigure}{0.40\textwidth}
   \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/TwrBsMyt.png}
-  \caption{5m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/TwrBsMyt.png}
-  \caption{10m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/TwrBsMyt.png}
-  \caption{15m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/TwrBsMyt.png}
-  \caption{25m/s}
-\end{subfigure}
 \caption{Tower fore-aft bending moments}
-\label{fig:towerforeaft}
-\end{figure}
-
-Figure~\ref{fig:bladeflap} shows the flapwise bending moment of the root for the different wind speeds.
-
-\begin{figure}[H]
-  \centering
+\end{subfigure}
 \begin{subfigure}{0.40\textwidth}
   \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/RootMFlp2.png}
-  \caption{5m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/RootMFlp2.png}
-  \caption{10m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/RootMFlp2.png}
-  \caption{15m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/RootMFlp2.png}
-  \caption{25m/s}
-\end{subfigure}
 \caption{Blade flapwise bending moments}
-\label{fig:bladeflap}
-\end{figure}
-
-Figure~\ref{fig:bladeedge} shows the flapwise bending moment of the root for the different wind speeds.
-
-\begin{figure}[H]
-  \centering
+\end{subfigure}
 \begin{subfigure}{0.40\textwidth}
   \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/RootMedg2.png}
-  \caption{5m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/RootMedg2.png}
-  \caption{10m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/RootMedg2.png}
-  \caption{15m/s}
-\end{subfigure}
-\begin{subfigure}{0.40\textwidth}
-  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/RootMedg2.png}
-  \caption{25m/s}
-\end{subfigure}
 \caption{Blade edgewise bending moments}
-\label{fig:bladeedge}
+\end{subfigure}
+\caption{Time series of bending moments for different variables at $v=5m/s$}
+\label{fig:bendingmoments5ms}
 \end{figure}
 
 \subsection{Damage equivalent loads under free stream condition}
-The DELs under free stream conditions for tower and root can be found in Table~\ref{tab:DELfree}.
+The DELs under free stream conditions for tower and root can be found in Table~\ref{tab:DELfree}. Damage equivalent loads are used to represent the cyclic loads of a time series in one numeric value. We find confirmation for the result from the previous section: Highest loads occur in case of the tower fore-aft and edgewise blade bending moments. The loads increase with the wind speed over-proportionally for all variables. 
 
 \begin{table}[H]
 \centering

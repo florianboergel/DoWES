@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.31)  4 OCT 2016 21:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.31)  4 OCT 2016 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -942,330 +942,226 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 608--618
  []
 
 [25 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png
- (PNG copy)>]
-<../CIP_6/FAST/Plots_ws5/TwrBsMxt.png, id=474, 421.575pt x 316.0608pt>
+ (PNG copy)>] [26 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/Turb
+Sim/wind_wake_4_5ms.png (PNG copy)>]
+<../CIP_6/FAST/Plots_ws5/TwrBsMxt.png, id=481, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png>
 Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png used on input lin
-e 636.
+e 638.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
-<../CIP_6/FAST/Plots_ws10/TwrBsMxt.png, id=475, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws10/TwrBsMxt.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws10/TwrBsMxt.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws10/TwrBsMxt.png used on input li
-ne 640.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
-
-<../CIP_6/FAST/Plots_ws15/TwrBsMxt.png, id=476, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws15/TwrBsMxt.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws15/TwrBsMxt.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws15/TwrBsMxt.png used on input li
-ne 644.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
-
-<../CIP_6/FAST/Plots_ws25/TwrBsMxt.png, id=477, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws25/TwrBsMxt.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws25/TwrBsMxt.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws25/TwrBsMxt.png used on input li
-ne 648.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
- [26 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_wake
-_4_5ms.png (PNG copy)>]
-<../CIP_6/FAST/Plots_ws5/TwrBsMyt.png, id=486, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/TwrBsMyt.png, id=482, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png used on input lin
-e 660.
+e 642.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
-<../CIP_6/FAST/Plots_ws10/TwrBsMyt.png, id=487, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws10/TwrBsMyt.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws10/TwrBsMyt.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws10/TwrBsMyt.png used on input li
-ne 664.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
-
-<../CIP_6/FAST/Plots_ws15/TwrBsMyt.png, id=488, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws15/TwrBsMyt.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws15/TwrBsMyt.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws15/TwrBsMyt.png used on input li
-ne 668.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
-
-<../CIP_6/FAST/Plots_ws25/TwrBsMyt.png, id=489, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws25/TwrBsMyt.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws25/TwrBsMyt.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws25/TwrBsMyt.png used on input li
-ne 672.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
- [27 <../CIP_6/FAST/Plots_ws5/TwrBsMxt.png (PNG copy)> <../CIP_6/FAST/Plots_ws1
-0/TwrBsMxt.png (PNG copy)> <../CIP_6/FAST/Plots_ws15/TwrBsMxt.png (PNG copy)> <
-../CIP_6/FAST/Plots_ws25/TwrBsMxt.png (PNG copy)>]
-<../CIP_6/FAST/Plots_ws5/RootMFlp2.png, id=496, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/RootMFlp2.png, id=483, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/RootMFlp2.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/RootMFlp2.png used on input li
-ne 684.
+ne 646.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
-<../CIP_6/FAST/Plots_ws10/RootMFlp2.png, id=497, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws10/RootMFlp2.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws10/RootMFlp2.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws10/RootMFlp2.png used on input l
-ine 688.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
-
-<../CIP_6/FAST/Plots_ws15/RootMFlp2.png, id=498, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws15/RootMFlp2.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws15/RootMFlp2.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws15/RootMFlp2.png used on input l
-ine 692.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
-
-<../CIP_6/FAST/Plots_ws25/RootMFlp2.png, id=499, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws25/RootMFlp2.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws25/RootMFlp2.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws25/RootMFlp2.png used on input l
-ine 696.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
- [28 <../CIP_6/FAST/Plots_ws5/TwrBsMyt.png (PNG copy)> <../CIP_6/FAST/Plots_ws1
-0/TwrBsMyt.png (PNG copy)> <../CIP_6/FAST/Plots_ws15/TwrBsMyt.png (PNG copy)> <
-../CIP_6/FAST/Plots_ws25/TwrBsMyt.png (PNG copy)>]
-<../CIP_6/FAST/Plots_ws5/RootMedg2.png, id=506, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/RootMedg2.png, id=484, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/RootMedg2.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/RootMedg2.png>
 Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/RootMedg2.png used on input li
-ne 708.
+ne 650.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
-
-<../CIP_6/FAST/Plots_ws10/RootMedg2.png, id=507, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws10/RootMedg2.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws10/RootMedg2.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws10/RootMedg2.png used on input l
-ine 712.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
-
-<../CIP_6/FAST/Plots_ws15/RootMedg2.png, id=508, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws15/RootMedg2.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws15/RootMedg2.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws15/RootMedg2.png used on input l
-ine 716.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
-
-<../CIP_6/FAST/Plots_ws25/RootMedg2.png, id=509, 421.575pt x 316.0608pt>
-File: ../CIP_6/FAST/Plots_ws25/RootMedg2.png Graphic file (type png)
-
-<use ../CIP_6/FAST/Plots_ws25/RootMedg2.png>
-Package pdftex.def Info: ../CIP_6/FAST/Plots_ws25/RootMedg2.png used on input l
-ine 720.
-(pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
- [29 <../CIP_6/FAST/Plots_ws5/RootMFlp2.png (PNG copy)> <../CIP_6/FAST/Plots_ws
-10/RootMFlp2.png (PNG copy)> <../CIP_6/FAST/Plots_ws15/RootMFlp2.png (PNG copy)
-> <../CIP_6/FAST/Plots_ws25/RootMFlp2.png (PNG copy)>]
-Overfull \hbox (84.20546pt too wide) in paragraph at lines 754--769
+ [27 <../CIP_6/FAST/Plots_ws5/TwrBsMxt.png (PNG copy)> <../CIP_6/FAST/Plots_ws5
+/TwrBsMyt.png (PNG copy)> <../CIP_6/FAST/Plots_ws5/RootMFlp2.png (PNG copy)> <.
+./CIP_6/FAST/Plots_ws5/RootMedg2.png (PNG copy)>]
+Overfull \hbox (84.20546pt too wide) in paragraph at lines 684--699
 [][] 
  []
 
-[30 <../CIP_6/FAST/Plots_ws5/RootMedg2.png (PNG copy)> <../CIP_6/FAST/Plots_ws1
-0/RootMedg2.png (PNG copy)> <../CIP_6/FAST/Plots_ws15/RootMedg2.png (PNG copy)>
- <../CIP_6/FAST/Plots_ws25/RootMedg2.png (PNG copy)>]
-<figures/delsTwrSide.png, id=525, 482.80376pt x 290.08376pt>
+<figures/delsTwrSide.png, id=493, 482.80376pt x 290.08376pt>
 File: figures/delsTwrSide.png Graphic file (type png)
 
 <use figures/delsTwrSide.png>
-Package pdftex.def Info: figures/delsTwrSide.png used on input line 780.
+Package pdftex.def Info: figures/delsTwrSide.png used on input line 710.
 (pdftex.def)             Requested size: 171.99922pt x 103.34119pt.
 
-<figures/delsTwrFore.png, id=526, 482.80376pt x 290.08376pt>
+<figures/delsTwrFore.png, id=494, 482.80376pt x 290.08376pt>
 File: figures/delsTwrFore.png Graphic file (type png)
 
 <use figures/delsTwrFore.png>
-Package pdftex.def Info: figures/delsTwrFore.png used on input line 783.
+Package pdftex.def Info: figures/delsTwrFore.png used on input line 713.
 (pdftex.def)             Requested size: 171.99922pt x 103.34119pt.
 
-<figures/delsBldEdge.png, id=527, 481.8pt x 289.08pt>
+<figures/delsBldEdge.png, id=495, 481.8pt x 289.08pt>
 File: figures/delsBldEdge.png Graphic file (type png)
 
 <use figures/delsBldEdge.png>
-Package pdftex.def Info: figures/delsBldEdge.png used on input line 786.
+Package pdftex.def Info: figures/delsBldEdge.png used on input line 716.
 (pdftex.def)             Requested size: 171.99922pt x 103.19974pt.
 
-<figures/delsBldFlap.png, id=528, 481.8pt x 289.08pt>
+<figures/delsBldFlap.png, id=496, 481.8pt x 289.08pt>
 File: figures/delsBldFlap.png Graphic file (type png)
 
 <use figures/delsBldFlap.png>
-Package pdftex.def Info: figures/delsBldFlap.png used on input line 789.
+Package pdftex.def Info: figures/delsBldFlap.png used on input line 719.
 (pdftex.def)             Requested size: 171.99922pt x 103.19974pt.
- [31 <./figures/delsTwrSide.png> <./figures/delsTwrFore.png> <./figures/delsBld
-Edge.png> <./figures/delsBldFlap.png>]
-<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png, id=540, 421.575pt x 316.1
+ [28] [29 <./figures/delsTwrSide.png> <./figures/delsTwrFore.png> <./figures/de
+lsBldEdge.png> <./figures/delsBldFlap.png>]
+<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png, id=514, 421.575pt x 316.1
 8124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png Graphic file (type pn
 g)
  <use ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png>
 Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png us
-ed on input line 847.
+ed on input line 777.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 
-<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png, id=541, 421.575pt x 316.
+<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png, id=515, 421.575pt x 316.
 18124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png Graphic file (type p
 ng)
  <use ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png>
 Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png u
-sed on input line 851.
+sed on input line 781.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 
-<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png, id=542, 421.575pt x 316.1
+<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png, id=516, 421.575pt x 316.1
 8124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png Graphic file (type pn
 g)
  <use ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png>
 Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png us
-ed on input line 855.
+ed on input line 785.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 
-<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png, id=543, 421.575pt x 316.
+<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png, id=517, 421.575pt x 316.
 18124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png Graphic file (type p
 ng)
  <use ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png>
 Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png u
-sed on input line 859.
+sed on input line 789.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
- [32]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 870.
-
-[33 <../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png (PNG copy)> <../CIP_6/
-FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png (PNG copy)> <../CIP_6/FAST/PSD_plot
-s/PSD_ws5_wake8_TowerFore.png (PNG copy)> <../CIP_6/FAST/PSD_plots/PSD_ws25_wak
-e8_TowerFore.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 883--886
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 800.
+ [30 <../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png (PNG copy)> <../CIP_6
+/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png (PNG copy)> <../CIP_6/FAST/PSD_plo
+ts/PSD_ws5_wake8_TowerFore.png (PNG copy)> <../CIP_6/FAST/PSD_plots/PSD_ws25_wa
+ke8_TowerFore.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 813--816
 
  []
 
-<../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png, id=554, 425.9112pt x 319.4334pt>
+[31]
+<../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png, id=528, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png used on input
- line 892.
+ line 822.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50/RootMFlp2.png, id=555, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EOG_50/RootMFlp2.png, id=529, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png used on inpu
-t line 896.
+t line 826.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
- [34]
-<../CIP_6/FASTextreme/EOG_50/BldPitch2.png, id=562, 425.9112pt x 319.4334pt>
+
+<../CIP_6/FASTextreme/EOG_50/BldPitch2.png, id=532, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EOG_50/BldPitch2.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EOG_50/BldPitch2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/BldPitch2.png used on inpu
-t line 906.
+t line 836.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png, id=564, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png, id=534, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png used on input 
-line 917.
+line 847.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EWSVR/RootMFlp2.png, id=565, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EWSVR/RootMFlp2.png, id=535, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png used on input
- line 921.
+ line 851.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
- [35 <../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextrem
+ [32 <../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextrem
 e/EOG_50/RootMFlp2.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50/BldPitch2.png (
 PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 928--929
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
 
  []
 
 
-<../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png, id=576, 425.9112pt x 319.4334p
+<../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png, id=544, 425.9112pt x 319.4334p
 t>
 File: ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png Graphic file (type png)
  <use ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png used on
- input line 937.
+ input line 867.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png, id=577, 425.9112pt x 319.4334
+<../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png, id=545, 425.9112pt x 319.4334
 pt>
 File: ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png Graphic file (type png)
  <use ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png used o
-n input line 941.
+n input line 871.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
-
-<../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png, id=579, 425.9112pt x 319.43
+ [33 <../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme
+/EWSVR/RootMFlp2.png (PNG copy)>]
+<../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png, id=553, 425.9112pt x 319.43
 34pt>
 File: ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png Graphic file (type png)
 
  <use ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png used
- on input line 953.
+ on input line 883.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png, id=580, 425.9112pt x 319.4
+<../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png, id=554, 425.9112pt x 319.4
 334pt>
 File: ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png Graphic file (type png
 )
  <use ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png use
-d on input line 957.
+d on input line 887.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
- [36 <../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme
-/EWSVR/RootMFlp2.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.pn
-g (PNG copy)> <../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png (PNG copy)>]
-Overfull \hbox (19.72977pt too wide) in paragraph at lines 969--997
+
+Overfull \hbox (19.72977pt too wide) in paragraph at lines 899--927
  [][] 
  []
 
-[37 <../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png (PNG copy)> <../CIP_6/FA
-STextreme/EOG_50_failtime/RootMFlp2.png (PNG copy)>] [38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1010.
- [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1010.
+[34 <../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTe
+xtreme/EOG_50_brake/RootMFlp2.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50_fail
+time/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.p
+ng (PNG copy)>] [35]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 940.
+ [36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 940.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1010.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1010.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 940.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 940.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 0D0A4301D00A8F2A9F7B7B03B37D7A84;3190.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1010.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 940.
  ) 
 Here is how much of TeX's memory you used:
- 10816 strings out of 493304
- 162257 string characters out of 6139871
- 395249 words of memory out of 5000000
- 13926 multiletter control sequences out of 15000+600000
+ 10756 strings out of 493304
+ 159990 string characters out of 6139871
+ 395089 words of memory out of 5000000
+ 13875 multiletter control sequences out of 15000+600000
  12535 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,11n,40p,1173b,1689s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1289,10 +1185,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
 public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosy
 m/feymr10.pfb>
-Output written on report.pdf (40 pages, 2841206 bytes).
+Output written on report.pdf (37 pages, 2289896 bytes).
 PDF statistics:
- 707 PDF objects out of 1000 (max. 8388607)
- 578 compressed objects within 6 object streams
- 170 named destinations out of 1000 (max. 500000)
- 616 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 562 compressed objects within 6 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 556 words of extra memory for PDF output out of 10000 (max. 10000000)
 
