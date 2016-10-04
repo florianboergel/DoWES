@@ -9,10 +9,10 @@
 %% Main code
 
 % add path with matlab functions
-addpath('C:/Fast/MatlabFunctions');
+addpath('/home/jan/Prive/Semester6/DesignProject/Repo/CIP_6/FAST/MatlabFunctions');
 
 % select FAST output file
-FAST_output_file_name  = select_file_from_folder('C:\Fast\*.out');
+FAST_output_file_name  = select_file_from_folder('/home/jan/Prive/Semester6/DesignProject/Repo/CIP_6/FAST/Fast/*.out');
 
 % create structure in workspace with results
 FAST_results = fast2mat(FAST_output_file_name);
@@ -22,16 +22,16 @@ create_figures = fast2plot(FAST_results);
 
 % calculate damage equivalent loads
 Damage_Eq_Loads = struct;
-% blade root flapwise bending moment (Whöler coefficient = 10)
+% blade root flapwise bending moment (Whï¿½ler coefficient = 10)
 [Damage_Eq_Loads.RootMFlp_Req R]= dequiv(FAST_results.Time, FAST_results.RootMFlp2,10);
 Damage_Eq_Loads.RootMFlp_m = 10;
-% blade root edgewise bending moment (Whöler coefficient = 10)
+% blade root edgewise bending moment (Whï¿½ler coefficient = 10)
 [Damage_Eq_Loads.RootMedg_Req R]= dequiv(FAST_results.Time, FAST_results.RootMedg2,10);
 Damage_Eq_Loads.RootMedg_m = 10;
-% tower base longitudinal (fore-aft) bending moment (Whöler coefficient = 4)
+% tower base longitudinal (fore-aft) bending moment (Whï¿½ler coefficient = 4)
 [Damage_Eq_Loads.TwrBsMyt_Req R]= dequiv(FAST_results.Time, FAST_results.TwrBsMyt,4);
 Damage_Eq_Loads.TwrBsMyt_m = 4;
-% tower base transversal (side-side) bending moment (Whöler coefficient = 4)
+% tower base transversal (side-side) bending moment (Whï¿½ler coefficient = 4)
 [Damage_Eq_Loads.TwrBsMxt_Req R]= dequiv(FAST_results.Time, FAST_results.TwrBsMxt,4);
 Damage_Eq_Loads.TwrBsMxt_m = 4;
 clear R
@@ -40,8 +40,8 @@ clear R
 % uncomment this section to analyse PSD
 
 % sensor (load value) to analyse
-data = FAST_results.RootMFlp2; % blade root flapwise bending moment
-%data = FAST_results.TwrBsMyt; % tower bottom fore-aft bending moment 
+%data = FAST_results.RootMFlp2; % blade root flapwise bending moment
+data = FAST_results.TwrBsMyt; % tower bottom fore-aft bending moment 
 
 % plot power spectrum density
 figure1 = figure;
@@ -70,3 +70,13 @@ ylim(axes1,[0.1 100]);
 xlabel('Frequency (Hz)');
 ylabel('Power/frequency (dB/Hz)');
 title('Power Spectral Density');
+
+%% output max/mins
+minmaxtable(1) = min(FAST_results.TwrBsMxt);
+minmaxtable(2) = max(FAST_results.TwrBsMxt);
+minmaxtable(3) = min(FAST_results.TwrBsMyt);
+minmaxtable(4) = max(FAST_results.TwrBsMyt);
+minmaxtable(5) = min(FAST_results.RootMFlp2);
+minmaxtable(6) = max(FAST_results.RootMFlp2);
+minmaxtable(7) = min(FAST_results.RootMedg2);
+minmaxtable(8) = max(FAST_results.RootMedg2);

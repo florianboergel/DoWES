@@ -57,9 +57,13 @@
 \tableofcontents
 \newpage
 
-\section{CIP 1}
+\section{Introduction}
+This reports guides through the process of Design of Wind Energy Systems. The different phases are structured in so called CIPs. In the first CIP the main parameters of the turbine to be designed will be fixed and site conditions defined. Then in the second CIP the geometry of the blade will be computed according to Schmitz' and Betz' models. Performance curves are the subject of the third tutorial. CIP 4 treats the tower design. Impact of wakes and wind fields are investigated in CIP 5 before in the last CIP a fatigue load analysis (CIP 6a) and an extreme load analysis (CIP 6b) are carried out.
+During this project we have used a set of different tools and programming languages, among those: Matlab, Python, WT-Perf, Fast and Turbsim.
+
+\section{CIP 1: Selection of main parameters and rotor design}
 In CIP 1 we were asked to estimate the main parameters of our wind turbine model. In addition we also calculated the airfoil aerodynamics properties and defined the geometry of our blade.
-The following table shows the side specific conditions and the limitations for the design process of the wind turbine.\\
+The following table shows the site specific conditions and the limitations for the design process of the wind turbine.\\
 
 \begin{table}[H]
 \begin{tabular}{l l l}
@@ -138,13 +142,13 @@ rating = \frac{\text{electrical power}}{area}
 \end{equation}
 We receive 382.06 W/$m^2$ as specific rating.
 \subsection{Rotor rated speed \& design tip speed ratio}
-The design tip speed ratio is the ratio between maximum tip speed and rated wind speed of the turbine. The maximum tip speed for the wind turbine is $82 m/s$ and the calculated rated wind speed is $11 m/s$. That leads to a design tip speed ratio $\lambda_d$ of \textbf{7.45}.\\
-Next the we calculated the rotor rated speed. The rotor rated speed in rotations per minute (rpm) is given by:
+The design tip speed ratio is the ratio between maximum tip speed and rated wind speed of the turbine. The maximum tip speed for the wind turbine is $82 m/s$ and the calculated rated wind speed is $11 m/s$. That leads to a design tip speed ratio $\lambda_d$ of \textbf{7.45}.\\\subsection{Annual Energy Production}
+Next, we calculated the rotor rated speed. The rotor rated speed in rotations per minute (rpm) is given by:
 
 \begin{equation}
 n = \frac{60s/min \cdot\ \text{max. tip speed}}{2\cdot\pi\cdot R} = 14.5 rpm
 \end{equation}
-\subsection{Annual Energy Production}
+%\subsection{Annual Energy Production}
 \subsection{Main aerodynamic properties}
 In order to estimate the design lift coefficient, the angle of attack and the drag coefficient we were given an excel sheet with the rotor design profile data for NACA-64-415 and NACA-64-421.
 Each sheet consists of 4 columns: angle of attack, lift coefficient, drag coefficient and thrust coefficient. According to the lecture, the optimal lift coefficient is defined as the maximum of the lift-to-drag ratio. Figure~\ref{fig:comparison_lift_to_drag} shows the lift-to-drag ratio for different angles of attack (AOA).
@@ -159,7 +163,7 @@ Each sheet consists of 4 columns: angle of attack, lift coefficient, drag coeffi
   \centering
   \includegraphics[width=1\linewidth]{../CIP_1/lift_to_drag_ratio_421.png}
   \caption{Lift-to-drag ratio for NACA 65-421}
-\end{subfigure}
+\end{subfigure}\subsection{Annual Energy Production}
 \caption{Lift-to-drag ratio for different angle of attacks}
 \label{fig:comparison_lift_to_drag}
 \end{figure}
@@ -186,7 +190,7 @@ lift-to-drag method & 5.0 & 0.952 & 0.006 &  0.092\\
 
 As the 80\% method results in a higher lift coefficients for both profiles we selected the corresponding parameters according to the 80\% method.
 \newpage
-\section{CIP 2}
+\section{CIP 2: Advanced BEM }
 In the first part of CIP 2 we designed the blade of the wind turbine. In the lecture we discussed two theories which are used to design the blade geometry. Betz and Schmitz theory both have different approaches to calculate the chord length and the twist angle. For the following steps it is import to keep in mind that the given blade consists of 10 blade elements, which are shown in the following figure.
 \begin{figure}[H]
 \includegraphics[width=1\linewidth]{../CIP_2/Figures/blade_elements.png}
@@ -199,14 +203,8 @@ Betz theory estimates that the maximum of power that can be extracted from the w
 \begin{equation}
 P_{betz} = \frac{16}{27}*P_{wind}
 \end{equation}
-To understand why there is a certain limit, consider that if all energy coming from the wind movement through the turbine the speed afterwards would drop to zero and no new wind could get in.
-The principle of Betz's law is derived from the principles of conservation of mass and momentum of the air stream following through and idealized 'actuator disk' (see figure~%\ref{fig:betz_tube}).
-%\begin{figure}[H]
-%\includegraphics[width=1\linewidth]{figures/betz_tube.png}
-%\caption{disk-shaped actuator}
-%\label{fig:betz_tube}
-%\end{figure}
-
+To understand why there is a certain limit, consider that if all energy coming from the wind movement through the turbine the speed afterwards would drop to zero then no new wind could get in and theenergy thus limited.
+The principle of Betz's law is derived from the principles of conservation of mass and momentum of the air stream following through and idealized 'actuator disk'.
 If we want to design the blade geometry according to this law, the power from the blade element theory has to equal $P_{Betz}$. This leads to the following equations which have been used for the further calculation.\\
 
 Planform:
@@ -221,7 +219,7 @@ Twist angle:
 \begin{equation}
 \alpha_{twist} = \alpha(r) - \alpha_a
 \end{equation}
-Using the parameters from CIP 1, we calculated the chord length and the twist angle for each blade segment. And overview is shown in table~\ref{blade_design_betz}.
+Using the parameters from CIP 1, we calculated the chord length and the twist angle for each blade segment. An overview is shown in table~\ref{blade_design_betz}.
 \begin{table}[H]
 \begin{tabular}{c| l l l l l l l l l}
 \hline
@@ -306,9 +304,9 @@ Twist angle	deg	&	27,590&	11,022&	3,813&	0,055&	-2,211&	-2,715&	-3,783&	-4,580&	
 \end{table}
 
 \newpage
-\section{CIP 3 - Performance Curves}
+\section{CIP 3: Performance Curves}
 \subsection{Introduction}
-In this section we analysed the designed turbine under different pitch angles and tip-speed ratios. The design process of a wind turbine differs from turbine to turbine. In order to compare wind turbines non dimensional coefficients are used. These do not depend on factors like size or wind conditions. The most common coefficient is the power coefficient $c_p$. Further we used the torque coefficient $c_q$ and the thrust coefficient $c_t$.
+In this section we analyzed the designed turbine under different pitch angles and tip-speed ratios. The design process of a wind turbine differs from turbine to turbine. In order to compare wind turbines non dimensional coefficients are used. These do not depend on factors like size or wind conditions. The most common coefficient is the power coefficient $c_p$. Further we used the torque coefficient $c_q$ and the thrust coefficient $c_t$.
 These coefficient are defined as:
 \begin{align*}
 c_p = \frac{P}{0.5 *\rho A v^3}\hspace{0.5cm}c_t =  \frac{T}{0.5\rho A v^2}\hspace{0.5cm}c_q = \frac{Q}{0.5\rho A v^2*R}\\
@@ -320,13 +318,13 @@ $c_q$ = Torque coefficient\\
 $p$   = Power\\
 $\rho$ = Density\\
 $A$    = Area\\
-$v$	   = Windspeed\\
-$R$		= Rotorradius
+$v$	   = Wind speed\\
+$R$		= Rotor radius
 
 \subsection{WT\_Perf}
-To compute the nondimensional parameters a program called WT\_Perf is used. 
+To compute the non dimensional parameters a program called WT\_Perf is used. 
 WT\_Perf uses blade-element momentum (BEM) theory to predict the performance of wind turbines. \footnote{WT\_Perf\_Users\_guide.pdf}. It also takes different correction algorithms into account, e.g. Prandtl's tip-loss and hub-loss model.
-WT\_Perf can be used from the operating system's command prompt. In order to use WT\_Perf  we configured the input file by updating the 'Turbine Data' section and implementing the calculated blade geometry. WT\_Perf also needs the aerodynamic data of the airfoils. We were able to used the provided data here. Last we defined the range of pitch angle and tip-speed ratio according to the tasks of CIP-3. \\
+WT\_Perf can be used from the operating system's command prompt. In order to use WT\_Perf  we configured the input file by updating the 'Turbine Data' section and implementing the calculated blade geometry. WT\_Perf also needs the aerodynamic data of the airfoils. We were able to use the provided data here. Last we defined the range of pitch angle and tip-speed ratio according to the tasks of CIP~3. \\
 The following code-snippet gives an idea of the input file structure:
 \newpage
 \begin{lstlisting}
@@ -350,10 +348,11 @@ The following code-snippet gives an idea of the input file structure:
 49.504	-4.335   1.544	 2	    FALSE
 57.120	-5.066   1.348	 2	    FALSE
 \end{lstlisting}
-\subsection{3.1,3.2}
-As already mentioned we configured the input file according to CIP-3. The generated output file contains values for the power coefficient $c_p$, thrust $T$ and torque $Q$.
-For task 3.2 we wrote a small python-program which examines the data and plots the results for the three different nondimensional coefficient mentioned in the introduction of CIP-3: $c_p, c_t$ and $c_q$. Since WT\_Perf only writes the power coefficient we had to calculate $c_t$ and $c_q$. Note that the coefficient are functions of $c_t(\lambda), c_q(\lambda)$.
-The following figures display the results for $c_p, c_t$ and $c_q$ with a tip-speed ratio $\lambda$ from one to 20 and pitch angles of : 0,5,10,15,20 and 30 degree. The curves are calculated at rated rotor speed (12.59 rpm).
+
+\subsection{Comparison}
+As already mentioned we configured the input file according to CIP~3. The generated output file contains values for the power coefficient $c_p$, thrust $T$ and torque $Q$.
+For task 3.2 we wrote a small python-program which examines the data and plots the results for the three different non dimensional coefficient mentioned in the introduction of CIP~3: $c_p, c_t$ and $c_q$. Since WT\_Perf only writes the power coefficient we had to calculate $c_t$ and $c_q$. Note that the coefficients are functions of $c_t(\lambda), c_q(\lambda)$.
+The following figures display the results for $c_p, c_t$ and $c_q$ with a tip-speed ratio $\lambda$ from 1 to 20 and pitch angles of 0,5,10,15,20 and 30 degree. The curves are calculated at rated rotor speed (12.59 rpm).
 
 \begin{figure}[H]
 \centering
@@ -369,7 +368,7 @@ The $c_p-\lambda$ curve shows different power coefficients at different tip-spee
 \caption{Thrust coefficient}
 \label{fig:thrust-coeff}
 \end{figure} 
-Figure \ref{fig:thrust-coeff} shows the behaviour of the thrust coefficient. 
+Figure \ref{fig:thrust-coeff} shows the behavior of the thrust coefficient. 
 From 0$^\circ$ to 10$^\circ$ the thrust coefficient reaches high values. For higher pitch angles the resulting thrust coefficient is significantly lower and is equal to zero for higher tip speed ratios. The thrust is directly applied at the tower and can be decreased by increasing the pitch angle.
 
 \begin{figure}[H]
@@ -378,14 +377,14 @@ From 0$^\circ$ to 10$^\circ$ the thrust coefficient reaches high values. For hig
 \caption{Torque coefficient}
 \label{fig:torque-coeff}
 \end{figure} 
-Figure \ref{fig:torque-coeff} shows the torque coefficient for different pitch angles. Compared to the $c_p-\lambda$ the maxima are shifted to the left and decrease with increasing pitch angle.  
-\subsection{3.4}
+Figure \ref{fig:torque-coeff} shows the torque coefficient for different pitch angles. Compared to the $c_p-\lambda$ the maximums are shifted to the left and decrease with increasing pitch angle.  
+\subsection{Rotor rated speed}
 In task 3.4 we were asked to calculate the resulting rotor speed for a rated wind speed of 8 m/s. For the calculation we used our design tip speed ratio:
 \begin{align}
 \lambda = \frac{\Omega R}{v}\\
 n = \frac{60 \lambda v}{2 \pi R} = 10.07 rpm
 \end{align}
-\subsection{3.5, 3.6}
+\subsection{Operation conditions}
 Again we used WT\_Perf to calculate the resulting operation conditions below rated wind speed. The input parameters are: v = 8 m/s, design top speed ratio $\lambda$ = 8.2 and rotational speed $n$ = 10.07 rpm. The results are shown in the following table:\\
 
 \begin{tabular}{|c |c| c| c| c| c|}
@@ -396,14 +395,14 @@ m/s &rpm & - &- &-& kW\\
 8 &10.07&0.544&0.825&0.033& 2054.846\\
 \hline
 \end{tabular}
-Power aus WT\_Perf
-\subsection{3.7,3.8}
+Power from WT\_Perf
+\subsection{Coefficients}
 According to Betz, the wind turbine should be able to extract 7618 kW.
 However the rated power of the wind turbine is lower than the power which could be extracted. Therefore pitching is needed. The resulting $c_p$ can be calculated as follows:
 \begin{equation}
 c_p = \frac{3500000}{0.5 \cdot 1.225 \cdot \pi\cdot  62.18^2 \cdot  12^3} = 0.272
 \end{equation}
-\subsection{3.9}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth]{../CIP_3/WT_Perf/Output/validated_cp.png}
@@ -411,17 +410,17 @@ c_p = \frac{3500000}{0.5 \cdot 1.225 \cdot \pi\cdot  62.18^2 \cdot  12^3} = 0.27
 \label{fig:validate}
 The resulting $c_p$ corresponds to a tip speed ratio of 5 with a pitch angle of 10$^\circ$
 \end{figure} 
-\subsection{3.10}
+\subsection{Rotor speed}
 \begin{align*}
 n = \frac{60 \lambda v}{2 \pi R} = 9.21
 \end{align*}
 \newpage
-\section{CIP 4}
+\section{CIP 4: Tower design}
 
-The following parameters are relevant for the remainder of this section:
+In this part of the Design project a modal analysis for tower design will be carried out and evaluated with respect to economical factors. For this purpose the following parameters are relevant:
 
 \begin{align*}
-	\Omega_{rated} &= 12.59 rpm \text{ (rotor rated speed)} \\
+	\Omega_{rated} &= 14.5 rpm \text{ (rotor rated speed)} \\
 	D &= 5m \text{ (tower diameter)} \\
 	E &=211000000000 \frac{N}{m^2} \text{ (elastic modulus)} \\
 	l &=100m \text{ (hub height)} \\
@@ -429,25 +428,25 @@ The following parameters are relevant for the remainder of this section:
 	\rho &=7850 \frac{kg}{m^3}\text{ (material density)} \\
 \end{align*}
 
-\subsection{Task a}
+\subsection{Eigenfrequency}
 For tower design resonances of excitation frequencies from the rotating blades must be taken into account. The Eigenfrequency of the tower can thus be obtained by adding a $10 \%$ safety margin to the rotor rated speed which represents the maximum stationary rotor speed:
 \begin{equation*}
-	f_0 = \Omega_{rated} \cdot 1.1 = \frac{12.59}{60} Hz \cdot 1.1 = 0.23081 Hz
+	f_0 = \Omega_{rated} \cdot 1.1 = \frac{14.5}{60} Hz \cdot 1.1 = 0.2658 Hz
 \end{equation*}
 
-\subsection{Task b}
-The design range of our turbine is a classical soft-stiff design which results in large wave excitation.
+\subsection{Design range}
+The design range of our turbine is a classical soft-stiff design which results in large wave excitation but allows variable speed turbine design since resonances with tower eigenfrequencies at frequencies lower than rated rotor speed are avoided. There are a few other common design approaches one of which is the soft-soft design where the eigenfrequency lies within the resonance range of the rotor. In this case certain rotor frequencies have to be excluded in order to avoid resonances.
 
-\subsection{Task c}
+\subsection{Wall thickness}
 The wall thickness $t$ can be computed from the following equations:
 
 \begin{align}
-f_0 \cot 2 \pi &= \sqrt{\frac{k}{m_{top} + 0.25 m_{tower}}} \\
+f_0 \cdot 2 \pi &= \sqrt{\frac{k}{m_{top} + 0.25 m_{tower}}} \\
 k &= \frac{3 E \pi D^3 t}{l^3 8} \\
-m_{tower} &= \rho \pi D t l\\
+m_{tower} &= \rho \pi D t l
 \end{align}
 
-By substituting Equations (2) and (3) into (1) we obtain the following equality which can be fed into Matlab in order to solve for the only unknown $t$:\\
+By substituting Equations (22) and (23) into (21) we obtain the following equality which can be fed into Matlab in order to solve for the only unknown $t$:\\
 
 \begin{equation*}
 0 = \sqrt{\frac{3 E \pi D^3 t}{l^3 8 \cdot (m_{top} + 0.25\rho \pi D t l)}} -f_0 \cdot 2 \pi \\
@@ -457,25 +456,555 @@ Extract from Matlab code used to solve for variable $t$:\\
 
 \begin{lstlisting}
 t=1;
-func = @(t) sqrt(3*E*pi*D^3*t/(l^3*8*(mTop+0.25*rho*pi*D+t*l)))-0.23081*2*pi;
+func = @(t) sqrt(3*E*pi*D^3*t/(l^3*8*(mTop+0.25*rho*pi*D+t*l)))-f0*2*pi;
 t = fsolve(func,t);
 \end{lstlisting}
 
-The resulting value for the wall thickness is $t=0.0239m$. The tower mass is then $m_{tower}=295310 kg = 295.31t$. The material cost for this tower would thus be of $147655$ \euro, assuming a price of $500$ \euro /t. Obviously a thicker tower wall leads to a higher price overall (linear increase). As depicted in Figure~\ref{fig:eigfreqWall} a thicker wall leads to a higher Eigenfrequency of the tower as well. However, in this case the relationship is not a linear one due to the exponent of $0.5$ in the formula. Hence, a thicker wall results in a higher Eigenfrequency but the increase is only significant for wall thicknesses up to $0.1m$. Above that the cost increase does not justify the gain in Eigenfrequency.
+The resulting value for the wall thickness is $t=0.0318m$. The tower mass is then $m_{tower}=391730 kg = 391.73t$. The material cost for this tower would thus be of $195870$ \euro, assuming a price of $500$ \euro /t. Obviously a thicker tower wall leads to a higher price overall (linear increase). As depicted in Figure~\ref{fig:eigfreqWall} a thicker wall leads to a higher Eigenfrequency of the tower as well. However, in this case the relationship is not a linear one due to the exponent of $0.5$ in the formula. Hence, a thicker wall results in a higher Eigenfrequency but the increase is only significant for wall thicknesses up to $0.1m$. Above that the cost increase does not justify the gain in Eigenfrequency because wall thickness and costs are proportional but the Eigenfrequency is under-proportional.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\linewidth]{../CIP_4/figures/eigenfrequency.jpg}
-\caption{Effect of wall thickness on Eigenfrequencies}
+\includegraphics[width=\linewidth]{../CIP_4/figures/eigenfrequency.jpg}
+\caption{Effect of wall thickness on Eigenfrequency}
 \label{fig:eigfreqWall}
 \end{figure} 
 
-\subsection{Task d}
-The Campbell diagram is depicted in Figure~\ref{fig:campbell}  (work in progress)
+\subsection{Campbell diagram}
+The Campbell diagram is depicted in Figure~\ref{fig:campbell}. The red line shows the computed Eigenfrequency of the tower and the circles mark resonance cases for certain rotor speed values due to periodic excitations. For example the dashed blue line ($1\Omega$) represents the 1P excitation (unbalance from the rotation), the second blue line ($3\Omega$) represents the periodic excitation caused by a tower shadow of one of the three blades.\\
+
+The operational range of the rotor with respect to tower Eigenfrequencies must thus be kept within certain limits. By designing the tower wall thickness with adding a 10\% safety margin to the rotor rated speed we can are on the safe side and avoid 1P excitations (intersection point of the $\Omega$ line with the red line). It must further be excluded during operations that any of the other intersection points occur, e.g. $3\Omega$ line with red line. Some rotational speed ranges must thus be excluded in operation in order to avoid any resonances.This analysis however only considers tower resonances. A complete evaluation must take into account more resonances as well, e.g. 1st blade edgewise and 1st blade flapwise eigenfrequencies. \\
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth]{../CIP_4/figures/campbell.jpg}
 \caption{Campbell Diagram}
 \label{fig:campbell}
 \end{figure} 
+
+
+\section{CIP 5: Wind fields and wake modeling}
+\subsection{Wind speed distribution: Rayleigh}
+Assuming a wind class type I-B gives per definition a reference wind speed of $V_{ref} = 50 m/s$ and a reference turbulence intensity of $I_{ref}=0.14$. The Rayleigh distribution as a special case of Weibull where the shape parameter has a value of $k=2$. The average wind speed can be derived from the reference wind speed as follows: $V_{ave}=V_{ref}/5 =10 m/s$. From this we can derive the scale parameter via $V_{ave} =  \lambda \cdot \sqrt{\frac{\pi}{2}}$ resulting in $\lambda = 7.97 m/s$. The corresponding wind speed distribution following a Weibull law with $\lambda = 7.97 m/s$ and $k=2$ is depicted in Figure~\ref{fig:rayleigh}. Frequencies were multiplied with 8760 in order to represent the absolute number of hours per year. Three crucial wind speeds are highlighted in the diagram: Cut-In speed ($3.5 m/s$), Rated speed ($11 m/s$) and Cut-Out speed ($25 m/s$). These three limits define the operational conditions of the turbine: Between Cut-In and Rated speed the turbine is operating in partial load, between rated speed and Cut-Out the turbine is operating under full load. Beyond these limits the turbine is not operating.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hours_year.png}
+\caption{Wind speeds vs hours per year}
+\label{fig:rayleigh}
+\end{figure} 
+
+\subsection{Power curve and AEP}
+The power produced depending on the wind speed can be obtained from the following formula:
+\begin{equation*}
+P(v) = 0.5 \cdot \rho \cdot \nu \cdot \pi \cdot R^2 \cdot v^3
+\end{equation*}
+Wind density is fixed at $\rho= 1.225$, the total conversion efficiency is given as $\nu=0.4705$ and the rotor swept area is $\pi \cdot 54^2 m^2$. For wind speeds above rated wind speed the power output of the turbine will be constant.
+The corresponding power curve is depicted in Figure~\ref{fig:powercurve}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png}
+\caption{Power curve}
+\label{fig:powercurve}
+\end{figure} 
+
+Combining the wind speed distribution from Figure~\ref{fig:rayleigh} and the power curve from Figure~\ref{fig:powercurve} enables computing the annual energy production. We multiply the number of hours for each wind speed with the power output at that specific speed and integrate this over all relevant wind speeds. The result corresponds to the area under the curve in Figure~\ref{fig:energyYield}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_yield.png}
+\caption{Energy yield for different wind speeds}
+\label{fig:energyYield}
+\end{figure} 
+
+Here, the total AEP is of about $11.099$ GWh. For a $100\%$ availability and a feed-in tariff of $0.08$~\euro/kWh the revenue is thus of approximately $887930$\euro. If we assume an availability of only $95\%$ the corresponding revenue lies around $843530$\euro which results in a loss of nearly $45000$\euro in one year.
+
+\subsection{Turbulence intensity under free stream conditions}
+Applying the normal turbulence model we calculated the turbulence intensity for different wind speeds. The wind class type is I-B which defines a reference intensity of $I_{ref}=0.14$. The result for the four given wind speeds is shown in Table~\ref{tab:freestream}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\textbf{v} & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ \\
+\hline
+\textbf{I} & $0.2618$ & $0.1834$ & $0.1573$ & $0.1364$	\\
+\hline
+\textbf{Operational condition} & partial & partial & full & full	\\
+\hline
+\end{tabular}
+\caption{Turbulence intensity according to NTM at different wind speeds}
+\label{tab:freestream}
+\end{table}
+
+From Figure~\ref{fig:energyYield} in the previous section we have seen that the biggest portion of the AEP of the turbine is contributed by wind speeds around rated wind speed. At higher wind speeds less energy is produced because these wind speeds simply are much less frequent due to the distribution, especially speeds of $20$m/s and higher are insignificant to the AEP. However, wind speeds around $5$m/s or $15$m/s do have an impact. Regarding the turbulence intensity shown above we can then conclude that there is no direct relation between turbulence and power output. 
+
+\subsection{Wind fields with TurbSim}
+Using TurbSim we generated wind fields for the given conditions, see Figure~\ref{fig:windfields}.
+
+\begin{figure}[htb!]
+\centering
+\begin{subfigure}{0.4\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.png}
+  \caption{At 5m/s}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_10ms.png}
+   \caption{At 10m/s}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_15ms.png}
+   \caption{At 15m/s}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_25ms.png}
+   \caption{At 25m/s}
+\end{subfigure}
+\caption{Wind fields by TurbSim}
+\label{fig:windfields}
+\end{figure}
+
+
+\subsection{Wake modeling with Frandsen}
+We now use Frandsen's model in order to analyze wakes. Two different setups will be evaluated: One with distances between the turbines of 4 times the rotor diameter, and one with 8 times the rotor diameter.
+The result for the four given wind speeds is shown in Table~\ref{tab:waketable}. The results for the NTM model have been carried over in order to compare these to the wake results.
+    
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\textbf{v} & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ \\
+\hline
+$\mathbf{4 \cdot d}$ & $0.2667$ & $0.1867$ & $0.1594$ & $ 0.1370$	\\
+\hline
+$\mathbf{8 \cdot d}$ & $0.2621$ & $0.1827$ & $0.1562$ & $0.1349$	\\
+\hline
+\textbf{NTM} & $0.2618$ & $0.1834$ & $0.1573$ & $0.1364$	\\
+\hline
+\end{tabular}
+\caption{Turbulence intensity according to NTM at different wind speeds}
+\label{tab:waketable}
+\end{table}
+
+Clearly the turbulence intensity is lower for the case of larger distances ($8 \cdot d$) for all wind speeds. However, the difference between the free stream turbulence and the case of larger distances is only marginal. For a wind speed of 5 m/s the turbulence intensity is lower in the free turbulence model, but for all other wind speeds the Frandsen model leads to lower turbulences then the free stream model. 
+
+The complete dataset for all wind bins and all three cases is visualized in Figure~\ref{fig:turbintense}. It is not easy to recognize, but by looking closely we find that the order $8 \cdot d$, NTM, $4 \cdot d$ from lowest to highest turbulences holds for all wind bins above 10 m/s.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png}
+\caption{Turbulence intensity in different setups}
+\label{fig:turbintense}
+\end{figure} 
+
+We generated wind fields for wake conditions with both layouts as well since these will be used later. 
+A comparison of the wind field under free stream conditions with the wind field under wake condition ($4\cdot d$) for $v=5m/s$ is shown in Figure~\ref{fig:windfieldsComp}. The two wind field do not diverge very much, but the computed turbulence intensity differs considerably ($0.2504$ vs $0.2544$).
+
+\begin{figure}[htb!]
+\begin{subfigure}{0.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.png}
+  \caption{Wind field for Free stream at 5m/s}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_wake_4_5ms.png}
+   \caption{Wind field for Wakes with $4\cdot d$ at 5m/s}
+\end{subfigure}
+\caption{Free stream vs Wake conditions}
+\label{fig:windfieldsComp}
+\end{figure}
+
+\subsection{Possible faults}
+Failures can occur with respect to electrical components and the turbine control. These failures must be simulated in order to ensure structural integrity of the turbine. Possible faults are defect pitch or yaw actuators, which lead to the turbine being unable to reduce or increase forces and might cause a breakdown. Also it could be that sensors are defect and supply wrong data which would result in a fatal mis-behavior of the turbine. 
+Likewise the drive train and gearbox might be affected by broken parts causing severe failure of the turbine if not handled correctly. The generator of a turbine can be subject to electromechanical problems, e.g. torque scaling fault, overheating, asymmetries etc.
+
+\section{CIP 6a: Fatigue loads}
+\subsection{FAST}
+The wind fields from the previous chapter will now be used to run simulations with FAST for fatigue analysis.
+We use the same wind speeds of 5,10,15 and 25m/s and free stream conditions. 
+
+Figure~\ref{fig:towersideside} shows the side-to-side bending moment of the tower for the different wind speeds.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/TwrBsMxt.png}
+  \caption{5m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/TwrBsMxt.png}
+  \caption{10m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/TwrBsMxt.png}
+  \caption{15m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/TwrBsMxt.png}
+  \caption{25m/s}
+\end{subfigure}
+\caption{Tower side-to-side bending moments}
+\label{fig:towersideside}
+\end{figure}
+
+Figure~\ref{fig:towerforeaft} shows the fore-aft bending moment of the tower for the different wind speeds.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/TwrBsMyt.png}
+  \caption{5m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/TwrBsMyt.png}
+  \caption{10m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/TwrBsMyt.png}
+  \caption{15m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/TwrBsMyt.png}
+  \caption{25m/s}
+\end{subfigure}
+\caption{Tower fore-aft bending moments}
+\label{fig:towerforeaft}
+\end{figure}
+
+Figure~\ref{fig:bladeflap} shows the flapwise bending moment of the root for the different wind speeds.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/RootMFlp2.png}
+  \caption{5m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/RootMFlp2.png}
+  \caption{10m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/RootMFlp2.png}
+  \caption{15m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/RootMFlp2.png}
+  \caption{25m/s}
+\end{subfigure}
+\caption{Blade flapwise bending moments}
+\label{fig:bladeflap}
+\end{figure}
+
+Figure~\ref{fig:bladeedge} shows the flapwise bending moment of the root for the different wind speeds.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws5/RootMedg2.png}
+  \caption{5m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws10/RootMedg2.png}
+  \caption{10m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws15/RootMedg2.png}
+  \caption{15m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/Plots_ws25/RootMedg2.png}
+  \caption{25m/s}
+\end{subfigure}
+\caption{Blade edgewise bending moments}
+\label{fig:bladeedge}
+\end{figure}
+
+\subsection{Damage equivalent loads under free stream condition}
+The DELs under free stream conditions for tower and root can be found in Table~\ref{tab:DELfree}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\textbf{v} & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ \\
+\hline
+\textbf{Tower side-to-side} & $811.645$ & $1466.761$ & $2112.274$ & $4974.035$ \\
+\hline
+\textbf{Tower fore-aft} & $2382.669$ & $2990.821$ & $3862.967$ & $6328.944$	\\
+\hline
+\textbf{Blade edgewise} & $1924.045$ & $2387.446$ & $2432.449$ & $2552.909$	\\
+\hline
+\textbf{Blade flapwise} & $738.816$ & $1426.071$ & $1765.008$ & $2353.317$	\\
+\hline
+\end{tabular}
+\caption{DELs under free stream conditions}
+\label{tab:DELfree}
+\end{table}
+
+
+\subsection{Damage equivalent loads under wake condition}
+The DELs under wake condition for tower and root can be found in Table~\ref{tab:DELwake}.
+
+\begin{table}[H]
+\begin{tabular}{| c | c | c | c | c |c | c | c | c |}
+\hline
+\multicolumn{1}{|c|}{\textbf{neighboring distance}} & \multicolumn{4}{c|}{$4\cdot d$} & \multicolumn{4}{c|}{$8\cdot d$} \\ 
+\hline
+\textbf{v} & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ & $5m/s$ & $10m/s$ & $15m/s$ & $25m/s$ \\
+\hline
+\textbf{Tower side-to-side} & $775.607$ & $1404.149$ & $2087.209$ & $5419.259$ & $810.116$ & $1445.473$ & $2132.343$ & $5356.443$ \\
+\hline
+\textbf{Tower fore-aft} & $3050.375$ & $3695.06$ & $3620.304$ & $6162.187$ & $2651.542$ & $2677.856$ & $3516.175$ & $5957.573$	\\
+\hline
+\textbf{Blade edgewise} & $1940.040$ & $2419.468$ & $2416.637$ & $2555.216$ & $1923.647$ & $2397.627$ & $2436.092$ & $2560.151$	\\
+\hline
+\textbf{Blade flapwise} & $814.974$ & $1445.028$ & $1701.446$ & $2308.930$ & $791.422$ & $1351.939$ & $1721.214$ & $2299.36$	\\
+\hline
+\end{tabular}
+\caption{DELs under wake condition}
+\label{tab:DELwake}
+\end{table}
+
+Comparing the DELs in the three different settings (free stream and wake with $4\cdot d$ and $8\cdot d$) in Figure~\ref{fig:compDels} we can see that for the edgewise blade DELs there is no notable difference between the three settings. For the flapwise blade moments however the DELs are lowest for the setting with wakes and a $8\cdot d$ distance and highest for a $4\cdot d$ distance while the free stream setting lies in the middle.
+Regarding the tower DELs the differences are more clear, especially in the case of fore-aft bending. Here again the $8\cdot d$ distance setting has lowest DELs at most wind speeds (except 5m/s) while the free stream setting has lower DELs then the $4\cdot d$ setting for moderate wind speeds.
+The fact that the $8\cdot d$ distance case results in lower DELs then the $4\cdot d$ distance case is as expected as we saw in the previous chapter that the turbulence intensity is lower for the setting with larger distances between neighboring turbines. However, we would have thought that the free stream setting results in even lower DELs since the turbulence intensity was shown to be lower with the NTM model then in the Frandsen model. 
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{figures/delsTwrSide.png}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{figures/delsTwrFore.png}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{figures/delsBldEdge.png}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{figures/delsBldFlap.png}
+\end{subfigure}
+\caption{Comparison of the DELs}
+\label{fig:compDels}
+\end{figure}
+
+
+\subsection{Statistical max/min sensor values}
+The statistical max and min values of the sensors analyzed above for all settings can be seen in Table~\ref{tab:statmaxmin}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ | c | c | c | c | c | c | c | c | c | }
+	 \hline
+	 & \multicolumn{2}{c|}{Tower side-side} &  \multicolumn{2}{c|}{Tower fore-aft} & \multicolumn{2}{c|}{Blade flapwise} & \multicolumn{2}{c|}{Blade edgewise } \\
+	 \hline
+	 & Min & Max & Min & Max & Min & Max & Min & Max \\
+	 \hline
+	 NTM 5m/s & -1272 & 1163 & 12310 & 17310 & 1452 & 2626 & -1328 & 1304 \\
+	 \hline
+	 NTM 10m/s & -629.6 & 1635 & 9931 & 21010 & 778.8 & 3110 & -1678 & 1285 \\
+	 \hline
+	 NTM 15m/s & -2701 & 3865 & 4047 & 20430 & -306.5 & 3192 & -1798 & 1580 \\ 
+	 \hline
+	 NTM 25m/s & -8513 & 8904 & 732.7 & 23270 & -1855 & 2903 & -2001 & 1684 \\ 
+	 \hline
+	 4d, 5m/s & -1271 & 1504 & 4610 & 19290 & 1016 & 2861 & -1332 & 1314 \\ 
+	 \hline
+	 4d, 10m/s & -2666 & 2637 & 8794 & 40330 & 766.2 & 5109 & -1807 & 1775 \\ 
+	 \hline
+	 4d, 15m/s & -2481 & 3642 & 3418 & 19770 & -291.7 & 3247 & -1802 & 1609 \\ 
+	 \hline
+	 4d, 25m/s & -8523 & 9251 & 260.2 & 22730 & -1844 & 2894 & -1992 & 1710 \\ 
+	 \hline
+	 8d, 5m/s & -1183 & 1529 & 5393 & 19760 & 1024 & 2908 & -1330 & 1306 \\ 
+	 \hline
+	 8d, 10m/s & -2912 & 2818 & 8901 & 38050 & 774.3 & 4984 & -1866 & 1838 \\ 
+	 \hline
+	 8d, 15m/s & -2397 & 3576 & 3439 & 19730 & -272.9 & 3206 & -1804 & 1602 \\ 
+	 \hline
+	 8d, 25m/s & -8490 & 8621 & 1003 & 23480 & -1889 & 2921 & -2021 & 1684 \\ 
+	 \hline
+\end{tabular}
+\caption{Max and mins of sensor values}
+\label{tab:statmaxmin}
+\end{table}
+
+
+
+\subsection{Power spectral density}
+For the blade flapwise bending moment and for the tower fore-aft bending moment under wake conditions (with $8\cdot d$ distance) the power spectral density plots can be found in Figure~\ref{fig:psdplots}. Two different wind speeds of 5 m/s and 25 m/s were chosen.
+The overall pattern of the spectral density is similar in all cases. Frequencies below 1 Hz are most powerful but occur less then higher frequencies. Higher wind speeds leads to higher frequencies and flattens the spectral profile a little.
+
+This tower was designed with an Eigenfrequency of $0.2658 Hz$. There is no obvious effect on the power spectral density of the Eigenfrequency. However, the power spectral density in all cases has these spikes which should be in same way linked to the Eigenfrequency of the system components, i.e. multiples of the blades flapwise and towers eigenfrequencies.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png}
+    \caption{Blade flapwise at 5 m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png}
+      \caption{Blade flapwise at 25 m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png}
+      \caption{Tower fore-aft at 5 m/s}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png}
+        \caption{Tower fore-aft at 25 m/s}
+\end{subfigure}
+\caption{Power spectral density plots}
+\label{fig:psdplots}
+\end{figure}
+
+
+\section{CIP 6b: Extreme loads}
+\subsection{Extreme conditions}
+\begin{itemize}
+\item Load case 1.3: \\
+	Power production under the ETM (extreme turbulence model). This load case is important because extreme turbulences can damage the turbine's components much more than normal turbulence which reduces lifetime. These conditions must thus be simulated 
+\item Load case 1.5: \\
+	Power production under the EWS (extreme wind shear). Extreme wind shear occurs when there is a high vertical (or horizontal) wind speed profile, which means that wind speeds differ considerably depending on the location on the rotor area. Blades are loaded non-linearly and also the drive-train can receive varying loads which might cause damages.
+\item Load case 2.1: \\
+	Control system fault or loss of electrical network. During production (NTM) a non-functioning control system or a turbine without electrical network is in extreme conditions because missing control or even erroneous control of the turbine, e.g. wrong pitch angel, can result in production losses and even failure or damages of the turbine.
+\item Load case 6.1: \\
+	The turbine is in parked position and the underlying wind model is EWM (extreme wind) with a 50-year recurrence. This practically means an exceptionally strong gust which occurs statistically only once within 50 years and might only last a few seconds (3 seconds). Clearly, such an extreme condition can pose severe problems to a turbine including breaking of components.
+\item Load case 8.1: \\
+	The turbine is transported, assembled, maintained or repaired. Even under the NTM and wind speeds defined by the manufacturer these steps in the lifetime of a turbine must also be simulated because wrong handling during any of these steps can damage parts of the turbine.
+\end{itemize}
+
+\subsection{Simulation of extreme load cases 1.5 and 2.3}
+Now we will simulate two extreme load cases. Load case 1.5 is defined by power production plus extreme wind shear (EWS). Load case 2.3 stands for power production plus fault and extreme operation gust.
+Within the load case 2.3 two different gusts are used: The 1-year return gust
+(EOG\_1\_R) and the 50-year return gust (EOG\_50\_R). The approach is as follows: \\
+
+First we created winds by using the provided input file which we adopted to our turbine and running the IECWind.exe. As mentioned in the task description only three of the set of generated files will be used: EOG\_01\_R.wnd, EOG\_50\_R.wnd” and EWSV00\_R.wnd. Next the .ipt and .fst input files are adopted to our turbine and the generated wind files. Then the supplied Matlab script is used to derive results from the FAST output files. 
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png}
+    \caption{Tower fore-aft for EOG\_50}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50/RootMFlp2.png}
+    \caption{Blade flapwise for EOG\_50}
+\end{subfigure}
+\caption{Time series EOG}
+\label{fig:lc23signal}
+\end{figure}
+
+Let us have a look at the time series now. For load case 2.3 we consider the same sensors as in the fatigue analysis (tower fore-aft and blade flapwise bending moments) for the 50-year return gust, see Figure~\ref{fig:lc23signal}. With the occurrence of the gust and the failure a high peak in both signals follows and after that a steep decrease to zero with some oscillations and then a slow recovering of the signal. The reaction of the controller accounts for this behavior, because it changes the pitch angle in order to cope with the gust, see Figure~\ref{fig:lc23pitch}.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\linewidth]{../CIP_6/FASTextreme/EOG_50/BldPitch2.png}
+    \caption{Pitch for EOG\_50}
+\label{fig:lc23pitch}
+\end{figure}
+
+The signals for the 1-year return gust look similar (here a gust of +4.5m/s is simulated instead of +6m/s as in the case of the 50-year gust).\\
+For load case 1.5 we obtain the signals in Figure~\ref{fig:lc15signal}.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png}
+    \caption{Tower fore-aft for EWS}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EWSVR/RootMFlp2.png}
+    \caption{Blade flapwise for EWS}
+\end{subfigure}
+\caption{Time series EWS}
+\label{fig:lc15signal}
+\end{figure}
+
+Here we note that the extreme shear event also causes a peak in the signals, which is however especially for the tower not as high as in the case of EOG. Also recovery of the signal is much quicker: After only about 10 seconds the signals have returned to normal oscillations as before the extreme event. Likewise the controller reacted by adapting pitch angles of the blades in order to reduce power and loads due to the extreme shear.\\
+
+No impact could be found regarding the timing of the failure except a shift of the event on the timescale.
+Concerning the influence of the brake we modified the input parameters a little. Activation time and time for nominal torque of the brake were considerably reduced (about 25\%) while the nominal torque of the break was increased (around 20\%).
+The recovery of the signal now goes much faster, see Figure~\ref{fig:lc23breaksignal}. Here the signal already drops back to the values before the event at around $t=300s$ whereas with the original brake settings this process takes approximately twice as long (compare Figure~\ref{fig:lc23signal}.
+
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png}
+    \caption{Tower fore-aft}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png}
+    \caption{Blade flapwise}
+\end{subfigure}
+\caption{Modified breaks for EOG\_50}
+\label{fig:lc23breaksignal}
+\end{figure}
+
+A change in the time of the failure (TimeGenOf in the input file) does also affect the signal. We have had the failure occur before the extreme gust. The corresponding signal can be found in Figure~\ref{fig:lc23failtime}.
+After the failure the signal drops to zero and then the gust appears and the return to normal operation of the turbine starts.
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png}
+    \caption{Tower fore-aft}
+\end{subfigure}
+\begin{subfigure}{0.40\textwidth}
+  \includegraphics[width=1\linewidth]{../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png}
+    \caption{Blade flapwise}
+\end{subfigure}
+\caption{Changed failure time for EOG\_50}
+\label{fig:lc23failtime}
+\end{figure}
+
+
+\subsection{Extreme load table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ | l | l | l | l | l | l | }
+\hline
+	\textbf{Group} & \textbf{Variable} & \textbf{Min/Max} & \textbf{DLC 1.5 EWS} & \textbf{DLC 2.3 EOG01} & \textbf{DLC 2.3 EOG50} \\ \hline \hline
+	Tower base & Fx & Min & 206.9 & -36.4 & -20.01 \\ \hline
+	Tower base & Fx & Max & 219.5 & 326.5 & 324.8 \\ \hline
+	Tower base & Fy & Min & -10.1 & -56.23 & -59.6 \\ \hline
+	Tower base & Fy & Max & 1.61 & 49.4 & 47.23 \\ \hline
+	Tower base & Fz & Min & -2002 & -2000 & -2001 \\ \hline
+	Tower base & Fz & Max & -1993 & -1969 & -1971 \\ \hline
+	Tower base & Mx & Min & 630.9 & -1680 & -2084 \\ \hline
+	Tower base & Mx & Max & 1630 & 2216 & 2567 \\ \hline
+	Tower base & My & Min & 17590 & -3825 & -2380 \\ \hline
+	Tower base & My & Max & 18470 & 26580 & 26490 \\ \hline
+	Tower base & Mz & Min & -47.01 & -114.7 & -115 \\ \hline
+	Tower base & Mz & Max & 158.4 & 65.48 & 67.85 \\ \hline
+	Blade root & Fx & Min & 51.93 & -7.054 & -2.584 \\ \hline
+	Blade root & Fx & Max & 99.58 & 97.53 & 101.2 \\ \hline
+	Blade root & Fy & Min & -53.65 & -53.05 & -53.83 \\ \hline
+	Blade root & Fy & Max & 28.19 & 38.35 & 38.11 \\ \hline
+	Blade root & Fz & Min & 196.9 & 184 & 186.2 \\ \hline
+	Blade root & Fz & Max & 281.2 & 339.1 & 337.6 \\ \hline
+	Blade root & Mx & Min & -296.2 & -470.9 & -465.8 \\ \hline
+	Blade root & Mx & Max & 726.5 & 684.5 & 710.5 \\ \hline
+	Blade root & My & Min & 947.5 & -277.6 & -185.3 \\ \hline
+	Blade root & My & Max & 1966 & 1839 & 1943 \\ \hline
+	Blade root & Mz & Min & 0.7765 & -0.4313 & -0.4882 \\ \hline
+	Blade root & Mz & Max & 12.05 & 16.25 & 13.77 \\ \hline
+\end{tabular}
+\caption{Extreme load table}
+\label{tab:exloadtable}
+\end{table}
+
+For tower base and blade root all max and min values of the 6 variables have been extracted from the signal data in Matlab. Values are in KN (forces) and kNm (moments). The first observation is that load case 2.3 dominates load case 1.5 with respect to the amplitudes. The more extreme values of the time series occur in the last and before-last column of the table. Only for some variables we find higher amplitudes for load case 1.5, e.g. TwrBsFzt and TwrBsMzt. 
+Within the load case 2.3 there is no clearly dominant setting. The 1-year gust and the 50-year gust setting both have similar amplitudes in the signals. Sometimes EOG\_01 has lower min or higher max values and sometimes EOG\_50 wins.
+
+\section{Summary}
+In this design project the entire process of designing a wind turbine has been carried out. We have seen that it is a very complex undertaking requiring a lot of expertise from engineering, physics and also meteorology. The team has to be very accurate at any point and take into account a lot of aspects. The site conditions must be investigated in order to find out about the possible revenues of the turbine and thus the financial revenue during its lifetime. Economic feasibility is the pre-condition of the whole project for all stakeholders.
+The wind distribution, the design of the rotor blade and the mechanical
+and electrical efficiency must be taken into account. Wind turbine dynamics are an important aspect as well. Many design decisions must be met which influence the possible energy gain and also the further design process. Security is the next big topic. A load analysis has to be carried out regarding fatigue and extreme loads, otherwise the turbine can not be certified.
+All these steps and many more which have not been treated in this project require a professional team and a good time-management in order to successfully design a good turbine.
+
 \end{document}

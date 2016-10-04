@@ -52,8 +52,8 @@ RElm   Twist    Chord  AFfile  PrntElem
 True                                     UseCm:               Are Cm data included in the airfoil tables?
 False                                    UseCpmin:            Are Cp,min data included in the airfoil tables?
 2                                        NumAF:               Number of airfoil files.
-"C:\Users\derPianist\Documents\GitHub\DoWES\CIP_3\WT_Perf\Airfoils\NACA_65_421.dat"
-"C:\Users\derPianist\Documents\GitHub\DoWES\CIP_3\WT_Perf\Airfoils\NACA_65_415.dat"
+"/home/jan/Prive/Semester6/DesignProject/Repo/CIP_3/WT_Perf/Airfoils/NACA_65_421.dat"
+"/home/jan/Prive/Semester6/DesignProject/Repo/CIP_3/WT_Perf/Airfoils/NACA_65_415.dat"
 -----  Output Configuration  ---------------------------------------------------
 False                UnfPower:                  Write parametric power to an unformatted file?
 True                 TabDel:                    Make output tab-delimited (fixed-width otherwise).

@@ -2,14 +2,14 @@ ALL        CONDITION FOR WHICH WIND WILL BE GENERATED,(see Table 1 below)
 SI         UNITS (SI or ENGLISH)
 2          IEC WIND TURBINE CLASS
 B          WIND TURBULENCE CATEGORY (A or B)
-12.0       Vrated, m/s or ft/s 
+11.0       Vrated, m/s or ft/s 
 25.0       Vout, m/s or ft/s
 0.0        Slope of the wind inflow (IEC specifies between -8 and +8), deg
 200.0      START OF IEC TRANSIENT CONDITION, sec
 .01        WIND FILE TIME STEP FOR TRANSIENT PORTION, sec
 BOTH       SIGN FOR WIND DIRECTION AND HORIZONTAL SHEAR (+ OR - OR "BOTH")
-80         Wind turbine hub-height, m or ft
-90.0       Wind turbine rotor diameter, m or ft
+100        Wind turbine hub-height, m or ft
+108       Wind turbine rotor diameter, m or ft
 
 
 INPUT DESCRIPTION FOR THE IEC WIND GENERATING PROGRAM IECWind
