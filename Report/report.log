@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.21)  4 OCT 2016 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.21)  5 OCT 2016 00:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -676,7 +676,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ... {6.6}Possible faults}{28}{subsection.6.6}
+l.35 ...odeling with Frandsen}{31}{subsection.6.5}
                                                    [1])
 \tf@toc=\write4
 \openout4 = `report.toc'.
@@ -691,7 +691,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--145
 
  []
 
-<../CIP_1/lift_to_drag_ratio_415.png, id=270, 429.2838pt x 338.7054pt>
+<../CIP_1/lift_to_drag_ratio_415.png, id=275, 429.2838pt x 338.7054pt>
 File: ../CIP_1/lift_to_drag_ratio_415.png Graphic file (type png)
 
 <use ../CIP_1/lift_to_drag_ratio_415.png>
@@ -699,7 +699,7 @@ Package pdftex.def Info: ../CIP_1/lift_to_drag_ratio_415.png used on input line
  159.
 (pdftex.def)             Requested size: 215.0023pt x 169.63654pt.
 
-<../CIP_1/lift_to_drag_ratio_421.png, id=271, 429.2838pt x 317.5062pt>
+<../CIP_1/lift_to_drag_ratio_421.png, id=276, 429.2838pt x 317.5062pt>
 File: ../CIP_1/lift_to_drag_ratio_421.png Graphic file (type png)
 
 <use ../CIP_1/lift_to_drag_ratio_421.png>
@@ -718,227 +718,252 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--189
 
 [5] [6 <../CIP_1/lift_to_drag_ratio_415.png (PNG copy)> <../CIP_1/lift_to_drag_
 ratio_421.png (PNG copy)>]
-<../CIP_2/Figures/blade_elements.png, id=290, 400.49625pt x 145.54375pt>
+Underfull \hbox (badness 10000) in paragraph at lines 197--202
+
+ []
+
+<../CIP_1/ws_plot.png, id=296, 429.2838pt x 317.5062pt>
+File: ../CIP_1/ws_plot.png Graphic file (type png)
+
+<use ../CIP_1/ws_plot.png>
+Package pdftex.def Info: ../CIP_1/ws_plot.png used on input line 206.
+(pdftex.def)             Requested size: 430.00462pt x 318.03831pt.
+
+<../CIP_1/power_curve.png, id=297, 421.575pt x 316.0608pt>
+File: ../CIP_1/power_curve.png Graphic file (type png)
+
+<use ../CIP_1/power_curve.png>
+Package pdftex.def Info: ../CIP_1/power_curve.png used on input line 213.
+(pdftex.def)             Requested size: 430.00462pt x 322.38739pt.
+ [7 <../CIP_1/ws_plot.png (PNG copy)>]
+<../CIP_1/energy_yield.png, id=305, 421.575pt x 316.0608pt>
+File: ../CIP_1/energy_yield.png Graphic file (type png)
+
+<use ../CIP_1/energy_yield.png>
+Package pdftex.def Info: ../CIP_1/energy_yield.png used on input line 221.
+(pdftex.def)             Requested size: 430.00462pt x 322.38739pt.
+ [8 <../CIP_1/power_curve.png (PNG copy)>]
+<../CIP_2/Figures/blade_elements.png, id=312, 400.49625pt x 145.54375pt>
 File: ../CIP_2/Figures/blade_elements.png Graphic file (type png)
 
 <use ../CIP_2/Figures/blade_elements.png>
 Package pdftex.def Info: ../CIP_2/Figures/blade_elements.png used on input line
- 196.
+ 229.
 (pdftex.def)             Requested size: 430.00462pt x 156.27658pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--209
+ [9 <../CIP_1/energy_yield.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 238--242
 
  []
 
-[7 <../CIP_2/Figures/blade_elements.png>]
-Overfull \hbox (31.94087pt too wide) in paragraph at lines 224--243
+
+Overfull \hbox (31.94087pt too wide) in paragraph at lines 257--276
+[][] 
+ []
+
+[10 <../CIP_2/Figures/blade_elements.png>]
+Overfull \hbox (31.94087pt too wide) in paragraph at lines 301--319
 [][] 
  []
 
 
-Overfull \hbox (31.94087pt too wide) in paragraph at lines 268--286
+Overfull \hbox (23.69072pt too wide) in paragraph at lines 324--335
 [][] 
  []
 
-[8]
-Overfull \hbox (23.69072pt too wide) in paragraph at lines 291--302
-[][] 
- []
-
-[9] [10] <../CIP_3/WT_Perf/Output/cp.png, id=329, 578.16pt x 433.62pt>
+[11] [12] [13] <../CIP_3/WT_Perf/Output/cp.png, id=356, 578.16pt x 433.62pt>
 File: ../CIP_3/WT_Perf/Output/cp.png Graphic file (type png)
 
 <use ../CIP_3/WT_Perf/Output/cp.png>
-Package pdftex.def Info: ../CIP_3/WT_Perf/Output/cp.png used on input line 359.
+Package pdftex.def Info: ../CIP_3/WT_Perf/Output/cp.png used on input line 392.
 
 (pdftex.def)             Requested size: 430.00462pt x 322.50143pt.
- [11]
-<../CIP_3/WT_Perf/Output/thrust.png, id=355, 578.16pt x 433.62pt>
+ [14]
+<../CIP_3/WT_Perf/Output/thrust.png, id=382, 578.16pt x 433.62pt>
 File: ../CIP_3/WT_Perf/Output/thrust.png Graphic file (type png)
 
 <use ../CIP_3/WT_Perf/Output/thrust.png>
 Package pdftex.def Info: ../CIP_3/WT_Perf/Output/thrust.png used on input line 
-367.
+400.
 (pdftex.def)             Requested size: 430.00462pt x 322.50143pt.
- [12 <../CIP_3/WT_Perf/Output/cp.png>]
-<../CIP_3/WT_Perf/Output/torque.png, id=364, 578.16pt x 433.62pt>
+ [15 <../CIP_3/WT_Perf/Output/cp.png>]
+<../CIP_3/WT_Perf/Output/torque.png, id=390, 578.16pt x 433.62pt>
 File: ../CIP_3/WT_Perf/Output/torque.png Graphic file (type png)
 
 <use ../CIP_3/WT_Perf/Output/torque.png>
 Package pdftex.def Info: ../CIP_3/WT_Perf/Output/torque.png used on input line 
-376.
+409.
 (pdftex.def)             Requested size: 430.00462pt x 322.50143pt.
- [13 <../CIP_3/WT_Perf/Output/thrust.png>]
-<../CIP_3/Report/power_coeff_literature.png, id=374, 866.23625pt x 506.89375pt>
+ [16 <../CIP_3/WT_Perf/Output/thrust.png>]
+<../CIP_3/Report/power_coeff_literature.png, id=400, 866.23625pt x 506.89375pt>
 File: ../CIP_3/Report/power_coeff_literature.png Graphic file (type png)
 <use ../CIP_3/Report/power_coeff_literature.png>
 Package pdftex.def Info: ../CIP_3/Report/power_coeff_literature.png used on inp
-ut line 387.
+ut line 420.
 (pdftex.def)             Requested size: 430.00462pt x 251.62863pt.
- [14 <../CIP_3/WT_Perf/Output/torque.png>]
-<../CIP_3/Report/thrust_coeff_literature.png, id=384, 546.04pt x 330.23375pt>
+ [17 <../CIP_3/WT_Perf/Output/torque.png>]
+<../CIP_3/Report/thrust_coeff_literature.png, id=410, 546.04pt x 330.23375pt>
 File: ../CIP_3/Report/thrust_coeff_literature.png Graphic file (type png)
 
 <use ../CIP_3/Report/thrust_coeff_literature.png>
 Package pdftex.def Info: ../CIP_3/Report/thrust_coeff_literature.png used on in
-put line 396.
+put line 429.
 (pdftex.def)             Requested size: 430.00462pt x 260.06044pt.
- [15 <../CIP_3/Report/power_coeff_literature.png>]
-<../CIP_3/Report/torque_coeff_literature.png, id=392, 832.10875pt x 498.86375pt
+ [18 <../CIP_3/Report/power_coeff_literature.png>]
+<../CIP_3/Report/torque_coeff_literature.png, id=419, 832.10875pt x 498.86375pt
 >
 File: ../CIP_3/Report/torque_coeff_literature.png Graphic file (type png)
  <use ../CIP_3/Report/torque_coeff_literature.png>
 Package pdftex.def Info: ../CIP_3/Report/torque_coeff_literature.png used on in
-put line 405.
+put line 438.
 (pdftex.def)             Requested size: 430.00462pt x 257.79689pt.
- [16 <../CIP_3/Report/thrust_coeff_literature.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+ [19 <../CIP_3/Report/thrust_coeff_literature.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
 
  []
 
-[17 <../CIP_3/Report/torque_coeff_literature.png>]
-<../CIP_3/WT_Perf/Output/validated_cp.png, id=406, 578.16pt x 433.62pt>
+[20 <../CIP_3/Report/torque_coeff_literature.png>]
+<../CIP_3/WT_Perf/Output/validated_cp.png, id=433, 578.16pt x 433.62pt>
 File: ../CIP_3/WT_Perf/Output/validated_cp.png Graphic file (type png)
 
 <use ../CIP_3/WT_Perf/Output/validated_cp.png>
 Package pdftex.def Info: ../CIP_3/WT_Perf/Output/validated_cp.png used on input
- line 436.
+ line 469.
 (pdftex.def)             Requested size: 430.00462pt x 322.50143pt.
- [18 <../CIP_3/WT_Perf/Output/validated_cp.png>] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
+ [21 <../CIP_3/WT_Perf/Output/validated_cp.png>] [22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--486
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 489.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 522.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 489.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 522.
 
-<../CIP_4/figures/eigenfrequency.jpg, id=424, 890.32625pt x 666.49pt>
+<../CIP_4/figures/eigenfrequency.jpg, id=451, 890.32625pt x 666.49pt>
 File: ../CIP_4/figures/eigenfrequency.jpg Graphic file (type jpg)
 
 <use ../CIP_4/figures/eigenfrequency.jpg>
 Package pdftex.def Info: ../CIP_4/figures/eigenfrequency.jpg used on input line
- 497.
+ 530.
 (pdftex.def)             Requested size: 430.00462pt x 321.89467pt.
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 503--504
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--506
+Underfull \hbox (badness 10000) in paragraph at lines 538--539
 
  []
 
-[22 <../CIP_4/figures/eigenfrequency.jpg>]
-<../CIP_4/figures/campbell.jpg, id=445, 878.28125pt x 658.46pt>
+[25 <../CIP_4/figures/eigenfrequency.jpg>]
+<../CIP_4/figures/campbell.jpg, id=472, 878.28125pt x 658.46pt>
 File: ../CIP_4/figures/campbell.jpg Graphic file (type jpg)
 
 <use ../CIP_4/figures/campbell.jpg>
-Package pdftex.def Info: ../CIP_4/figures/campbell.jpg used on input line 509.
+Package pdftex.def Info: ../CIP_4/figures/campbell.jpg used on input line 542.
 (pdftex.def)             Requested size: 430.00462pt x 322.387pt.
- [23 <../CIP_4/figures/campbell.jpg>]
+ [26 <../CIP_4/figures/campbell.jpg>]
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hours_yea
-r.png, id=451, 421.575pt x 316.0608pt>
+r.png, id=478, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hour
 s_year.png Graphic file (type png)
 
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hours
 _year.png>
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/windspeed_vs_hours_year.png used on input line 521.
+n/windspeed_vs_hours_year.png used on input line 554.
 (pdftex.def)             Requested size: 430.00462pt x 322.38739pt.
- [24 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hour
+ [27 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/windspeed_vs_hour
 s_year.png (PNG copy)>]
-<../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png, id=45
-9, 421.575pt x 316.0608pt>
+<../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png, id=48
+5, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png G
 raphic file (type png)
 
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png>
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/power_curve.png used on input line 536.
+n/power_curve.png used on input line 569.
 (pdftex.def)             Requested size: 430.00462pt x 322.38739pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_yield.png, id=4
-63, 421.575pt x 316.0608pt>
+89, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_yield.png 
 Graphic file (type png)
 
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_yield.png>
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/energy_yield.png used on input line 545.
+n/energy_yield.png used on input line 578.
 (pdftex.def)             Requested size: 430.00462pt x 322.38739pt.
 
-[25 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png (P
-NG copy)>] [26 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_
+[28 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/power_curve.png (P
+NG copy)>] [29 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/energy_
 yield.png (PNG copy)>]
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.png, 
-id=478, 413.8662pt x 314.6154pt>
+id=504, 413.8662pt x 314.6154pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.
 png Graphic file (type png)
 
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.p
 ng>
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/TurbSim/wind_5ms.png used on input line 579.
+n/TurbSim/wind_5ms.png used on input line 612.
 (pdftex.def)             Requested size: 171.99922pt x 130.75017pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_10ms.png,
- id=479, 421.575pt x 316.0608pt>
+ id=505, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_10ms
 .png Graphic file (type png)
 
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_10ms.
 png>
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/TurbSim/wind_10ms.png used on input line 584.
+n/TurbSim/wind_10ms.png used on input line 617.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_15ms.png,
- id=480, 421.575pt x 316.0608pt>
+ id=506, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_15ms
 .png Graphic file (type png)
 
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_15ms.
 png>
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/TurbSim/wind_15ms.png used on input line 589.
+n/TurbSim/wind_15ms.png used on input line 622.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_25ms.png,
- id=481, 425.9112pt x 319.4334pt>
+ id=507, 425.9112pt x 319.4334pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_25ms
 .png Graphic file (type png)
 
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_25ms.
 png>
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/TurbSim/wind_25ms.png used on input line 594.
+n/TurbSim/wind_25ms.png used on input line 627.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
- [27 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.
+ [30 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.
 png (PNG copy)> <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSi
 m/wind_10ms.png (PNG copy)> <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simul
 ation/TurbSim/wind_15ms.png (PNG copy)> <../CIP_5/CIP_Tutorial_5_-_Windfield_an
 d_wake_simulation/TurbSim/wind_25ms.png (PNG copy)>]
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png, id
-=489, 421.575pt x 316.0608pt>
+=516, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.pn
 g Graphic file (type png)
 
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png
 >
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/wake_effects_5.png used on input line 629.
+n/wake_effects_5.png used on input line 662.
 (pdftex.def)             Requested size: 215.0023pt x 161.1937pt.
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.
 png Graphic file (type png)
@@ -946,249 +971,246 @@ png Graphic file (type png)
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_5ms.p
 ng>
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/TurbSim/wind_5ms.png used on input line 640.
+n/TurbSim/wind_5ms.png used on input line 673.
 (pdftex.def)             Requested size: 215.0023pt x 163.44252pt.
 
 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_wake_4_5m
-s.png, id=491, 421.575pt x 316.0608pt>
+s.png, id=518, 421.575pt x 316.0608pt>
 File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_wake
 _4_5ms.png Graphic file (type png)
 
 <use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/TurbSim/wind_wake_
 4_5ms.png>
 Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
-n/TurbSim/wind_wake_4_5ms.png used on input line 645.
+n/TurbSim/wind_wake_4_5ms.png used on input line 678.
 (pdftex.def)             Requested size: 215.0023pt x 161.1937pt.
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 638--648
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 671--681
 []$[]$ $[]$ 
  []
 
-[28 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png
- (PNG copy)>] [29 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/Turb
+[31 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png
+ (PNG copy)>] [32 <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/Turb
 Sim/wind_wake_4_5ms.png (PNG copy)>]
-<../CIP_6/FAST/Plots_ws5/TwrBsMxt.png, id=507, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/TwrBsMxt.png, id=534, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png>
 Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png used on input lin
-e 668.
+e 701.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
-<../CIP_6/FAST/Plots_ws5/TwrBsMyt.png, id=508, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/TwrBsMyt.png, id=535, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png used on input lin
-e 672.
+e 705.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
-<../CIP_6/FAST/Plots_ws5/RootMFlp2.png, id=509, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/RootMFlp2.png, id=536, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/RootMFlp2.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/RootMFlp2.png used on input li
-ne 676.
+ne 709.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
 
-<../CIP_6/FAST/Plots_ws5/RootMedg2.png, id=510, 421.575pt x 316.0608pt>
+<../CIP_6/FAST/Plots_ws5/RootMedg2.png, id=537, 421.575pt x 316.0608pt>
 File: ../CIP_6/FAST/Plots_ws5/RootMedg2.png Graphic file (type png)
 
 <use ../CIP_6/FAST/Plots_ws5/RootMedg2.png>
 Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/RootMedg2.png used on input li
-ne 680.
+ne 713.
 (pdftex.def)             Requested size: 171.99922pt x 128.94917pt.
- [30 <../CIP_6/FAST/Plots_ws5/TwrBsMxt.png (PNG copy)> <../CIP_6/FAST/Plots_ws5
+ [33 <../CIP_6/FAST/Plots_ws5/TwrBsMxt.png (PNG copy)> <../CIP_6/FAST/Plots_ws5
 /TwrBsMyt.png (PNG copy)> <../CIP_6/FAST/Plots_ws5/RootMFlp2.png (PNG copy)> <.
 ./CIP_6/FAST/Plots_ws5/RootMedg2.png (PNG copy)>]
-Overfull \hbox (84.20546pt too wide) in paragraph at lines 714--729
+Overfull \hbox (84.20546pt too wide) in paragraph at lines 747--762
 [][] 
  []
 
-<figures/delsTwrSide.png, id=520, 482.80376pt x 290.08376pt>
+<figures/delsTwrSide.png, id=546, 482.80376pt x 290.08376pt>
 File: figures/delsTwrSide.png Graphic file (type png)
 
 <use figures/delsTwrSide.png>
-Package pdftex.def Info: figures/delsTwrSide.png used on input line 740.
+Package pdftex.def Info: figures/delsTwrSide.png used on input line 773.
 (pdftex.def)             Requested size: 171.99922pt x 103.34119pt.
 
-<figures/delsTwrFore.png, id=521, 482.80376pt x 290.08376pt>
+<figures/delsTwrFore.png, id=547, 482.80376pt x 290.08376pt>
 File: figures/delsTwrFore.png Graphic file (type png)
 
 <use figures/delsTwrFore.png>
-Package pdftex.def Info: figures/delsTwrFore.png used on input line 743.
+Package pdftex.def Info: figures/delsTwrFore.png used on input line 776.
 (pdftex.def)             Requested size: 171.99922pt x 103.34119pt.
 
-<figures/delsBldEdge.png, id=522, 481.8pt x 289.08pt>
+<figures/delsBldEdge.png, id=548, 481.8pt x 289.08pt>
 File: figures/delsBldEdge.png Graphic file (type png)
 
 <use figures/delsBldEdge.png>
-Package pdftex.def Info: figures/delsBldEdge.png used on input line 746.
+Package pdftex.def Info: figures/delsBldEdge.png used on input line 779.
 (pdftex.def)             Requested size: 171.99922pt x 103.19974pt.
 
-<figures/delsBldFlap.png, id=523, 481.8pt x 289.08pt>
+<figures/delsBldFlap.png, id=549, 481.8pt x 289.08pt>
 File: figures/delsBldFlap.png Graphic file (type png)
 
 <use figures/delsBldFlap.png>
-Package pdftex.def Info: figures/delsBldFlap.png used on input line 749.
+Package pdftex.def Info: figures/delsBldFlap.png used on input line 782.
 (pdftex.def)             Requested size: 171.99922pt x 103.19974pt.
- [31] [32 <./figures/delsTwrSide.png> <./figures/delsTwrFore.png> <./figures/de
+ [34] [35 <./figures/delsTwrSide.png> <./figures/delsTwrFore.png> <./figures/de
 lsBldEdge.png> <./figures/delsBldFlap.png>]
-<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png, id=541, 421.575pt x 316.1
+<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png, id=568, 421.575pt x 316.1
 8124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png Graphic file (type pn
 g)
  <use ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png>
 Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png us
-ed on input line 807.
+ed on input line 840.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 
-<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png, id=542, 421.575pt x 316.
+<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png, id=569, 421.575pt x 316.
 18124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png Graphic file (type p
 ng)
  <use ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png>
 Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png u
-sed on input line 811.
+sed on input line 844.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 
-<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png, id=543, 421.575pt x 316.1
+<../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png, id=570, 421.575pt x 316.1
 8124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png Graphic file (type pn
 g)
  <use ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png>
 Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_TowerFore.png us
-ed on input line 815.
+ed on input line 848.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 
-<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png, id=544, 421.575pt x 316.
+<../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png, id=571, 421.575pt x 316.
 18124pt>
 File: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png Graphic file (type p
 ng)
  <use ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png>
 Package pdftex.def Info: ../CIP_6/FAST/PSD_plots/PSD_ws25_wake8_TowerFore.png u
-sed on input line 819.
+sed on input line 852.
 (pdftex.def)             Requested size: 171.99922pt x 128.9983pt.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 830.
- [33 <../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png (PNG copy)> <../CIP_6
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 863.
+ [36 <../CIP_6/FAST/PSD_plots/PSD_ws5_wake8_BladeFlap.png (PNG copy)> <../CIP_6
 /FAST/PSD_plots/PSD_ws25_wake8_BladeFlap.png (PNG copy)> <../CIP_6/FAST/PSD_plo
 ts/PSD_ws5_wake8_TowerFore.png (PNG copy)> <../CIP_6/FAST/PSD_plots/PSD_ws25_wa
 ke8_TowerFore.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 843--846
+Underfull \hbox (badness 10000) in paragraph at lines 876--879
 
  []
 
-[34]
-<../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png, id=554, 425.9112pt x 319.4334pt>
+[37]
+<../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png, id=582, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png used on input
- line 852.
+ line 885.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50/RootMFlp2.png, id=555, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EOG_50/RootMFlp2.png, id=583, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png used on inpu
-t line 856.
+t line 889.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50/BldPitch2.png, id=558, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EOG_50/BldPitch2.png, id=586, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EOG_50/BldPitch2.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EOG_50/BldPitch2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/BldPitch2.png used on inpu
-t line 866.
+t line 899.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png, id=560, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png, id=588, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png used on input 
-line 877.
+line 910.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EWSVR/RootMFlp2.png, id=561, 425.9112pt x 319.4334pt>
+<../CIP_6/FASTextreme/EWSVR/RootMFlp2.png, id=589, 425.9112pt x 319.4334pt>
 File: ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png Graphic file (type png)
 
 <use ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png used on input
- line 881.
+ line 914.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
- [35 <../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextrem
+ [38 <../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextrem
 e/EOG_50/RootMFlp2.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50/BldPitch2.png (
 PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 888--889
+Underfull \hbox (badness 10000) in paragraph at lines 921--922
 
  []
 
 
-<../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png, id=571, 425.9112pt x 319.4334p
+<../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png, id=598, 425.9112pt x 319.4334p
 t>
 File: ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png Graphic file (type png)
  <use ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png used on
- input line 897.
+ input line 930.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png, id=572, 425.9112pt x 319.4334
+<../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png, id=599, 425.9112pt x 319.4334
 pt>
 File: ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png Graphic file (type png)
  <use ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png used o
-n input line 901.
+n input line 934.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
- [36 <../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme
+ [39 <../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme
 /EWSVR/RootMFlp2.png (PNG copy)>]
-<../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png, id=581, 425.9112pt x 319.43
+<../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png, id=607, 425.9112pt x 319.43
 34pt>
 File: ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png Graphic file (type png)
 
  <use ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png used
- on input line 913.
+ on input line 946.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-<../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png, id=582, 425.9112pt x 319.4
+<../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png, id=608, 425.9112pt x 319.4
 334pt>
 File: ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png Graphic file (type png
 )
  <use ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png>
 Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png use
-d on input line 917.
+d on input line 950.
 (pdftex.def)             Requested size: 171.99922pt x 128.99937pt.
 
-Overfull \hbox (19.72977pt too wide) in paragraph at lines 929--957
+Overfull \hbox (19.72977pt too wide) in paragraph at lines 962--990
  [][] 
  []
 
-[37 <../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTe
+[40 <../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTe
 xtreme/EOG_50_brake/RootMFlp2.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50_fail
 time/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.p
-ng (PNG copy)>] [38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 970.
- [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 970.
+ng (PNG copy)>] [41]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1003.
+ [42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1003.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 970.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 970.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1003.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1003.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 0D0A4301D00A8F2A9F7B7B03B37D7A84;3190.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 970.
+(rerunfilecheck)             Checksum: ED0821D3E20F2587CDEFEA8B2DE3DBF9;3265.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1003.
  ) 
 Here is how much of TeX's memory you used:
- 10798 strings out of 493085
- 161039 string characters out of 6136917
- 398487 words of memory out of 5000000
- 13933 multiletter control sequences out of 15000+600000
+ 10823 strings out of 493085
+ 161538 string characters out of 6136917
+ 398650 words of memory out of 5000000
+ 13949 multiletter control sequences out of 15000+600000
  12535 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,40p,1173b,1689s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1212,10 +1234,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
 public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosy
 m/feymr10.pfb>
-Output written on report.pdf (40 pages, 2382662 bytes).
+Output written on report.pdf (43 pages, 2453359 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
- 580 compressed objects within 6 object streams
- 170 named destinations out of 1000 (max. 500000)
- 571 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 732 PDF objects out of 1000 (max. 8388607)
+ 602 compressed objects within 7 object streams
+ 178 named destinations out of 1000 (max. 500000)
+ 594 words of extra memory for PDF output out of 10000 (max. 10000000)
 

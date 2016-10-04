@@ -190,6 +190,39 @@ lift-to-drag method & 5.0 & 0.952 & 0.006 &  0.092\\
 
 As the 80\% method results in a higher lift coefficients for both profiles we selected the corresponding parameters according to the 80\% method.
 \newpage
+\subsection{Annual Energy Production}
+The annual energy production is defined as 
+\begin{equation}
+\text{total energy production} = \sum n_v \cdot p_v
+\end{equation}
+with\\
+n = number of hours \\
+p = power curve\\
+v = wind speed\\
+
+With an assumed Rayleigh distribution figure~\ref{fig:ws} was calculated to show the wind speed distribution over a year.
+
+\begin{figure}[H]
+\includegraphics[width=1\linewidth]{../CIP_1/ws_plot.png}
+\caption{Wind speed vs. hours per year}
+\label{fig:ws}
+\end{figure}
+In order to proceed with the calculation of the annual energy production the power curve was also calculated, which is shown in the following figure.
+
+\begin{figure}[H]
+\includegraphics[width=1\linewidth]{../CIP_1/power_curve.png}
+\caption{Power curve}
+\label{fig:power}
+\end{figure}
+
+With these two parameters we were able to calculate the annual energy production which can be extracted by integrating over the whole domain. Figure~\ref{fig:yield} shows the outcome. The annual energy yield is estimated at 18.325 kWh. In order to achieve the highest energy output it is necessary to guarantee a high availability of the turbine. 
+
+\begin{figure}[H]
+\includegraphics[width=1\linewidth]{../CIP_1/energy_yield.png}
+\caption{Annual Energy yield}
+\label{fig:yield}
+\end{figure}
+
 \section{CIP 2: Advanced BEM }
 In the first part of CIP 2 we designed the blade of the wind turbine. In the lecture we discussed two theories which are used to design the blade geometry. Betz and Schmitz theory both have different approaches to calculate the chord length and the twist angle. For the following steps it is import to keep in mind that the given blade consists of 10 blade elements, which are shown in the following figure.
 \begin{figure}[H]
@@ -408,20 +441,20 @@ At last the predicted torque coefficient was evaluated in figure \ref{fig:torque
 \end{figure} 
 
 \subsection{Rotor rated speed}
-In task 3.4 we were asked to calculate the resulting rotor speed for a rated wind speed of 8 m/s. For the calculation we used our design tip speed ratio:
+In task 3.4 we were asked to calculate the resulting rotor speed for a rated wind speed of 9 m/s. For the calculation we used our design tip speed ratio:
 \begin{align}
 \lambda = \frac{\Omega R}{v}\\
 n = \frac{60 \lambda v}{2 \pi R} = 10.07 rpm
 \end{align}
 \subsection{Operation conditions}
-Again we used WT\_Perf to calculate the resulting operation conditions below rated wind speed. The input parameters are: v = 8 m/s, design top speed ratio $\lambda$ = 8.2 and rotational speed $n$ = 10.07 rpm. The results are shown in the following table:\\
+Again we used WT\_Perf to calculate the resulting operation conditions below rated wind speed. The input parameters are: v = 9 m/s, design top speed ratio $\lambda$ = 8.2 and rotational speed $n$ = 10.07 rpm. The results are shown in the following table:\\
 
 \begin{tabular}{|c |c| c| c| c| c|}
 \hline
 v & rotor speed & $c_p$ & $c_t$ & $c_q$ & $P$\\
 m/s &rpm & - &- &-& kW\\
 \hline
-8 &10.07&0.544&0.825&0.033& 2054.846\\
+9 &10.07&0.544&0.825&0.033& 2054.846\\
 \hline
 \end{tabular}
 \subsection{Coefficients}
@@ -442,7 +475,7 @@ The resulting $c_p$ corresponds to a tip speed ratio of 5 with a pitch angle of 
 \begin{align*}
 n = \frac{60 \lambda v}{2 \pi R} = 9.21 rpm
 \end{align*}
-It can be seen, that for conditions below rated wind speed it is still possible to achieve a high power coefficient. The calculated power coefficient for 8 m/s is 0.544. If the wind speed is higher than the rated wind speed the power coefficient drops significantly. This is due to the limited power generation of the generator. Not all kinetic energy of the wind can be transformed into electrical energy and pitching is required to protect the generator. 
+It can be seen, that for conditions below rated wind speed it is still possible to achieve a high power coefficient. The calculated power coefficient for 9 m/s is 0.544. If the wind speed is higher than the rated wind speed the power coefficient drops significantly. This is due to the limited capacity of the generator. Not all kinetic energy of the wind can be transformed into electrical energy and pitching is required to protect the generator. 
 In both cases the rotations per minute are below rated rotor speed. Therefore the most efficient possibility to design a turbine is to make it variable. A constant tip speed ratio can be achieved, which leads to a high power coefficient.
 \newpage
 \section{CIP 4: Tower design}

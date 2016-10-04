@@ -83,3 +83,56 @@ full_load_hours_enercon = netyield_enercon/3000;
 capacity_vestas = netyield_vestas/(1800*8760);
 capacity_nordex = netyield_nordex/(2500*8760);
 capacity_enercon = netyield_enercon/(3000*8760);
+
+%% rayleigh verteilung 
+clear all;
+close all;
+disp(' Weibull Distribution 8.5 Mean')
+figure;
+sample = wblrnd(9.55, 2, 8760, 1);
+mean = mean(sample);
+disp(mean);
+ylim = max(sample)
+pd = histfit(sample,24, 'wbl');
+delete(pd(1))
+xlabel('Windspeed in m/s')
+ylabel('Hours per year')
+title('Wind speed vs. hours a year')
+hold on
+plot([3.5 3.5],[0 1000])
+text([3.5 3.5],[500 500],'Cut in')
+plot([11 11],[0 1000])
+text([11 11],[500 500],'Rated Wind Speed')
+plot([25 25],[0 1000])
+number = hist(sample,25)
+
+
+
+text([25 25],[500 500],'Cut off')
+xlim([0 26])
+saveas(gcf,'ws_plot.png')
+%% power curve
+for i= 1 :25
+    u(i) = 0.5*1.225*98^2*pi*i^3/4/1000/1000
+    if u(i) > 3.500
+        u(i) = 3.500
+    end
+end
+figure
+plot(u)
+xlabel('Windspeed in m/s')
+ylabel('Power in kW')
+title('Power curve')
+saveas(gcf,'power_curve.png')
+%% yield
+for i = 1:length(u)
+    yield(i) = u(i) * number(i)
+end
+figure
+plot(yield)
+xlabel('Windspeed in m/s')
+ylabel('Energy yield in kWh')
+title('Energy Yield')
+sum(yield)
+disp(sum(yield))
+saveas(gcf,'energy_yield.png')

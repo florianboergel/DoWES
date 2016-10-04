@@ -10,37 +10,38 @@
 \contentsline {subsection}{\numberline {2.7}Annual Energy Production}{5}{subsection.2.7}
 \contentsline {subsection}{\numberline {2.8}Main aerodynamic properties}{5}{subsection.2.8}
 \contentsline {subsection}{\numberline {2.9}Annual Energy Production}{6}{subsection.2.9}
-\contentsline {section}{\numberline {3}CIP 2: Advanced BEM }{7}{section.3}
-\contentsline {subsection}{\numberline {3.1}Design your blade according to Betz theory}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Design according to Schmitz}{8}{subsection.3.2}
-\contentsline {section}{\numberline {4}CIP 3: Performance Curves}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Introduction}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}WT\_Perf}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Comparison}{11}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Rotor rated speed}{17}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Operation conditions}{17}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Coefficients}{18}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Rotor speed}{18}{subsection.4.7}
-\contentsline {section}{\numberline {5}CIP 4: Tower design}{20}{section.5}
-\contentsline {subsection}{\numberline {5.1}Eigenfrequency}{20}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Design range}{20}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Wall thickness}{20}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Campbell diagram}{22}{subsection.5.4}
-\contentsline {section}{\numberline {6}CIP 5: Wind fields and wake modeling}{23}{section.6}
-\contentsline {subsection}{\numberline {6.1}Wind speed distribution: Rayleigh}{23}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Power curve and AEP}{24}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Turbulence intensity under free stream conditions}{26}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Wind fields with TurbSim}{27}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Wake modeling with Frandsen}{28}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Possible faults}{29}{subsection.6.6}
-\contentsline {section}{\numberline {7}CIP 6a: Fatigue loads}{29}{section.7}
-\contentsline {subsection}{\numberline {7.1}FAST}{29}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Damage equivalent loads under free stream condition}{30}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Damage equivalent loads under wake condition}{31}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Statistical max/min sensor values}{32}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Power spectral density}{33}{subsection.7.5}
-\contentsline {section}{\numberline {8}CIP 6b: Extreme loads}{34}{section.8}
-\contentsline {subsection}{\numberline {8.1}Extreme conditions}{34}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Simulation of extreme load cases 1.5 and 2.3}{34}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Extreme load table}{38}{subsection.8.3}
-\contentsline {section}{\numberline {9}Summary}{39}{section.9}
+\contentsline {subsection}{\numberline {2.10}Annual Energy Production}{7}{subsection.2.10}
+\contentsline {section}{\numberline {3}CIP 2: Advanced BEM }{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Design your blade according to Betz theory}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Design according to Schmitz}{11}{subsection.3.2}
+\contentsline {section}{\numberline {4}CIP 3: Performance Curves}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{13}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}WT\_Perf}{13}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Comparison}{14}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Rotor rated speed}{20}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Operation conditions}{20}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Coefficients}{21}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Rotor speed}{21}{subsection.4.7}
+\contentsline {section}{\numberline {5}CIP 4: Tower design}{23}{section.5}
+\contentsline {subsection}{\numberline {5.1}Eigenfrequency}{23}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Design range}{23}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Wall thickness}{23}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Campbell diagram}{25}{subsection.5.4}
+\contentsline {section}{\numberline {6}CIP 5: Wind fields and wake modeling}{26}{section.6}
+\contentsline {subsection}{\numberline {6.1}Wind speed distribution: Rayleigh}{26}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Power curve and AEP}{27}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Turbulence intensity under free stream conditions}{29}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Wind fields with TurbSim}{30}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Wake modeling with Frandsen}{31}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Possible faults}{32}{subsection.6.6}
+\contentsline {section}{\numberline {7}CIP 6a: Fatigue loads}{32}{section.7}
+\contentsline {subsection}{\numberline {7.1}FAST}{32}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Damage equivalent loads under free stream condition}{33}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Damage equivalent loads under wake condition}{34}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Statistical max/min sensor values}{35}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Power spectral density}{36}{subsection.7.5}
+\contentsline {section}{\numberline {8}CIP 6b: Extreme loads}{37}{section.8}
+\contentsline {subsection}{\numberline {8.1}Extreme conditions}{37}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Simulation of extreme load cases 1.5 and 2.3}{37}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Extreme load table}{41}{subsection.8.3}
+\contentsline {section}{\numberline {9}Summary}{42}{section.9}
