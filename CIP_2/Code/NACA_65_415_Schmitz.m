@@ -140,8 +140,20 @@ hold off;
 %% Pitching moments
 figure();
 hold on;
+title('Pitching Moments for each blade element');
+xlabel('AoA [°]');
+ylabel('C_m');
+plot(pitchingMoment(:,1));
+plot(pitchingMoment(:,2));
+legend('v=5.5m/s','v=11m/s');
+hold off;
+saveas(gcf,'../Figures/pitchingperbe.png');
+figure();
+hold on;
 title('Pitching Coefficient');
 xlabel('AoA [°]');
 ylabel('C_m');
 plot(interpolationTable(18:61,1),interpolationTable(18:61,4));
 hold off;
+saveas(gcf,'../Figures/pitchingcoeff.png');
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.31)  10 OCT 2016 17:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.31)  11 OCT 2016 00:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1682,100 +1682,456 @@ LaTeX Font Warning: Font shape `T1/hfoss/m/sl' in size <2> not available
 
 [11
 
- <../CIP_2/Figures/blade_elements.png>] (./Dowes_report.toc)
+ <../CIP_2/Figures/blade_elements.png>]
+<../CIP_2/Figures/prandtl_tip_loss.png, id=335, 413.8662pt x 314.6154pt>
+File: ../CIP_2/Figures/prandtl_tip_loss.png Graphic file (type png)
+
+<use ../CIP_2/Figures/prandtl_tip_loss.png>
+Package pdftex.def Info: ../CIP_2/Figures/prandtl_tip_loss.png used on input li
+ne 215.
+(pdftex.def)             Requested size: 268.59512pt x 204.19034pt.
+ [12
+
+ <../CIP_2/Figures/prandtl_tip_loss.png (PNG copy)>]
+<../CIP_2/Figures/hansen_lift_correction_3.png, id=342, 429.2838pt x 317.5062pt
+>
+File: ../CIP_2/Figures/hansen_lift_correction_3.png Graphic file (type png)
+ <use ../CIP_2/Figures/hansen_lift_correction_3.png>
+Package pdftex.def Info: ../CIP_2/Figures/hansen_lift_correction_3.png used on 
+input line 234.
+(pdftex.def)             Requested size: 151.08315pt x 111.74411pt.
+
+<../CIP_2/Figures/snel_correction_3.png, id=343, 421.575pt x 316.0608pt>
+File: ../CIP_2/Figures/snel_correction_3.png Graphic file (type png)
+
+<use ../CIP_2/Figures/snel_correction_3.png>
+Package pdftex.def Info: ../CIP_2/Figures/snel_correction_3.png used on input l
+ine 234.
+(pdftex.def)             Requested size: 151.08315pt x 113.27058pt.
+ [13
+
+ <../CIP_2/Figures/hansen_lift_correction_3.png (PNG copy)> <../CIP_2/Figures/s
+nel_correction_3.png (PNG copy)>] <../CIP_2/Figures/pitchingperbe.png, id=352, 
+427.3566pt x 319.9152pt>
+File: ../CIP_2/Figures/pitchingperbe.png Graphic file (type png)
+
+<use ../CIP_2/Figures/pitchingperbe.png>
+Package pdftex.def Info: ../CIP_2/Figures/pitchingperbe.png used on input line 
+252.
+(pdftex.def)             Requested size: 167.8713pt x 125.6695pt.
+ [14
+
+ <../CIP_2/Figures/pitchingperbe.png (PNG copy)>] (./Dowes_report.toc)
 
 Package textpos Warning: environment textblock* not in vertical mode. 
 (textpos)                Environment textblock* should not have any text
 (textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 208.
+(textpos)                Alignment may work out wrongly. on input line 254.
 
 File: images/FullBow.pdf Graphic file (type pdf)
 <use images/FullBow.pdf>
-Package pdftex.def Info: images/FullBow.pdf used on input line 208.
+Package pdftex.def Info: images/FullBow.pdf used on input line 254.
 (pdftex.def)             Requested size: 364.19536pt x 53.78906pt.
 
-Overfull \hbox (10.81726pt too wide) in paragraph at lines 208--208
-[][][][]  
- []
-
-[12
-
-] (./Dowes_report.toc)
-
-Package textpos Warning: environment textblock* not in vertical mode. 
-(textpos)                Environment textblock* should not have any text
-(textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 210.
-
-File: images/FullBow.pdf Graphic file (type pdf)
-<use images/FullBow.pdf>
-Package pdftex.def Info: images/FullBow.pdf used on input line 210.
-(pdftex.def)             Requested size: 364.19536pt x 53.78906pt.
-
-Overfull \hbox (10.81726pt too wide) in paragraph at lines 210--210
-[][][][]  
- []
-
-[13
-
-] (./Dowes_report.toc)
-
-Package textpos Warning: environment textblock* not in vertical mode. 
-(textpos)                Environment textblock* should not have any text
-(textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 212.
-
-File: images/FullBow.pdf Graphic file (type pdf)
-<use images/FullBow.pdf>
-Package pdftex.def Info: images/FullBow.pdf used on input line 212.
-(pdftex.def)             Requested size: 364.19536pt x 53.78906pt.
-
-Overfull \hbox (10.81726pt too wide) in paragraph at lines 212--212
-[][][][]  
- []
-
-[14
-
-] (./Dowes_report.toc)
-
-Package textpos Warning: environment textblock* not in vertical mode. 
-(textpos)                Environment textblock* should not have any text
-(textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 214.
-
-File: images/FullBow.pdf Graphic file (type pdf)
-<use images/FullBow.pdf>
-Package pdftex.def Info: images/FullBow.pdf used on input line 214.
-(pdftex.def)             Requested size: 364.19536pt x 53.78906pt.
-
-Overfull \hbox (10.81726pt too wide) in paragraph at lines 214--214
+Overfull \hbox (10.81726pt too wide) in paragraph at lines 254--254
 [][][][]  
  []
 
 [15
 
+] <figures/wt_perf.png, id=376, 645.41125pt x 235.88126pt>
+File: figures/wt_perf.png Graphic file (type png)
+
+<use figures/wt_perf.png>
+Package pdftex.def Info: figures/wt_perf.png used on input line 270.
+(pdftex.def)             Requested size: 201.44762pt x 73.62273pt.
+ <figures/cp.png, id=377, 578.16pt x 433.62pt>
+File: figures/cp.png Graphic file (type png)
+
+<use figures/cp.png>
+Package pdftex.def Info: figures/cp.png used on input line 270.
+(pdftex.def)             Requested size: 134.295pt x 100.71635pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <24.88> on input line 270.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <20.74> on input line 270.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 270.
+LaTeX Font Info:    Font shape `T1/hfoss/m/it' in size <24.88> not available
+(Font)              Font shape `T1/hfoss/m/sl' tried instead on input line 270.
+
+LaTeX Font Info:    Font shape `T1/hfoss/m/it' in size <20.74> not available
+(Font)              Font shape `T1/hfoss/m/sl' tried instead on input line 270.
+
+LaTeX Font Info:    Font shape `T1/hfoss/m/it' in size <17.28> not available
+(Font)              Font shape `T1/hfoss/m/sl' tried instead on input line 270.
+
+
+<figures/power_coeff_literature.png, id=378, 866.23625pt x 506.89375pt>
+File: figures/power_coeff_literature.png Graphic file (type png)
+
+<use figures/power_coeff_literature.png>
+Package pdftex.def Info: figures/power_coeff_literature.png used on input line 
+270.
+(pdftex.def)             Requested size: 134.295pt x 78.58318pt.
+ [16
+
+ <./figures/wt_perf.png> <./figures/cp.png> <./figures/power_coeff_literature.p
+ng>]
+<figures/thrust.png, id=388, 578.16pt x 433.62pt>
+File: figures/thrust.png Graphic file (type png)
+ <use figures/thrust.png>
+Package pdftex.def Info: figures/thrust.png used on input line 290.
+(pdftex.def)             Requested size: 134.295pt x 100.71635pt.
+
+<figures/thrust_coeff_literature.png, id=389, 546.04pt x 330.23375pt>
+File: figures/thrust_coeff_literature.png Graphic file (type png)
+
+<use figures/thrust_coeff_literature.png>
+Package pdftex.def Info: figures/thrust_coeff_literature.png used on input line
+ 290.
+(pdftex.def)             Requested size: 134.295pt x 81.21786pt.
+
+<figures/torque.png, id=390, 578.16pt x 433.62pt>
+File: figures/torque.png Graphic file (type png)
+ <use figures/torque.png>
+Package pdftex.def Info: figures/torque.png used on input line 290.
+(pdftex.def)             Requested size: 134.295pt x 100.71635pt.
+
+<figures/torque_coeff_literature.png, id=391, 832.10875pt x 498.86375pt>
+File: figures/torque_coeff_literature.png Graphic file (type png)
+
+<use figures/torque_coeff_literature.png>
+Package pdftex.def Info: figures/torque_coeff_literature.png used on input line
+ 290.
+(pdftex.def)             Requested size: 134.295pt x 80.51253pt.
+ [17
+
+ <./figures/thrust.png> <./figures/thrust_coeff_literature.png> <./figures/torq
+ue.png> <./figures/torque_coeff_literature.png>] [18
+
+] [19
+
+] [20
+
+] [21
+
 ] (./Dowes_report.toc)
 
 Package textpos Warning: environment textblock* not in vertical mode. 
 (textpos)                Environment textblock* should not have any text
 (textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 216.
+(textpos)                Alignment may work out wrongly. on input line 305.
 
 File: images/FullBow.pdf Graphic file (type pdf)
 <use images/FullBow.pdf>
-Package pdftex.def Info: images/FullBow.pdf used on input line 216.
+Package pdftex.def Info: images/FullBow.pdf used on input line 305.
 (pdftex.def)             Requested size: 364.19536pt x 53.78906pt.
 
-Overfull \hbox (10.81726pt too wide) in paragraph at lines 216--216
+Overfull \hbox (10.81726pt too wide) in paragraph at lines 305--305
 [][][][]  
  []
 
-[16
+[22
+
+] <figures/designranges.png, id=440, 1071.00125pt x 369.38pt>
+File: figures/designranges.png Graphic file (type png)
+
+<use figures/designranges.png>
+Package pdftex.def Info: figures/designranges.png used on input line 318.
+(pdftex.def)             Requested size: 268.59512pt x 92.63785pt.
+ [23
+
+ <./figures/designranges.png>]
+Overfull \hbox (23.30125pt too wide) detected at line 338
+\T1/hfoss/m/sl/8 f[] \OMS/lmsy/m/n/8 ^^A \T1/hfoss/m/n/8 2\OML/lmm/m/it/8 ^^Y \
+OT1/cmss/m/n/8 = []
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 338.
+LaTeX Font Info:    Font shape `T1/hfoss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/hfoss/m/sl' tried instead on input line 338.
+
+<../CIP_4/figures/eigenfrequency.jpg, id=447, 890.32625pt x 666.49pt>
+File: ../CIP_4/figures/eigenfrequency.jpg Graphic file (type jpg)
+
+<use ../CIP_4/figures/eigenfrequency.jpg>
+Package pdftex.def Info: ../CIP_4/figures/eigenfrequency.jpg used on input line
+ 338.
+(pdftex.def)             Requested size: 167.8713pt x 125.66827pt.
+ [24
+
+ <../CIP_4/figures/eigenfrequency.jpg>] <../CIP_4/figures/campbell.jpg, id=459,
+ 878.28125pt x 658.46pt>
+File: ../CIP_4/figures/campbell.jpg Graphic file (type jpg)
+
+<use ../CIP_4/figures/campbell.jpg>
+Package pdftex.def Info: ../CIP_4/figures/campbell.jpg used on input line 346.
+(pdftex.def)             Requested size: 268.59512pt x 201.36754pt.
+ [25
+
+ <../CIP_4/figures/campbell.jpg>]
+(./Dowes_report.toc)
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 348.
+
+File: images/FullBow.pdf Graphic file (type pdf)
+<use images/FullBow.pdf>
+Package pdftex.def Info: images/FullBow.pdf used on input line 348.
+(pdftex.def)             Requested size: 364.19536pt x 53.78906pt.
+
+Overfull \hbox (10.81726pt too wide) in paragraph at lines 348--348
+[][][][]  
+ []
+
+[26
+
+] <figures/wind_turbine_overview.png, id=479, 704.48561pt x 363.70024pt>
+File: figures/wind_turbine_overview.png Graphic file (type png)
+
+<use figures/wind_turbine_overview.png>
+Package pdftex.def Info: figures/wind_turbine_overview.png used on input line 3
+55.
+(pdftex.def)             Requested size: 268.59512pt x 138.66814pt.
+ [27
+
+ <./figures/wind_turbine_overview.png>] [28
+
+] [29
 
 ]
+<../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png, id
+=501, 421.575pt x 316.0608pt>
+File: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.pn
+g Graphic file (type png)
+
+<use ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png
+>
+Package pdftex.def Info: ../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulatio
+n/wake_effects_5.png used on input line 408.
+(pdftex.def)             Requested size: 302.1663pt x 226.54118pt.
+
+Overfull \vbox (17.88171pt too high) detected at line 408
+ []
+
+[30
+
+ <../CIP_5/CIP_Tutorial_5_-_Windfield_and_wake_simulation/wake_effects_5.png (P
+NG copy)>] (./Dowes_report.toc)
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 410.
+
+File: images/FullBow.pdf Graphic file (type pdf)
+<use images/FullBow.pdf>
+Package pdftex.def Info: images/FullBow.pdf used on input line 410.
+(pdftex.def)             Requested size: 364.19536pt x 53.78906pt.
+
+Overfull \hbox (10.81726pt too wide) in paragraph at lines 410--410
+[][][][]  
+ []
+
+[31
+
+] <../CIP_6/FAST/Plots_ws5/TwrBsMxt.png, id=521, 421.575pt x 316.0608pt>
+File: ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png Graphic file (type png)
+
+<use ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png>
+Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/TwrBsMxt.png used on input lin
+e 443.
+(pdftex.def)             Requested size: 127.58383pt x 95.64847pt.
+
+<../CIP_6/FAST/Plots_ws5/TwrBsMyt.png, id=522, 421.575pt x 316.0608pt>
+File: ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png Graphic file (type png)
+
+<use ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png>
+Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/TwrBsMyt.png used on input lin
+e 443.
+(pdftex.def)             Requested size: 127.58383pt x 95.64847pt.
+
+<../CIP_6/FAST/Plots_ws5/RootMFlp2.png, id=523, 421.575pt x 316.0608pt>
+File: ../CIP_6/FAST/Plots_ws5/RootMFlp2.png Graphic file (type png)
+
+<use ../CIP_6/FAST/Plots_ws5/RootMFlp2.png>
+Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/RootMFlp2.png used on input li
+ne 443.
+(pdftex.def)             Requested size: 127.58383pt x 95.64847pt.
+
+<../CIP_6/FAST/Plots_ws5/RootMedg2.png, id=524, 421.575pt x 316.0608pt>
+File: ../CIP_6/FAST/Plots_ws5/RootMedg2.png Graphic file (type png)
+
+<use ../CIP_6/FAST/Plots_ws5/RootMedg2.png>
+Package pdftex.def Info: ../CIP_6/FAST/Plots_ws5/RootMedg2.png used on input li
+ne 443.
+(pdftex.def)             Requested size: 127.58383pt x 95.64847pt.
+ [32
+
+ <../CIP_6/FAST/Plots_ws5/TwrBsMxt.png (PNG copy)> <../CIP_6/FAST/Plots_ws5/Twr
+BsMyt.png (PNG copy)> <../CIP_6/FAST/Plots_ws5/RootMFlp2.png (PNG copy)> <../CI
+P_6/FAST/Plots_ws5/RootMedg2.png (PNG copy)>] <figures/delsTwrSide.png, id=532,
+ 482.80376pt x 290.08376pt>
+File: figures/delsTwrSide.png Graphic file (type png)
+
+<use figures/delsTwrSide.png>
+Package pdftex.def Info: figures/delsTwrSide.png used on input line 463.
+(pdftex.def)             Requested size: 134.295pt x 80.6873pt.
+
+<figures/delsTwrFore.png, id=533, 482.80376pt x 290.08376pt>
+File: figures/delsTwrFore.png Graphic file (type png)
+
+<use figures/delsTwrFore.png>
+Package pdftex.def Info: figures/delsTwrFore.png used on input line 463.
+(pdftex.def)             Requested size: 134.295pt x 80.6873pt.
+
+<figures/delsBldEdge.png, id=534, 481.8pt x 289.08pt>
+File: figures/delsBldEdge.png Graphic file (type png)
+
+<use figures/delsBldEdge.png>
+Package pdftex.def Info: figures/delsBldEdge.png used on input line 463.
+(pdftex.def)             Requested size: 134.295pt x 80.57573pt.
+
+<figures/delsBldFlap.png, id=535, 481.8pt x 289.08pt>
+File: figures/delsBldFlap.png Graphic file (type png)
+
+<use figures/delsBldFlap.png>
+Package pdftex.def Info: figures/delsBldFlap.png used on input line 463.
+(pdftex.def)             Requested size: 134.295pt x 80.57573pt.
+ [33
+
+ <./figures/delsTwrSide.png> <./figures/delsTwrFore.png> <./figures/delsBldEdge
+.png> <./figures/delsBldFlap.png>]
+(./Dowes_report.toc)
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 465.
+
+File: images/FullBow.pdf Graphic file (type pdf)
+<use images/FullBow.pdf>
+Package pdftex.def Info: images/FullBow.pdf used on input line 465.
+(pdftex.def)             Requested size: 364.19536pt x 53.78906pt.
+
+Overfull \hbox (10.81726pt too wide) in paragraph at lines 465--465
+[][][][]  
+ []
+
+[34
+
+]
+<../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png, id=559, 425.9112pt x 319.4334pt>
+File: ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png Graphic file (type png)
+
+<use ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png>
+Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png used on input
+ line 489.
+(pdftex.def)             Requested size: 134.295pt x 100.71953pt.
+
+<../CIP_6/FASTextreme/EOG_50/RootMFlp2.png, id=560, 425.9112pt x 319.4334pt>
+File: ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png Graphic file (type png)
+
+<use ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png>
+Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/RootMFlp2.png used on inpu
+t line 489.
+(pdftex.def)             Requested size: 134.295pt x 100.71953pt.
+
+<../CIP_6/FASTextreme/EOG_50/BldPitch2.png, id=561, 425.9112pt x 319.4334pt>
+File: ../CIP_6/FASTextreme/EOG_50/BldPitch2.png Graphic file (type png)
+
+<use ../CIP_6/FASTextreme/EOG_50/BldPitch2.png>
+Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50/BldPitch2.png used on inpu
+t line 489.
+(pdftex.def)             Requested size: 134.295pt x 100.71953pt.
+
+Overfull \vbox (20.25958pt too high) detected at line 489
+ []
+
+[35
+
+ <../CIP_6/FASTextreme/EOG_50/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme/EO
+G_50/RootMFlp2.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50/BldPitch2.png (PNG 
+copy)>]
+<../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png, id=568, 425.9112pt x 319.4334pt>
+File: ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png Graphic file (type png)
+
+<use ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png>
+Package pdftex.def Info: ../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png used on input 
+line 509.
+(pdftex.def)             Requested size: 134.295pt x 100.71953pt.
+
+<../CIP_6/FASTextreme/EWSVR/RootMFlp2.png, id=569, 425.9112pt x 319.4334pt>
+File: ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png Graphic file (type png)
+
+<use ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png>
+Package pdftex.def Info: ../CIP_6/FASTextreme/EWSVR/RootMFlp2.png used on input
+ line 509.
+(pdftex.def)             Requested size: 134.295pt x 100.71953pt.
+ [36
+
+ <../CIP_6/FASTextreme/EWSVR/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme/EWS
+VR/RootMFlp2.png (PNG copy)>]
+<../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png, id=576, 425.9112pt x 319.4334p
+t>
+File: ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png Graphic file (type png)
+ <use ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png>
+Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png used on
+ input line 536.
+(pdftex.def)             Requested size: 127.58383pt x 95.68452pt.
+
+<../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png, id=577, 425.9112pt x 319.4334
+pt>
+File: ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png Graphic file (type png)
+ <use ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png>
+Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_brake/RootMFlp2.png used o
+n input line 536.
+(pdftex.def)             Requested size: 127.58383pt x 95.68452pt.
+
+<../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png, id=578, 425.9112pt x 319.43
+34pt>
+File: ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png Graphic file (type png)
+
+ <use ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png>
+Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_failtime/TwrBsMyt.png used
+ on input line 536.
+(pdftex.def)             Requested size: 127.58383pt x 95.68452pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--536
+
+ []
+
+
+<../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png, id=579, 425.9112pt x 319.4
+334pt>
+File: ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png Graphic file (type png
+)
+ <use ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png>
+Package pdftex.def Info: ../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png use
+d on input line 536.
+(pdftex.def)             Requested size: 127.58383pt x 95.68452pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--536
+
+ []
+
+
+Overfull \vbox (6.39517pt too high) detected at line 536
+ []
+
+[37
+
+ <../CIP_6/FASTextreme/EOG_50_brake/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextr
+eme/EOG_50_brake/RootMFlp2.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50_failtim
+e/TwrBsMyt.png (PNG copy)> <../CIP_6/FASTextreme/EOG_50_failtime/RootMFlp2.png 
+(PNG copy)>]
 \openout4 = `Dowes_report.vrb'.
 
- (./Dowes_report.vrb) [17
+ (./Dowes_report.vrb) [38
 
 ]
 \tf@nav=\write7
@@ -1789,11 +2145,11 @@ Overfull \hbox (10.81726pt too wide) in paragraph at lines 216--216
 
  
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
 (./Dowes_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
 Package rerunfilecheck Info: File `Dowes_report.out' has not changed.
 (rerunfilecheck)             Checksum: 31224C1FB7B88A56000C2F35C035800A;412.
 
@@ -1804,37 +2160,46 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 549.
  ) 
 Here is how much of TeX's memory you used:
- 22158 strings out of 493304
- 390682 string characters out of 6139871
- 536456 words of memory out of 5000000
- 24881 multiletter control sequences out of 15000+600000
- 87157 words of font info for 139 fonts, out of 8000000 for 9000
+ 22558 strings out of 493304
+ 400402 string characters out of 6139871
+ 537102 words of memory out of 5000000
+ 25163 multiletter control sequences out of 15000+600000
+ 120269 words of font info for 192 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,16n,53p,865b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
 /fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
-lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/te
-xmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi070
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb>
-Output written on Dowes_report.pdf (17 pages, 1059128 bytes).
+lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/te
+xmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy
+8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0600.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfsi0700.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfsi0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1200.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfss1728.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfsx0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb
+>
+Output written on Dowes_report.pdf (38 pages, 2340095 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 44 named destinations out of 1000 (max. 500000)
- 35488 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 722 PDF objects out of 1000 (max. 8388607)
+ 559 compressed objects within 6 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 52037 words of extra memory for PDF output out of 61914 (max. 10000000)
 
