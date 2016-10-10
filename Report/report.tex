@@ -56,6 +56,10 @@
 \input{titlepage.tex}
 \tableofcontents
 \newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
 
 \section{Introduction}
 This reports guides through the process of Design of Wind Energy Systems. The different phases are structured in so called CIPs. In the first CIP the main parameters of the turbine to be designed will be fixed and site conditions defined. Then in the second CIP the geometry of the blade will be computed according to Schmitz' and Betz' models. Performance curves are the subject of the third tutorial. CIP 4 treats the tower design. Impact of wakes and wind fields are investigated in CIP 5 before in the last CIP a fatigue load analysis (CIP 6a) and an extreme load analysis (CIP 6b) are carried out.
@@ -335,6 +339,53 @@ Twist angle	deg	&	27,590&	11,022&	3,813&	0,055&	-2,211&	-2,715&	-3,783&	-4,580&	
 \caption{Final blade design according to Schmitz}
 \label{final_blade_design_schmitz}
 \end{table}
+
+\subsection{Advanced BEM}
+For the further evaluation of the designed blade we used the blade element momentum theory (BEM). BEM helps to estimate the local forces acting on a wind turbine blade. The first assumption of this theory is the actuator disk model, where we consider a wind turbine in a stream tube, as shown in figure~\ref{fig:actuatordisk}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{../CIP_2/Figures/actuatordiskb.png}
+\caption{Actuator disk model}
+\label{fig:actuatordisk}
+\end{figure}
+Therefore we assume a closed system, which must obey momentum conservation. The rotor is moved by the incoming wind and angular momentum is induced. The wind is also influenced and is slowed down. The change in velocity is described by the induction factor $a$.
+\begin{equation}
+v_2 = v_1(1-a)
+\end{equation}
+In the following we first introduce the BEM algorithm and discuss some of the corrections which have to be consider when designing a wind turbine. It should be noted that these corrections are not used in the further design process because the application of the BEM is very complex and is done by specially designed programs.
+\subsubsection{BEM algorithm}
+The BEM algorithm is an iterative process and is limited by a convergence test. The following figure shows the main idea of the BEM algorithm.
+\subsubsection{Prandtl factor}
+The BEM theory by itself fails to represent all of the occurring effects which have to be considered. One major effect is the finite number of blades. The BEM theory calculates an uniform induction factor over each rotor ring, but in reality the local solidity decreases toward the tip and is not uniform over the ring. To deal with these errors the Prandtl correction is applied. The effects are shown in the following figure.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{../CIP_2/Figures/prandtl_tip_loss.png}
+\caption{Prandtl Tip los}
+\label{fig:tiplos}
+\end{figure}
+
+The figure shows that the tip-loss factor decreases with increasing r/R ratio. There are not big differences for alternating wind speeds. However it seems that higher wind speeds have a slightly bigger influence on the tip losses.
+
+\subsection{3D corrections}
+Measurements show that sometimes stall turbines have significant higher power in stall range than calculated. This is due to 3D effects which are not considered by 2D models. To deal with this problem, different corrections terms can be applied.
+In the following two different models are shown. Figure~\ref{fig:hansen} shows the correction by Chaviaropoulus and Hansen and figure~\ref{fig:snel} the correction by Snel. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{../CIP_2/Figures/hansen_lift_correction_3.png}
+\caption{Hansen 3D Correction}
+\label{fig:hansen}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{../CIP_2/Figures/snel_correction_3.png}
+\caption{Snel 3D correction}
+\label{fig:snel}
+\end{figure}
+
+
 
 \newpage
 \section{CIP 3: Performance Curves}
