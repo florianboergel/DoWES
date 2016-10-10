@@ -340,7 +340,7 @@ Twist angle	deg	&	27,590&	11,022&	3,813&	0,055&	-2,211&	-2,715&	-3,783&	-4,580&	
 \label{final_blade_design_schmitz}
 \end{table}
 
-\subsection{Advanced BEM}
+\subsection{Corrections to BEM}
 For the further evaluation of the designed blade we used the blade element momentum theory (BEM). BEM helps to estimate the local forces acting on a wind turbine blade. The first assumption of this theory is the actuator disk model, where we consider a wind turbine in a stream tube, as shown in figure~\ref{fig:actuatordisk}.
 \begin{figure}[H]
 \centering
@@ -385,6 +385,24 @@ In the following two different models are shown. Figure~\ref{fig:hansen} shows t
 \label{fig:snel}
 \end{figure}
 
+\subsection{Pitching moment}
+We calculated the pitching moment at the different blade elements according to the following formula:
+\begin{equation*}
+M= C_m \cdot A \cdot c \cdot \rho \cdot v^2 \cdot 0.5
+\end{equation*}
+The total pitching moment can be obtained by adding up the moments of all blade elements. The results for the two different wind speeds ($v_{rated}$ and $0.5v_{rated}$}) are as follows:
+\begin{align*}
+M(5.5m/s) &= 15.881 Nm\\
+M(11m/s) &= 278.705 Nm
+\end{align*}
+
+Figure~\ref{fig:pitchingcoeffs} depicts the pitching coefficients in dependance of the angle of attack.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{../CIP_2/Figures/pitchingcoeff.png}
+\caption{Pitching coefficient}
+\label{fig:pitchingcoeffs}
+\end{figure}
 
 
 \newpage

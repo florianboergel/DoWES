@@ -5,11 +5,11 @@ rated_ws = 11
 k = 2
 vAve=10
 A = vAve/sqrt(pi/2)
-data = wblpdf(0:0.01:30,A,k)
+data = wblpdf(0:0.01:30,9,k)
 data = data*8760/100 %must be fitted to bin size 1
 
 figure;
-plot(0:0.01:30,data)
+plot(0:0.01:30,data*100)
 y1=get(gca,'ylim')
 hold on
 plot([cut_in_ws cut_in_ws],y1)
@@ -64,14 +64,14 @@ for i= 1:length(data_power)
     energy_yield(i) = data_power(i)/1000*data(i);
 end
 figure;
-plot(0:0.01:30, energy_yield)
+plot(0:0.01:30, energy_yield/10)
 title('Energy yield')
 xlabel('Wind speed in [m/s]')
-ylabel('Energy in [kWh/a]')
+ylabel('Energy in [MWh/a]')
 saveas(gcf, 'energy_yield.png')
 
 total_energy_yield = sum(energy_yield);
-disp('Sum Energy yield in [kWh/a]')
+disp('Sum Energy yield in [GWh/a]')
 disp(total_energy_yield)
 disp('Money 100 % available 0.08 € / kWh')
 disp(total_energy_yield*0.08)

@@ -1,0 +1,228 @@
+% Page Layout
+\documentclass[12pt,t]{beamer}
+\usepackage{etex} % Avoid an error due to a lack of registers
+\usepackage[english]{babel} % Defines the language of macros as well
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{graphicx}
+\include{layout}
+
+\author{DoWES}
+\title{Jan Kämper \& Florian Börgel}
+\date{11.10.2016}
+\semester{Semester 2016}
+\institute{Universität Oldenburg}
+
+\begin{document}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\tiny,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=tb,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  otherkeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\frame{\titlepage}
+\frame{\frametitle{Table of Contents}\tableofcontents}
+
+\AtBeginSection[]{
+	\frame{
+		\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+	}
+}
+
+%%%%%%%%%%%% Start of content %%%%%%%%%%%% 
+\section{Selection of Main Parameters}
+
+\begin{frame}
+\huge 
+Formulas
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/cip1_params.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\huge
+Results
+\begin{table}
+\footnotesize
+\centering
+\begin{tabular}{ | l | l | l | }
+\hline
+	\textbf{Main parameters} & \textbf{Unit} & \textbf{Value} \\ \hline \hline
+	Calculate total conversion efficiency & m & 0.4704 \\ \hline
+	Total wind power that needs to be extracted & kW & 7439.258 \\ \hline
+	Rated wind speed (rounded up) & m/s & 11 \\ \hline
+	Rotor radius (rounded up) & m & 54 \\ \hline
+	Blade length (without hub) & m & 52.75 \\ \hline
+	Rotor area (rounded radius) & $m^2$ & 9160.884 \\ \hline
+	Specific rating (design) & $W/m^2$ & 382.051 \\ \hline
+	$\lambda D$ Design tip speed ratio & - & 7.454 \\ \hline
+	Rotor rated speed & rpm & 14.5 \\ \hline
+	Blade element length (8 elements, same length) & m & 6.593 \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\huge
+Estimation of AEP
+\begin{figure}[htbp]
+	\begin{center}
+		\begin{minipage}[t]{0.4\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/ws_plot.png}
+		\end{minipage}
+		\begin{minipage}[t]{0.4\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/power_curve.png}
+		\end{minipage}
+	\end{center}
+\end{figure}
+\footnotesize
+\begin{equation*}
+\text{AEP} = \sum_v n_v \cdot p_v
+\end{equation*}
+\scriptsize
+with: \\
+n = number of hours \\
+p = power curve\\
+v = wind speed\\
+
+\end{frame}
+
+\begin{frame}
+\huge
+Resulting Energy yield
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/energy_yield.png}
+\end{figure}
+\footnotesize
+\begin{equation*}
+\text{AEP} = 13,49 GWh
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}
+\huge
+Lift-to-drag ratio
+\begin{figure}[htbp]
+	\begin{center}
+		\begin{minipage}[t]{0.4\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/lift_to_drag_ratio_415.png}
+		\end{minipage}
+		\begin{minipage}[t]{0.4\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/lift_to_drag_ratio_421.png}
+		\end{minipage}
+	\end{center}
+\end{figure}
+\footnotesize
+\begin{table}[H]
+\begin{tabular}{l | r r r r}
+NACA 65-415 & $\alpha$ &$c_l$ &$c_d$ & $c_m$\\
+\hline
+80\% method& 10 & 1.345 & 0.016 & 0.071\\
+lift-to-drag method & 3.0 & 0.710 & 0.005 &  0.088\\
+\hline
+NACA 65-421 & $\alpha$ &$c_l$ &$c_d$ & $c_m$\\
+\hline
+80\% method& 11 & 1.255 & 0.026 & 0.055\\
+lift-to-drag method & 5.0 & 0.952 & 0.006 &  0.092\\
+\end{tabular}
+\caption{Main aerodynamic parameters}
+\end{table}
+\end{frame}
+\section{Rotor design, BEM}
+
+\begin{frame}
+\huge
+BEM algorithm
+\begin{figure}[H]
+\includegraphics[width=0.8\linewidth]{figures/algo.png}
+\label{fig:blade_elemets}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\huge
+Blade design
+\Tiny
+\begin{figure}[H]
+\includegraphics[width=0.6\linewidth]{../CIP_2/Figures/blade_elements.png}
+\label{fig:blade_elemets}
+\end{figure}
+
+\begin{table}[H]
+\begin{tabular}{c| l l l l l l l l l}
+\hline
+Station  & 	1&	2&	3	&4	&5	&6	&7	&8	&9\\
+&Cylinder&65-421&65-421&65-421&65-421& 65-415& 65-415& 65-415&65-415\\
+\hline
+Blade&	3.297&	9.891&	16.484&	23.078&	29.672&	36.266&	42.859&	49.453&	52.750\\
+\hline
+Chord &	6,628	&5,426&	3,935	&3,014&	2,425&	1,887&	1,617&	1,413&	1,329\\
+Twist &	27,590&	11,022&	3,813&	0,055&	-2,211&	-2,715&	-3,783&	-4,580&	-4,907\\
+\hline
+\end{tabular}
+\label{final_blade_design_schmitz}
+\end{table}
+\end{frame}
+
+
+\section{Control and characteristic curves}
+
+\section{Tower design, modal analysis}
+
+\section{External conditions}
+
+\section{Fatigue load analysis}
+
+\section{Extreme load analysis}
+
+\begin{frame}[fragile]
+\vspace{100 pt}
+\Huge
+\begin{center}
+Thanks!
+\end{center}
+\end{frame}
+%%%%%%%%%%%% End of content %%%%%%%%%%%%
+
+
+\end{document}

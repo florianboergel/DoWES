@@ -72,10 +72,12 @@ for j=1:2
            % disp(alpha*180/pi);
 
             %step 4
-            interpolationTable = xlsread('Interpol.xlsx','NACA 65-415','B6:D81');
+            interpolationTable = xlsread('Interpol.xlsx','NACA 65-415','B6:E81');
             C_L = interp1(interpolationTable(:,1),interpolationTable(:,2),alpha_A_tmp*180/pi,'spline');
             C_D = interp1(interpolationTable(:,1),interpolationTable(:,3),alpha_A_tmp*180/pi,'spline');
-
+            C_M = interp1(interpolationTable(:,1),interpolationTable(:,4),alpha_A_tmp*180/pi,'spline');
+            pitchingMoment(count_indice,j) = C_M*chord(count_indice)*0.5*1.225*Ud*chord(count_indice)*BladeElementLength;
+          
             %step 5
             C_T = C_L * cos(alpha) % + C_D *sin(alpha);
             C_Q = C_L * cos(alpha) - C_D *sin(alpha);
@@ -91,18 +93,19 @@ for j=1:2
                 K = 4*sin(alpha)^2/(sigma*C_T);
                 a=0.5*(2+K*(1-2*a_c)-sqrt((K*(1-2*a_c)+2)^2+4*(K*a_c^2-1)));
             end;
-            count = count+1;
+            count = count+1;BladeElementLength
         end; %BEM while loop
 
         a_results(count_indice,j)=a;
         a_Dash_results(count_indice,j)=a_Dash;
 
         fTip(count_indice,j)=2/pi*acos((exp(-N/2*(1-r/R)/(r/R*sin(alpha)))));
-        f_cl_snel(count_indice) = 3*(chord(count_indice)/r)^2
-        f_cl_hansen(count_indice) = 2.2*(chord(count_indice)/r)*(cosd(alpha_twist(count_indice)*180/pi-10))^4
-
+        f_cl_snel(count_indice) = 3*(chord(count_indice)/r)^2;
+        f_cl_hansen(count_indice) = 2.2*(chord(count_indice)/r)*(cosd(alpha_twist(count_indice)*180/pi-10))^4;
         count_indice = count_indice + 1;
     end; % loop over r
+    disp('Pitch moment for ' + Ud +':')
+    pitchMomentPerAngle(j) = sum(pitchingMoment(:,j));
 
 end; %loop over Ud
 
@@ -112,6 +115,8 @@ C_L_3d_hansen(:,1) = interpolationTable(18:61,2)+(c_l_design - interpolationTabl
 C_L_3d_hansen(:,2) = interpolationTable(18:61,2)+(c_l_design - interpolationTable(18:61,2))*f_cl_hansen(5)
 C_D_3d_hansen(:,1) = interpolationTable(18:61,3)+(c_d_design - interpolationTable(18:61,3))*f_cl_hansen(3)
 C_D_3d_hansen(:,2) = interpolationTable(18:61,3)+(c_d_design - interpolationTable(18:61,3))*f_cl_hansen(5)
+
+
 
 figure();
 hold on;
@@ -130,4 +135,13 @@ hold on;
 title('Hansen Drag Corrections');
 plot(C_D_3d_hansen(:,1));
 plot(C_D_3d_hansen(:,2));
+hold off;
+
+%% Pitching moments
+figure();
+hold on;
+title('Pitching Coefficient');
+xlabel('AoA [°]');
+ylabel('C_m');
+plot(interpolationTable(18:61,1),interpolationTable(18:61,4));
 hold off;

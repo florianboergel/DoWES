@@ -12,34 +12,39 @@
 \BOOKMARK [1][-]{section.3}{CIP 2: Advanced BEM }{}% 12
 \BOOKMARK [2][-]{subsection.3.1}{Design your blade according to Betz theory}{section.3}% 13
 \BOOKMARK [2][-]{subsection.3.2}{Design according to Schmitz}{section.3}% 14
-\BOOKMARK [1][-]{section.4}{CIP 3: Performance Curves}{}% 15
-\BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.2}{WT\137Perf}{section.4}% 17
-\BOOKMARK [2][-]{subsection.4.3}{Comparison}{section.4}% 18
-\BOOKMARK [2][-]{subsection.4.4}{Rotor rated speed}{section.4}% 19
-\BOOKMARK [2][-]{subsection.4.5}{Operation conditions}{section.4}% 20
-\BOOKMARK [2][-]{subsection.4.6}{Coefficients}{section.4}% 21
-\BOOKMARK [2][-]{subsection.4.7}{Rotor speed}{section.4}% 22
-\BOOKMARK [1][-]{section.5}{CIP 4: Tower design}{}% 23
-\BOOKMARK [2][-]{subsection.5.1}{Eigenfrequency}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.2}{Design range}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.3}{Wall thickness}{section.5}% 26
-\BOOKMARK [2][-]{subsection.5.4}{Campbell diagram}{section.5}% 27
-\BOOKMARK [1][-]{section.6}{CIP 5: Wind fields and wake modeling}{}% 28
-\BOOKMARK [2][-]{subsection.6.1}{Wind speed distribution: Rayleigh}{section.6}% 29
-\BOOKMARK [2][-]{subsection.6.2}{Power curve and AEP}{section.6}% 30
-\BOOKMARK [2][-]{subsection.6.3}{Turbulence intensity under free stream conditions}{section.6}% 31
-\BOOKMARK [2][-]{subsection.6.4}{Wind fields with TurbSim}{section.6}% 32
-\BOOKMARK [2][-]{subsection.6.5}{Wake modeling with Frandsen}{section.6}% 33
-\BOOKMARK [2][-]{subsection.6.6}{Possible faults}{section.6}% 34
-\BOOKMARK [1][-]{section.7}{CIP 6a: Fatigue loads}{}% 35
-\BOOKMARK [2][-]{subsection.7.1}{FAST}{section.7}% 36
-\BOOKMARK [2][-]{subsection.7.2}{Damage equivalent loads under free stream condition}{section.7}% 37
-\BOOKMARK [2][-]{subsection.7.3}{Damage equivalent loads under wake condition}{section.7}% 38
-\BOOKMARK [2][-]{subsection.7.4}{Statistical max/min sensor values}{section.7}% 39
-\BOOKMARK [2][-]{subsection.7.5}{Power spectral density}{section.7}% 40
-\BOOKMARK [1][-]{section.8}{CIP 6b: Extreme loads}{}% 41
-\BOOKMARK [2][-]{subsection.8.1}{Extreme conditions}{section.8}% 42
-\BOOKMARK [2][-]{subsection.8.2}{Simulation of extreme load cases 1.5 and 2.3}{section.8}% 43
-\BOOKMARK [2][-]{subsection.8.3}{Extreme load table}{section.8}% 44
-\BOOKMARK [1][-]{section.9}{Summary}{}% 45
+\BOOKMARK [2][-]{subsection.3.3}{Corrections to BEM}{section.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.3.1}{BEM algorithm}{subsection.3.3}% 16
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Prandtl factor}{subsection.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.4}{3D corrections}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.5}{Pitching moment}{section.3}% 19
+\BOOKMARK [1][-]{section.4}{CIP 3: Performance Curves}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.2}{WT\137Perf}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.3}{Comparison}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.4}{Rotor rated speed}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.5}{Operation conditions}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.6}{Coefficients}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.7}{Rotor speed}{section.4}% 27
+\BOOKMARK [1][-]{section.5}{CIP 4: Tower design}{}% 28
+\BOOKMARK [2][-]{subsection.5.1}{Eigenfrequency}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.2}{Design range}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.3}{Wall thickness}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.4}{Campbell diagram}{section.5}% 32
+\BOOKMARK [1][-]{section.6}{CIP 5: Wind fields and wake modeling}{}% 33
+\BOOKMARK [2][-]{subsection.6.1}{Wind speed distribution: Rayleigh}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.2}{Power curve and AEP}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.3}{Turbulence intensity under free stream conditions}{section.6}% 36
+\BOOKMARK [2][-]{subsection.6.4}{Wind fields with TurbSim}{section.6}% 37
+\BOOKMARK [2][-]{subsection.6.5}{Wake modeling with Frandsen}{section.6}% 38
+\BOOKMARK [2][-]{subsection.6.6}{Possible faults}{section.6}% 39
+\BOOKMARK [1][-]{section.7}{CIP 6a: Fatigue loads}{}% 40
+\BOOKMARK [2][-]{subsection.7.1}{FAST}{section.7}% 41
+\BOOKMARK [2][-]{subsection.7.2}{Damage equivalent loads under free stream condition}{section.7}% 42
+\BOOKMARK [2][-]{subsection.7.3}{Damage equivalent loads under wake condition}{section.7}% 43
+\BOOKMARK [2][-]{subsection.7.4}{Statistical max/min sensor values}{section.7}% 44
+\BOOKMARK [2][-]{subsection.7.5}{Power spectral density}{section.7}% 45
+\BOOKMARK [1][-]{section.8}{CIP 6b: Extreme loads}{}% 46
+\BOOKMARK [2][-]{subsection.8.1}{Extreme conditions}{section.8}% 47
+\BOOKMARK [2][-]{subsection.8.2}{Simulation of extreme load cases 1.5 and 2.3}{section.8}% 48
+\BOOKMARK [2][-]{subsection.8.3}{Extreme load table}{section.8}% 49
+\BOOKMARK [1][-]{section.9}{Summary}{}% 50
