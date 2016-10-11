@@ -1,9 +1,0 @@
-\beamer@endinputifotherversion {3.24pt}
-\select@language {english}
-\beamer@sectionintoc {1}{Selection of Main Parameters}{3}{0}{1}
-\beamer@sectionintoc {2}{Rotor design, BEM}{9}{0}{2}
-\beamer@sectionintoc {3}{Control and characteristic curves}{15}{0}{3}
-\beamer@sectionintoc {4}{Tower design, modal analysis}{22}{0}{4}
-\beamer@sectionintoc {5}{External conditions}{26}{0}{5}
-\beamer@sectionintoc {6}{Fatigue load analysis}{31}{0}{6}
-\beamer@sectionintoc {7}{Extreme load analysis}{34}{0}{7}
